@@ -1,0 +1,1857 @@
+,Issue key,Status,Resolution,Created,Fix Versions Combined,Affects Versions Combined
+0,HIVE-28515,Resolved,Fixed,10/Sep/24 06:55,"4.0.1, 4.1.0",4.0.0
+1,HIVE-28487,Resolved,Fixed,29/Aug/24 10:28,"4.0.1, 4.1.0",4.0.0
+2,HIVE-28451,Resolved,Fixed,19/Aug/24 13:12,"4.0.1, 4.1.0",4.0.0
+3,HIVE-28439,Resolved,Fixed,07/Aug/24 13:23,"4.0.1, 4.1.0",4.0.0
+4,HIVE-28360,Resolved,Fixed,04/Jul/24 09:50,"4.0.1, 4.1.0",3.1.3
+5,HIVE-28353,Resolved,Fixed,27/Jun/24 04:10,"4.0.1, 4.1.0",4.0.0
+6,HIVE-28347,Resolved,Fixed,25/Jun/24 06:09,"4.0.1, 4.1.0","2.4.0, 3.1.3, 4.0.0"
+7,HIVE-28285,Resolved,Fixed,29/May/24 15:38,"4.0.1, 4.1.0",4.0.0
+8,HIVE-28278,Resolved,Fixed,23/May/24 15:44,"4.0.1, 4.1.0",4.0.0
+9,HIVE-28277,Closed,Won't Fix,23/May/24 03:22,4.0.0,4.0.0
+10,HIVE-28266,Resolved,Fixed,16/May/24 21:16,"4.0.1, 4.1.0",4.0.0
+11,HIVE-28264,Resolved,Fixed,16/May/24 13:00,"4.0.1, 4.1.0",4.0.0
+12,HIVE-28262,Resolved,Fixed,16/May/24 07:21,"4.0.1, 4.1.0","3.1.3, 4.1.0"
+13,HIVE-28239,Resolved,Fixed,30/Apr/24 10:42,"4.0.1, 4.1.0",4.0.0
+14,HIVE-28217,Resolved,Fixed,25/Apr/24 08:28,"4.0.1, 4.1.0",3.1.2
+15,HIVE-28207,Resolved,Fixed,21/Apr/24 11:58,"4.0.1, 4.1.0",4.0.0
+16,HIVE-28202,Resolved,Fixed,17/Apr/24 11:42,"4.0.1, 4.1.0","4.0.0, 4.0.0-beta-1"
+17,HIVE-28190,Resolved,Done,09/Apr/24 17:09,"4.0.1, 4.1.0",4.0.0
+18,HIVE-28173,Resolved,Fixed,03/Apr/24 19:39,"4.0.1, 4.1.0",4.0.0
+19,HIVE-28166,Resolved,Fixed,30/Mar/24 13:27,"4.0.1, 4.1.0",4.0.0
+20,HIVE-28161,Resolved,Fixed,28/Mar/24 15:00,"4.0.1, 4.1.0",4.0.0-beta-1
+21,HIVE-28143,Resolved,Fixed,21/Mar/24 13:29,"4.0.1, 4.1.0",4.0.0
+22,HIVE-28123,Closed,Fixed,18/Mar/24 10:52,4.0.0,4.0.0
+23,HIVE-28121,Resolved,Fixed,15/Mar/24 11:26,"2.3.10, 4.0.1, 4.1.0",4.0.0
+24,HIVE-28082,Resolved,Fixed,20/Feb/24 03:00,"4.0.1, 4.1.0",4.0.0-beta-1
+25,HIVE-28054,Closed,Fixed,02/Feb/24 01:34,4.0.0,4.0.0-beta-1
+26,HIVE-28053,Closed,Fixed,01/Feb/24 14:05,4.0.0,4.0.0-beta-1
+27,HIVE-28021,Closed,Fixed,23/Jan/24 15:27,4.0.0,4.0.0-beta-1
+28,HIVE-28009,Closed,Fixed,18/Jan/24 09:49,4.0.0,"4.0.0, 4.0.0-beta-1"
+29,HIVE-28006,Resolved,Fixed,17/Jan/24 09:00,"4.0.1, 4.1.0","4.0.0, 4.0.0-beta-1, 4.1.0"
+30,HIVE-28004,Closed,Fixed,16/Jan/24 10:19,4.0.0,4.0.0-beta-1
+31,HIVE-28002,Resolved,Not A Problem,16/Jan/24 07:49,4.0.0-beta-1,4.0.0-beta-1
+32,HIVE-27988,Closed,Fixed,08/Jan/24 14:05,4.0.0,4.0.0-beta-1
+33,HIVE-27967,Closed,Fixed,23/Dec/23 10:51,4.0.0,4.0.0-beta-1
+34,HIVE-27962,Closed,Duplicate,19/Dec/23 17:59,4.0.0,4.0.0-beta-1
+35,HIVE-27960,Closed,Fixed,18/Dec/23 13:29,4.0.0,"2.3.9, 4.0.0-beta-1"
+36,HIVE-27952,Closed,Fixed,13/Dec/23 07:10,4.0.0,4.0.0-beta-1
+37,HIVE-27951,Closed,Fixed,11/Dec/23 23:41,4.0.0,4.0.0-beta-1
+38,HIVE-27950,Closed,Fixed,11/Dec/23 22:49,4.0.0,4.0.0-beta-1
+39,HIVE-27948,Closed,Fixed,11/Dec/23 15:48,4.0.0,4.0.0-beta-1
+40,HIVE-27943,Closed,Fixed,07/Dec/23 15:15,4.0.0,4.0.0-beta-1
+41,HIVE-27942,Closed,Fixed,07/Dec/23 13:53,4.0.0,"4.0.0-alpha-1, 4.0.0-alpha-2"
+42,HIVE-27930,Closed,Fixed,03/Dec/23 11:42,4.0.0,4.0.0-beta-1
+43,HIVE-27924,Closed,Fixed,01/Dec/23 06:37,4.0.0,4.0.0-beta-1
+44,HIVE-27916,Closed,Fixed,29/Nov/23 12:07,4.0.0,4.0.0-beta-1
+45,HIVE-27866,Closed,Fixed,09/Nov/23 12:59,4.0.0,4.0.0-beta-1
+46,HIVE-27847,Resolved,Fixed,03/Nov/23 15:35,"4.0.1, 4.1.0","4.0.0-alpha-1, 4.0.0-alpha-2"
+47,HIVE-27801,Closed,Fixed,16/Oct/23 08:21,4.0.0,"4.0.0, 4.0.0-beta-1"
+48,HIVE-27797,Closed,Fixed,13/Oct/23 10:20,4.0.0,4.0.0-alpha-1
+49,HIVE-27775,Closed,Fixed,06/Oct/23 12:04,4.0.0,4.0.0-beta-1
+50,HIVE-27749,Closed,Fixed,27/Sep/23 19:50,4.0.0,"4.0.0-alpha-2, 4.0.0-beta-1"
+51,HIVE-27733,Closed,Fixed,26/Sep/23 08:16,4.0.0,4.0.0-beta-1
+52,HIVE-27713,Closed,Fixed,20/Sep/23 10:00,4.0.0,4.0.0-alpha-2
+53,HIVE-27695,Closed,Fixed,15/Sep/23 15:43,4.0.0,4.0.0-beta-1
+54,HIVE-27675,Closed,Fixed,08/Sep/23 17:16,4.0.0,3.1.0
+55,HIVE-27667,Closed,Fixed,03/Sep/23 01:55,4.0.0,4.0.0-beta-1
+56,HIVE-27658,Closed,Fixed,31/Aug/23 02:33,4.0.0,"3.1.3, 4.0.0-beta-1"
+57,HIVE-27649,Closed,Fixed,24/Aug/23 18:40,4.0.0,"3.1.2, 4.0.0"
+58,HIVE-27642,Closed,Fixed,23/Aug/23 11:22,4.0.0,4.0.0-beta-1
+59,HIVE-27631,Closed,Fixed,17/Aug/23 08:53,4.0.0,"2.3.5, 2.3.7, 3.1.3"
+60,HIVE-27555,Closed,Fixed,01/Aug/23 12:31,4.0.0,4.0.0-beta-1
+61,HIVE-27502,Closed,Fixed,13/Jul/23 11:29,4.0.0-beta-1,4.0.0-alpha-2
+62,HIVE-27449,Closed,Fixed,19/Jun/23 02:32,4.0.0-beta-1,4.0.0-alpha-2
+63,HIVE-27439,Closed,Fixed,14/Jun/23 07:47,4.0.0-beta-1,3.1.3
+64,HIVE-27374,Closed,Fixed,25/May/23 13:35,4.0.0-beta-1,4.0.0-alpha-2
+65,HIVE-27357,Resolved,Fixed,18/May/23 08:45,"4.0.1, 4.1.0","3.1.3, 4.0.0-alpha-2"
+66,HIVE-27344,Closed,Fixed,15/May/23 09:58,4.0.0-beta-1,"3.1.3, 4.0.0-alpha-2"
+67,HIVE-27338,Closed,Fixed,12/May/23 09:15,4.0.0-beta-1,4.0.0-alpha-2
+68,HIVE-27337,Resolved,Fixed,12/May/23 00:10,4.0.0-alpha-1,4.0.0-alpha-2
+69,HIVE-27324,Closed,Fixed,06/May/23 05:57,4.0.0,3.1.3
+70,HIVE-27289,Closed,Fixed,25/Apr/23 02:14,4.0.0-beta-1,4.0.0-alpha-2
+71,HIVE-27268,Closed,Fixed,17/Apr/23 19:01,4.0.0-beta-1,3.1.3
+72,HIVE-27240,Closed,Fixed,10/Apr/23 21:23,4.0.0,"4.0.0-alpha-1, 4.0.0-alpha-2"
+73,HIVE-27161,Closed,Fixed,21/Mar/23 14:40,4.0.0,"4.0.0-alpha-1, 4.0.0-alpha-2"
+74,HIVE-27157,Closed,Fixed,20/Mar/23 16:39,4.0.0-beta-1,4.0.0-alpha-2
+75,HIVE-27140,Closed,Fixed,14/Mar/23 12:47,4.0.0-beta-1,"2.3.8, 3.1.2"
+76,HIVE-27093,Closed,Fixed,18/Feb/23 18:03,4.0.0,4.0.0-alpha-2
+77,HIVE-27071,Closed,Fixed,11/Feb/23 20:17,4.0.0-beta-1,4.0.0
+78,HIVE-27065,Closed,Fixed,10/Feb/23 00:15,4.0.0-beta-1,4.0.0-alpha-2
+79,HIVE-27063,Closed,Fixed,09/Feb/23 20:29,4.0.0-beta-1,4.0.0
+80,HIVE-26911,Closed,Fixed,06/Jan/23 03:52,4.0.0-beta-1,4.0.0
+81,HIVE-26828,Closed,Fixed,09/Dec/22 14:03,4.0.0,4.0.0-alpha-2
+82,HIVE-26812,Closed,Fixed,06/Dec/22 18:27,4.0.0-beta-1,4.0.0-alpha-2
+83,HIVE-26767,Closed,Fixed,22/Nov/22 15:44,4.0.0-beta-1,4.0.0
+84,HIVE-26759,Closed,Fixed,18/Nov/22 06:04,4.0.0-beta-1,4.0.0-alpha-2
+85,HIVE-26658,Closed,Fixed,21/Oct/22 13:42,4.0.0-beta-1,4.0.0-alpha-1
+86,HIVE-26652,Closed,Fixed,19/Oct/22 15:02,4.0.0-alpha-2,4.0.0-alpha-2
+87,HIVE-26643,Closed,Fixed,17/Oct/22 13:48,4.0.0-alpha-2,4.0.0-alpha-2
+88,HIVE-26633,Closed,Fixed,15/Oct/22 21:48,4.0.0-alpha-2,4.0.0-alpha-2
+89,HIVE-26584,Closed,Fixed,01/Oct/22 16:53,4.0.0-alpha-2,4.0.0-alpha-2
+90,HIVE-26568,Closed,Duplicate,27/Sep/22 02:57,4.0.0-alpha-2,3.1.2
+91,HIVE-26522,Closed,Fixed,07/Sep/22 14:36,"2.3.10, 4.0.0-beta-1","2.3.8, 3.1.3"
+92,HIVE-26466,Closed,Fixed,12/Aug/22 03:17,4.0.0-alpha-2,4.0.0-alpha-2
+93,HIVE-26447,Closed,Fixed,02/Aug/22 23:49,4.0.0-alpha-2,4.0.0-alpha-1
+94,HIVE-26434,Resolved,Fixed,27/Jul/22 17:53,2.3.10,2.3.9
+95,HIVE-26404,Closed,Fixed,18/Jul/22 14:10,4.0.0-alpha-2,4.0.0-alpha-1
+96,HIVE-26396,Closed,Fixed,15/Jul/22 08:21,"3.2.0, 4.0.0-alpha-2",3.1.3
+97,HIVE-26374,Closed,Fixed,06/Jul/22 21:28,4.0.0-alpha-2,"3.1.3, 4.0.0-alpha-1"
+98,HIVE-26355,Closed,Fixed,25/Jun/22 16:00,4.0.0-alpha-2,4.0.0-alpha-1
+99,HIVE-26339,Resolved,Fixed,17/Jun/22 08:28,"4.0.1, 4.1.0",4.0.0
+100,HIVE-26320,Closed,Fixed,13/Jun/22 14:45,4.0.0-alpha-2,4.0.0-alpha-1
+101,HIVE-26277,Closed,Fixed,01/Jun/22 08:38,4.0.0-alpha-2,4.0.0-alpha-2
+102,HIVE-26268,Closed,Fixed,26/May/22 18:39,4.0.0-alpha-2,4.0.0
+103,HIVE-26205,Closed,Fixed,07/May/22 12:50,4.0.0-alpha-2,4.0.0-alpha-2
+104,HIVE-26197,Closed,Fixed,02/May/22 16:14,4.0.0-alpha-2,"3.1.3, 4.0.0, 4.0.0-alpha-1"
+105,HIVE-26192,Closed,Fixed,30/Apr/22 13:12,4.0.0-alpha-2,4.0.0-alpha-2
+106,HIVE-26184,Closed,Fixed,28/Apr/22 07:56,4.0.0-alpha-2,"2.3.8, 3.1.3"
+107,HIVE-26180,Closed,Fixed,27/Apr/22 08:49,4.0.0-alpha-2,"4.0.0-alpha-1, 4.0.0-alpha-2"
+108,HIVE-26158,Closed,Fixed,20/Apr/22 13:28,4.0.0-alpha-2,"4.0.0, 4.0.0-alpha-1, 4.0.0-alpha-2"
+109,HIVE-26147,Closed,Fixed,16/Apr/22 13:55,4.0.0-alpha-2,4.0.0-alpha-2
+110,HIVE-26131,Closed,Fixed,12/Apr/22 05:01,4.0.0-alpha-2,"4.0.0-alpha-1, 4.0.0-alpha-2"
+111,HIVE-26114,Closed,Fixed,04/Apr/22 17:02,4.0.0-alpha-2,"2.3.8, 3.1.2"
+112,HIVE-26060,Closed,Fixed,22/Mar/22 16:46,4.0.0-alpha-2,4.0.0-alpha-1
+113,HIVE-26049,Closed,Fixed,18/Mar/22 15:36,4.0.0-alpha-1,4.0.0-alpha-1
+114,HIVE-26048,Closed,Fixed,18/Mar/22 08:00,4.0.0-alpha-1,4.0.0-alpha-1
+115,HIVE-26036,Closed,Fixed,14/Mar/22 15:57,4.0.0-alpha-1,"3.1.2, 4.0.0"
+116,HIVE-26018,Resolved,Fixed,09/Mar/22 13:15,"4.0.1, 4.1.0","3.1.0, 4.0.0"
+117,HIVE-26017,Resolved,Fixed,09/Mar/22 11:19,4.0.0-alpha-1,4.0.0
+118,HIVE-25997,Closed,Fixed,02/Mar/22 07:49,4.0.0-alpha-1,4.0.0-alpha-1
+119,HIVE-25986,Closed,Fixed,25/Feb/22 15:05,4.0.0-alpha-1,4.0.0
+120,HIVE-25973,Closed,Fixed,23/Feb/22 10:00,4.0.0-alpha-1,4.0.0
+121,HIVE-25968,Resolved,Duplicate,22/Feb/22 07:24,2.3.0,2.1.1
+122,HIVE-25964,Closed,Fixed,17/Feb/22 08:51,4.0.0-alpha-1,4.0.0
+123,HIVE-25957,Closed,Fixed,14/Feb/22 22:50,4.0.0-alpha-1,4.0.0
+124,HIVE-25926,Closed,Fixed,03/Feb/22 09:58,4.0.0-alpha-1,4.0.0
+125,HIVE-25917,Closed,Fixed,31/Jan/22 16:55,4.0.0-alpha-1,4.0.0
+126,HIVE-25914,Closed,Fixed,31/Jan/22 07:27,4.0.0-alpha-1,4.0.0
+127,HIVE-25912,Closed,Fixed,30/Jan/22 07:37,4.0.0-alpha-1,"3.1.2, 4.0.0"
+128,HIVE-25907,Closed,Fixed,27/Jan/22 10:54,4.0.0-alpha-2,4.0.0
+129,HIVE-25853,Closed,Duplicate,07/Jan/22 11:55,4.0.0-alpha-2,4.0.0
+130,HIVE-25844,Closed,Fixed,04/Jan/22 15:35,4.0.0-alpha-1,3.1.2
+131,HIVE-25839,Closed,Fixed,04/Jan/22 03:28,4.0.0-alpha-1,3.1.2
+132,HIVE-25825,Closed,Fixed,20/Dec/21 12:39,4.0.0-alpha-1,4.0.0
+133,HIVE-25811,Closed,Invalid,15/Dec/21 13:05,4.0.0-alpha-2,4.0.0
+134,HIVE-25803,Closed,Fixed,14/Dec/21 07:51,4.0.0,4.0.0
+135,HIVE-25802,Closed,Fixed,14/Dec/21 06:13,4.0.0-alpha-2,4.0.0
+136,HIVE-25795,Closed,Fixed,10/Dec/21 10:51,4.0.0-alpha-1,"3.1.2, 4.0.0"
+137,HIVE-25774,Closed,Fixed,06/Dec/21 03:32,4.0.0-alpha-1,4.0.0
+138,HIVE-25766,Closed,Fixed,02/Dec/21 18:31,4.0.0-alpha-1,4.0.0
+139,HIVE-25758,Closed,Fixed,01/Dec/21 16:57,4.0.0-alpha-2,4.0.0
+140,HIVE-25757,Closed,Fixed,01/Dec/21 15:32,4.0.0-alpha-1,4.0.0
+141,HIVE-25749,Closed,Fixed,29/Nov/21 16:30,4.0.0-alpha-1,4.0.0
+142,HIVE-25746,Closed,Fixed,29/Nov/21 14:58,4.0.0-alpha-1,4.0.0
+143,HIVE-25734,Closed,Fixed,23/Nov/21 21:10,4.0.0-alpha-1,4.0.0
+144,HIVE-25730,Resolved,Duplicate,22/Nov/21 05:01,3.1.1,3.1.1
+145,HIVE-25716,Closed,Fixed,17/Nov/21 14:48,4.0.0-alpha-1,4.0.0
+146,HIVE-25675,Closed,Fixed,05/Nov/21 12:28,4.0.0-alpha-1,4.0.0
+147,HIVE-25659,Closed,Fixed,28/Oct/21 14:34,4.0.0-alpha-1,"3.1.0, 4.0.0"
+148,HIVE-25646,Closed,Fixed,25/Oct/21 21:25,"3.2.0, 4.0.0-alpha-1","3.1.2, 4.0.0"
+149,HIVE-25626,Closed,Fixed,19/Oct/21 20:26,4.0.0-alpha-1,"3.1.2, 4.0.0"
+150,HIVE-25621,Closed,Fixed,18/Oct/21 19:41,4.0.0-alpha-2,4.0.0
+151,HIVE-25600,Closed,Fixed,07/Oct/21 17:05,3.1.3,"3.1.0, 3.1.2"
+152,HIVE-25582,Closed,Fixed,01/Oct/21 00:54,4.0.0-alpha-1,4.0.0
+153,HIVE-25577,Closed,Fixed,29/Sep/21 13:29,4.0.0-alpha-1,"3.1.2, 4.0.0"
+154,HIVE-25570,Closed,Fixed,29/Sep/21 04:19,4.0.0-alpha-1,4.0.0
+155,HIVE-25561,Closed,Fixed,27/Sep/21 04:04,4.0.0-alpha-1,"1.2.1, 2.3.8, 2.4.0"
+156,HIVE-25547,Closed,Fixed,22/Sep/21 15:55,4.0.0-alpha-1,4.0.0
+157,HIVE-25530,Closed,Fixed,16/Sep/21 14:27,4.0.0-alpha-1,4.0.0
+158,HIVE-25492,Closed,Fixed,31/Aug/21 12:30,4.0.0-alpha-2,"4.0.0-alpha-1, 4.0.0-alpha-2"
+159,HIVE-25458,Closed,Fixed,17/Aug/21 11:20,4.0.0-alpha-1,3.1.2
+160,HIVE-25443,Closed,Fixed,11/Aug/21 09:28,4.0.0-alpha-1,"3.0.0, 3.1.0, 3.1.1, 3.1.2"
+161,HIVE-25416,Closed,Fixed,03/Aug/21 05:32,4.0.0-alpha-2,3.1.2
+162,HIVE-25386,Resolved,Fixed,26/Jul/21 06:45,"storage-2.8.1, storage-2.9.0",4.0.0
+163,HIVE-25384,Closed,Fixed,26/Jul/21 05:33,4.0.0-alpha-1,4.0.0
+164,HIVE-25299,Closed,Fixed,30/Jun/21 06:50,4.0.0-alpha-1,"3.1.2, 4.0.0"
+165,HIVE-25298,Closed,Not A Bug,29/Jun/21 17:59,4.0.0-alpha-2,3.1.2
+166,HIVE-25268,Closed,Fixed,18/Jun/21 16:49,4.0.0-alpha-1,"3.1.0, 3.1.1, 3.1.2, 4.0.0"
+167,HIVE-25242,Closed,Fixed,14/Jun/21 08:23,4.0.0-alpha-1,4.0.0
+168,HIVE-25219,Closed,Fixed,08/Jun/21 21:54,4.0.0-alpha-1,3.1.0
+169,HIVE-25170,Closed,Fixed,27/May/21 03:56,4.0.0-alpha-1,3.1.2
+170,HIVE-25163,Closed,Fixed,26/May/21 07:24,4.0.0-alpha-1,4.0.0
+171,HIVE-25150,Closed,Fixed,21/May/21 14:24,4.0.0-alpha-1,4.0.0
+172,HIVE-25117,Closed,Fixed,14/May/21 12:04,4.0.0-alpha-1,4.0.0
+173,HIVE-25104,Closed,Fixed,11/May/21 15:17,4.0.0-alpha-1,3.1.0
+174,HIVE-25093,Closed,Fixed,05/May/21 07:11,4.0.0-alpha-1,3.1.2
+175,HIVE-25009,Closed,Fixed,13/Apr/21 19:07,4.0.0-alpha-1,4.0.0
+176,HIVE-24964,Closed,Fixed,31/Mar/21 21:08,3.1.3,"3.0.0, 3.1.1, 3.1.2"
+177,HIVE-24957,Closed,Fixed,30/Mar/21 13:10,4.0.0-alpha-1,4.0.0
+178,HIVE-24951,Closed,Fixed,27/Mar/21 06:18,4.0.0-alpha-1,4.0.0
+179,HIVE-24949,Closed,Fixed,26/Mar/21 22:58,4.0.0-alpha-1,3.1.2
+180,HIVE-24928,Closed,Fixed,24/Mar/21 08:18,4.0.0-alpha-1,4.0.0
+181,HIVE-24907,Closed,Fixed,18/Mar/21 18:18,4.0.0,"2.4.0, 3.2.0"
+182,HIVE-24902,Closed,Fixed,18/Mar/21 04:03,4.0.0-alpha-1,"3.1.2, 4.0.0"
+183,HIVE-24898,Closed,Fixed,17/Mar/21 19:21,4.0.0-alpha-1,4.0.0
+184,HIVE-24882,Closed,Fixed,12/Mar/21 23:40,4.0.0-alpha-1,4.0.0
+185,HIVE-24876,Closed,Fixed,11/Mar/21 18:56,4.0.0-alpha-1,4.0.0
+186,HIVE-24851,Closed,Fixed,05/Mar/21 15:35,"3.1.3, 3.2.0, 4.0.0-alpha-1","3.1.2, 4.0.0"
+187,HIVE-24849,Closed,Fixed,04/Mar/21 23:21,4.0.0-alpha-1,"2.3.4, 3.1.2, 4.0.0"
+188,HIVE-24809,Closed,Fixed,22/Feb/21 15:16,4.0.0-alpha-1,4.0.0
+189,HIVE-24807,Resolved,Fixed,22/Feb/21 11:05,3.1.0,3.1.0
+190,HIVE-24803,Closed,Fixed,22/Feb/21 04:28,4.0.0-alpha-1,4.0.0
+191,HIVE-24786,Closed,Fixed,16/Feb/21 11:51,4.0.0-alpha-1,4.0.0
+192,HIVE-24751,Closed,Fixed,08/Feb/21 09:45,4.0.0-alpha-1,4.0.0
+193,HIVE-24653,Closed,Fixed,18/Jan/21 14:34,3.1.3,3.1.2
+194,HIVE-24636,Closed,Fixed,14/Jan/21 11:27,"3.1.3, 3.2.0",3.1.0
+195,HIVE-24608,Resolved,Fixed,08/Jan/21 18:58,2.3.9,2.3.7
+196,HIVE-24606,Closed,Fixed,08/Jan/21 13:50,4.0.0,"2.3.7, 3.1.2, 4.0.0"
+197,HIVE-24595,Closed,Invalid,06/Jan/21 20:01,4.0.0-alpha-2,3.0.0
+198,HIVE-24579,Closed,Fixed,04/Jan/21 03:40,4.0.0-alpha-1,"2.3.7, 3.1.2, 4.0.0"
+199,HIVE-24570,Closed,Fixed,25/Dec/20 11:51,4.0.0-alpha-1,"3.1.0, 4.0.0"
+200,HIVE-24569,Closed,Fixed,24/Dec/20 18:14,4.0.0-alpha-1,2.2.0
+201,HIVE-24553,Resolved,Fixed,20/Dec/20 18:19,2.3.8,2.3.8
+202,HIVE-24551,Resolved,Fixed,17/Dec/20 02:23,2.3.8,2.3.8
+203,HIVE-24550,Closed,Fixed,16/Dec/20 23:14,4.0.0-alpha-1,4.0.0
+204,HIVE-24530,Closed,Fixed,14/Dec/20 14:56,4.0.0-alpha-1,4.0.0
+205,HIVE-24523,Closed,Fixed,11/Dec/20 00:07,4.0.0-alpha-1,"3.2.0, 4.0.0"
+206,HIVE-24517,Resolved,Fixed,10/Dec/20 09:49,3.1.2,3.1.2
+207,HIVE-24512,Resolved,Fixed,09/Dec/20 17:37,2.3.8,2.3.8
+208,HIVE-24501,Closed,Fixed,08/Dec/20 10:12,4.0.0-alpha-1,4.0.0
+209,HIVE-24467,Closed,Fixed,02/Dec/20 05:44,4.0.0-alpha-1,"1.1.0, 2.3.4, 3.1.2"
+210,HIVE-24446,Closed,Fixed,30/Nov/20 14:28,4.0.0-alpha-1,4.0.0
+211,HIVE-24404,Closed,Fixed,18/Nov/20 07:52,4.0.0-beta-1,"2.3.7, 3.1.3, 4.0.0-alpha-1"
+212,HIVE-24345,Closed,Fixed,02/Nov/20 10:29,4.0.0-alpha-1,4.0.0
+213,HIVE-24342,Closed,Fixed,31/Oct/20 21:25,4.0.0-alpha-1,3.1.2
+214,HIVE-24322,Closed,Fixed,28/Oct/20 17:09,4.0.0-alpha-1,4.0.0
+215,HIVE-24319,Resolved,Fixed,28/Oct/20 11:05,3.1.2,3.1.2
+216,HIVE-24316,Closed,Fixed,28/Oct/20 04:41,3.1.3,3.1.3
+217,HIVE-24293,Closed,Fixed,21/Oct/20 21:10,4.0.0-alpha-1,4.0.0
+218,HIVE-24288,Closed,Fixed,20/Oct/20 00:59,4.0.0-alpha-1,3.1.0
+219,HIVE-24256,Closed,Fixed,10/Oct/20 14:52,4.0.0-alpha-1,4.0.0
+220,HIVE-24245,Closed,Fixed,08/Oct/20 21:38,4.0.0-alpha-1,"3.1.0, 3.1.2"
+221,HIVE-24213,Closed,Fixed,30/Sep/20 11:12,4.0.0-alpha-1,4.0.0
+222,HIVE-24193,Closed,Fixed,23/Sep/20 18:01,4.0.0-alpha-1,3.1.2
+223,HIVE-24147,Closed,Fixed,11/Sep/20 05:32,4.0.0-alpha-1,4.0.0
+224,HIVE-24122,Closed,Not A Problem,07/Sep/20 13:59,4.0.0-alpha-2,"3.1.0, 3.1.2"
+225,HIVE-24113,Closed,Fixed,02/Sep/20 19:51,4.0.0-alpha-1,3.1.2
+226,HIVE-24097,Closed,Fixed,31/Aug/20 20:37,4.0.0-alpha-1,4.0.0
+227,HIVE-24094,Closed,Fixed,31/Aug/20 01:50,4.0.0-alpha-1,3.1.0
+228,HIVE-24070,Closed,Duplicate,25/Aug/20 08:01,4.0.0-alpha-2,4.0.0
+229,HIVE-24068,Closed,Fixed,24/Aug/20 21:33,4.0.0-alpha-1,4.0.0
+230,HIVE-24030,Closed,Fixed,11/Aug/20 23:28,4.0.0-alpha-1,4.0.0
+231,HIVE-24020,Closed,Fixed,10/Aug/20 07:07,4.0.0-alpha-1,"3.1.2, 4.0.0"
+232,HIVE-23980,Resolved,Fixed,03/Aug/20 16:26,2.3.8,2.3.7
+233,HIVE-23968,Closed,Duplicate,31/Jul/20 17:22,4.0.0-alpha-2,4.0.0
+234,HIVE-23962,Closed,Fixed,31/Jul/20 03:19,4.0.0-alpha-1,4.0.0
+235,HIVE-23925,Closed,Fixed,24/Jul/20 09:05,4.0.0-alpha-1,4.0.0
+236,HIVE-23887,Closed,Fixed,21/Jul/20 07:36,4.0.0-alpha-1,4.0.0
+237,HIVE-23873,Closed,Fixed,17/Jul/20 17:06,4.0.0-alpha-1,"3.1.0, 3.1.1, 3.1.2"
+238,HIVE-23851,Closed,Fixed,15/Jul/20 11:13,4.0.0-alpha-1,4.0.0
+239,HIVE-23807,Resolved,Fixed,06/Jul/20 19:40,2.3.7,2.3.0
+240,HIVE-23763,Closed,Fixed,25/Jun/20 14:51,4.0.0-alpha-1,4.0.0
+241,HIVE-23717,Closed,Fixed,17/Jun/20 20:40,4.0.0-alpha-1,3.1.0
+242,HIVE-23704,Closed,Fixed,16/Jun/20 16:12,4.0.0-alpha-1,"2.3.7, 3.1.2"
+243,HIVE-23606,Closed,Fixed,04/Jun/20 05:25,4.0.0-alpha-1,3.0.0
+244,HIVE-23583,Closed,Duplicate,30/May/20 12:02,4.0.0-alpha-2,3.1.2
+245,HIVE-23582,Closed,Fixed,29/May/20 23:57,4.0.0-alpha-1,4.0.0
+246,HIVE-23580,Closed,Fixed,29/May/20 13:26,4.0.0-alpha-1,4.0.0
+247,HIVE-23498,Closed,Fixed,19/May/20 00:55,4.0.0-alpha-1,3.1.2
+248,HIVE-23454,Closed,Fixed,12/May/20 18:22,4.0.0-alpha-1,"3.0.0, 3.2.0"
+249,HIVE-23452,Resolved,Auto Closed,12/May/20 12:53,4.0.0,3.1.0
+250,HIVE-23442,Closed,Fixed,11/May/20 18:20,4.0.0-alpha-1,4.0.0
+251,HIVE-23435,Closed,Fixed,11/May/20 12:45,4.0.0-alpha-1,3.1.0
+252,HIVE-23423,Closed,Fixed,08/May/20 19:26,4.0.0-alpha-1,4.0.0
+253,HIVE-23408,Closed,Fixed,08/May/20 02:00,4.0.0-alpha-1,4.0.0
+254,HIVE-23358,Closed,Fixed,03/May/20 04:59,4.0.0-alpha-1,4.0.0
+255,HIVE-23347,Closed,Fixed,30/Apr/20 17:53,4.0.0-alpha-1,3.1.0
+256,HIVE-23345,Closed,Fixed,30/Apr/20 14:25,4.0.0-alpha-1,4.0.0
+257,HIVE-23339,Closed,Fixed,30/Apr/20 12:27,4.0.0-alpha-1,"3.1.0, 4.0.0"
+258,HIVE-23265,Closed,Fixed,21/Apr/20 16:50,4.0.0-alpha-1,"3.1.0, 3.1.2"
+259,HIVE-23230,Closed,Fixed,17/Apr/20 05:49,4.0.0-alpha-1,3.1.0
+260,HIVE-23178,Closed,Fixed,10/Apr/20 19:39,4.0.0-alpha-1,"3.1.0, 3.1.1, 3.1.2"
+261,HIVE-23128,Closed,Fixed,02/Apr/20 03:54,4.0.0-alpha-1,"2.4.0, 3.1.2"
+262,HIVE-23088,Closed,Fixed,27/Mar/20 10:13,"3.1.3, 3.2.0, 4.0.0-alpha-1",3.1.2
+263,HIVE-23086,Closed,Fixed,26/Mar/20 18:08,2.3.7,2.3.6
+264,HIVE-23058,Closed,Fixed,20/Mar/20 14:45,4.0.0-alpha-1,3.1.0
+265,HIVE-23033,Closed,Fixed,16/Mar/20 17:01,"3.2.0, 4.0.0-alpha-1","3.0.0, 3.1.0, 3.1.1, 3.1.2"
+266,HIVE-22988,Closed,Fixed,06/Mar/20 10:18,4.0.0-alpha-1,4.0.0
+267,HIVE-22982,Closed,Fixed,05/Mar/20 13:03,4.0.0-alpha-1,4.0.0
+268,HIVE-22967,Closed,Fixed,03/Mar/20 14:34,4.0.0-alpha-1,"2.3.6, 3.1.2"
+269,HIVE-22961,Closed,Fixed,02/Mar/20 19:26,4.0.0,4.0.0
+270,HIVE-22951,Closed,Fixed,29/Feb/20 09:14,4.0.0-alpha-1,4.0.0
+271,HIVE-22948,Closed,Fixed,29/Feb/20 05:09,4.0.0-alpha-1,"3.1.2, 4.0.0"
+272,HIVE-22905,Closed,Fixed,18/Feb/20 16:23,4.0.0-alpha-1,3.1.2
+273,HIVE-22903,Closed,Fixed,18/Feb/20 14:48,4.0.0-alpha-1,4.0.0
+274,HIVE-22901,Closed,Fixed,18/Feb/20 13:56,4.0.0-alpha-1,3.1.2
+275,HIVE-22898,Closed,Fixed,18/Feb/20 09:41,4.0.0-alpha-1,4.0.0
+276,HIVE-22880,Closed,Fixed,12/Feb/20 08:59,4.0.0-alpha-1,4.0.0
+277,HIVE-22877,Closed,Fixed,12/Feb/20 00:16,4.0.0-alpha-1,4.0.0
+278,HIVE-22853,Closed,Fixed,07/Feb/20 15:28,4.0.0-alpha-1,4.0.0
+279,HIVE-22826,Closed,Fixed,04/Feb/20 14:13,4.0.0-alpha-1,4.0.0
+280,HIVE-22824,Closed,Fixed,04/Feb/20 00:47,4.0.0-alpha-1,4.0.0
+281,HIVE-22769,Closed,Fixed,24/Jan/20 06:00,4.0.0-alpha-1,"3.0.0, 3.1.0"
+282,HIVE-22758,Closed,Duplicate,22/Jan/20 04:41,4.0.0-alpha-2,"3.0.0, 3.1.0"
+283,HIVE-22739,Closed,Fixed,16/Jan/20 21:10,4.0.0-alpha-1,4.0.0
+284,HIVE-22712,Closed,Fixed,09/Jan/20 19:56,4.0.0-alpha-1,3.1.2
+285,HIVE-22708,Closed,Fixed,08/Jan/20 18:15,"2.3.8, 4.0.0-alpha-1",4.0.0
+286,HIVE-22687,Closed,Fixed,31/Dec/19 12:12,4.0.0-alpha-1,3.1.0
+287,HIVE-22670,Closed,Fixed,26/Dec/19 09:38,4.0.0-alpha-2,"2.3.6, 3.1.2"
+288,HIVE-22663,Closed,Fixed,19/Dec/19 06:01,4.0.0-alpha-1,4.0.0
+289,HIVE-22578,Closed,Fixed,04/Dec/19 10:04,4.0.0-alpha-1,"3.0.0, 3.1.2"
+290,HIVE-22566,Closed,Fixed,02/Dec/19 20:14,4.0.0-alpha-1,3.1.0
+291,HIVE-22555,Closed,Fixed,27/Nov/19 17:40,4.0.0-alpha-1,4.0.0
+292,HIVE-22546,Closed,Fixed,26/Nov/19 13:59,4.0.0-alpha-1,4.0.0
+293,HIVE-22544,Closed,Fixed,26/Nov/19 11:28,4.0.0-alpha-1,4.0.0
+294,HIVE-22537,Closed,Fixed,25/Nov/19 17:35,4.0.0-alpha-1,4.0.0
+295,HIVE-22527,Closed,Fixed,22/Nov/19 03:20,4.0.0-alpha-1,"3.1.0, 3.1.1"
+296,HIVE-22522,Resolved,Fixed,21/Nov/19 03:27,3.1.0,3.1.1
+297,HIVE-22514,Closed,Fixed,19/Nov/19 15:14,4.0.0-alpha-1,4.0.0
+298,HIVE-22461,Closed,Fixed,05/Nov/19 19:55,4.0.0-alpha-1,3.1.2
+299,HIVE-22453,Closed,Fixed,04/Nov/19 19:08,4.0.0-alpha-1,"2.3.6, 3.1.2"
+300,HIVE-22420,Closed,Fixed,29/Oct/19 15:55,4.0.0-alpha-1,3.1.0
+301,HIVE-22412,Closed,Fixed,28/Oct/19 09:42,4.0.0-alpha-1,"1.2.1, 2.0.0, 3.0.0"
+302,HIVE-22410,Resolved,Works for Me,27/Oct/19 08:45,3.1.3,"2.3.7, 3.1.2"
+303,HIVE-22408,Closed,Fixed,26/Oct/19 15:29,4.0.0-alpha-1,3.1.2
+304,HIVE-22407,Closed,Fixed,26/Oct/19 12:25,"3.1.3, 3.2.0, 4.0.0-alpha-1","3.1.2, 4.0.0"
+305,HIVE-22400,Closed,Fixed,24/Oct/19 13:43,4.0.0-alpha-1,3.1.0
+306,HIVE-22393,Closed,Fixed,23/Oct/19 15:29,4.0.0-alpha-1,3.1.2
+307,HIVE-22375,Closed,Fixed,21/Oct/19 08:10,4.0.0-alpha-1,4.0.0
+308,HIVE-22373,Closed,Fixed,20/Oct/19 16:33,4.0.0-alpha-1,3.1.2
+309,HIVE-22368,Closed,Won't Fix,18/Oct/19 07:20,4.0.0-alpha-2,"3.1.0, 3.1.1, 4.0.0"
+310,HIVE-22360,Closed,Fixed,17/Oct/19 07:26,4.0.0-alpha-1,4.0.0
+311,HIVE-22351,Closed,Fixed,15/Oct/19 23:35,4.0.0-alpha-1,4.0.0
+312,HIVE-22336,Closed,Fixed,14/Oct/19 09:55,4.0.0-alpha-1,4.0.0
+313,HIVE-22325,Closed,Duplicate,10/Oct/19 18:23,4.0.0-alpha-2,"3.1.0, 3.1.1, 3.1.2"
+314,HIVE-22317,Closed,Resolved,10/Oct/19 06:23,4.0.0-alpha-2,4.0.0
+315,HIVE-22301,Closed,Fixed,08/Oct/19 00:00,4.0.0-alpha-1,3.1.2
+316,HIVE-22227,Closed,Fixed,20/Sep/19 22:09,4.0.0-alpha-1,4.0.0
+317,HIVE-22208,Closed,Fixed,16/Sep/19 06:48,4.0.0-alpha-1,"3.1.0, 4.0.0"
+318,HIVE-22207,Closed,Fixed,16/Sep/19 04:38,4.0.0-alpha-1,"2.1.0, 3.1.0"
+319,HIVE-22201,Closed,Fixed,13/Sep/19 09:40,4.0.0-alpha-1,3.0.0
+320,HIVE-22197,Closed,Fixed,12/Sep/19 03:59,4.0.0-alpha-1,4.0.0
+321,HIVE-22190,Closed,Duplicate,11/Sep/19 07:57,2.3.7,"2.3.6, 3.1.2"
+322,HIVE-22178,Closed,Fixed,07/Sep/19 04:22,4.0.0-alpha-1,3.1.0
+323,HIVE-22173,Closed,Fixed,05/Sep/19 20:57,4.0.0-beta-1,"3.1.1, 4.0.0-alpha-1"
+324,HIVE-22170,Closed,Fixed,05/Sep/19 01:32,4.0.0-alpha-1,"3.1.0, 3.1.1, 3.1.2, 3.2.0, 4.0.0"
+325,HIVE-22165,Closed,Fixed,31/Aug/19 15:00,4.0.0-alpha-1,"2.1.0, 2.3.2"
+326,HIVE-22164,Closed,Fixed,30/Aug/19 19:17,4.0.0-alpha-1,4.0.0
+327,HIVE-22162,Closed,Fixed,30/Aug/19 07:03,4.0.0-alpha-1,3.1.2
+328,HIVE-22161,Closed,Fixed,30/Aug/19 06:53,4.0.0-alpha-1,"1.2.2, 3.1.2, 4.0.0"
+329,HIVE-22134,Closed,Fixed,21/Aug/19 17:52,4.0.0-alpha-1,3.1.0
+330,HIVE-22129,Closed,Fixed,21/Aug/19 03:50,4.0.0-alpha-1,3.1.0
+331,HIVE-22121,Closed,Fixed,16/Aug/19 04:28,4.0.0-alpha-1,"3.1.0, 4.0.0"
+332,HIVE-22120,Closed,Fixed,16/Aug/19 02:15,4.0.0-alpha-1,4.0.0
+333,HIVE-22114,Closed,Fixed,14/Aug/19 18:54,4.0.0-alpha-1,3.1.0
+334,HIVE-22110,Closed,Fixed,14/Aug/19 07:36,4.0.0-alpha-1,4.0.0
+335,HIVE-22109,Closed,Fixed,14/Aug/19 05:19,4.0.0-alpha-1,4.0.0
+336,HIVE-22107,Closed,Fixed,13/Aug/19 22:31,4.0.0-alpha-1,4.0.0
+337,HIVE-22080,Closed,Fixed,02/Aug/19 23:43,4.0.0-alpha-1,4.0.0
+338,HIVE-22076,Closed,Fixed,02/Aug/19 06:09,4.0.0-alpha-1,4.0.0
+339,HIVE-22075,Closed,Fixed,01/Aug/19 22:28,4.0.0-alpha-1,"3.1.1, 4.0.0"
+340,HIVE-22056,Closed,Invalid,26/Jul/19 14:05,4.0.0-alpha-2,"3.1.0, 3.1.1, 4.0.0"
+341,HIVE-22054,Closed,Fixed,26/Jul/19 10:38,4.0.0-alpha-1,"0.13.0, 1.2.0, 2.1.0, 2.3.5, 3.1.1"
+342,HIVE-22045,Closed,Fixed,24/Jul/19 22:11,4.0.0-alpha-1,4.0.0
+343,HIVE-22033,Closed,Fixed,23/Jul/19 14:29,"3.2.0, 4.0.0-alpha-1",2.3.5
+344,HIVE-22008,Closed,Fixed,18/Jul/19 09:36,4.0.0-alpha-1,"2.3.4, 4.0.0"
+345,HIVE-22007,Closed,Fixed,17/Jul/19 18:36,4.0.0-alpha-1,4.0.0
+346,HIVE-21999,Closed,Fixed,16/Jul/19 14:40,4.0.0-alpha-1,3.0.0
+347,HIVE-21992,Closed,Fixed,14/Jul/19 06:02,4.0.0-alpha-1,"3.2.0, 4.0.0"
+348,HIVE-21986,Closed,Fixed,10/Jul/19 22:51,4.0.0-alpha-1,3.1.1
+349,HIVE-21976,Closed,Fixed,10/Jul/19 00:27,4.0.0-alpha-1,4.0.0
+350,HIVE-21971,Closed,Fixed,09/Jul/19 03:32,4.0.0-alpha-1,2.3.4
+351,HIVE-21970,Closed,Fixed,08/Jul/19 23:23,"3.2.0, 4.0.0-alpha-1","3.2.0, 4.0.0"
+352,HIVE-21966,Closed,Fixed,08/Jul/19 09:20,4.0.0-alpha-1,3.1.1
+353,HIVE-21957,Closed,Fixed,04/Jul/19 12:54,4.0.0-alpha-1,4.0.0
+354,HIVE-21941,Closed,Fixed,02/Jul/19 05:30,4.0.0-alpha-1,3.1.0
+355,HIVE-21938,Closed,Fixed,01/Jul/19 05:23,4.0.0-alpha-1,3.1.0
+356,HIVE-21935,Closed,Fixed,28/Jun/19 21:42,4.0.0-alpha-1,3.1.1
+357,HIVE-21927,Closed,Fixed,27/Jun/19 05:58,4.0.0-alpha-1,3.1.1
+358,HIVE-21925,Closed,Fixed,26/Jun/19 19:26,"3.2.0, 4.0.0-alpha-1","3.2.0, 4.0.0"
+359,HIVE-21917,Closed,Fixed,24/Jun/19 14:40,4.0.0-alpha-1,"3.1.0, 3.1.1"
+360,HIVE-21913,Closed,Fixed,21/Jun/19 18:00,"3.2.0, 4.0.0-alpha-1","3.2.0, 4.0.0"
+361,HIVE-21902,Closed,Fixed,20/Jun/19 05:51,4.0.0-alpha-1,3.1.0
+362,HIVE-21897,Closed,Invalid,19/Jun/19 22:46,4.0.0-alpha-2,3.1.1
+363,HIVE-21896,Closed,Fixed,19/Jun/19 20:24,4.0.0-alpha-1,3.1.1
+364,HIVE-21892,Closed,Fixed,18/Jun/19 23:20,4.0.0-alpha-1,4.0.0
+365,HIVE-21879,Closed,Fixed,17/Jun/19 03:47,4.0.0-alpha-1,4.0.0
+366,HIVE-21873,Resolved,Won't Fix,14/Jun/19 07:54,2.3.3,"2.3.0, 2.3.1, 2.3.2, 2.3.3, 2.3.4, 2.3.5"
+367,HIVE-21864,Closed,Fixed,12/Jun/19 05:40,4.0.0-alpha-1,3.1.1
+368,HIVE-21862,Closed,Fixed,11/Jun/19 18:33,4.0.0-alpha-1,4.0.0
+369,HIVE-21837,Closed,Fixed,05/Jun/19 14:44,4.0.0-alpha-1,3.0.0
+370,HIVE-21831,Closed,Fixed,04/Jun/19 15:52,4.0.0-alpha-1,"3.0.0, 3.1.0, 3.1.1"
+371,HIVE-21829,Closed,Fixed,04/Jun/19 05:10,4.0.0-alpha-1,3.1.2
+372,HIVE-21825,Closed,Fixed,03/Jun/19 20:31,"3.2.0, 4.0.0-alpha-1","3.2.0, 4.0.0"
+373,HIVE-21821,Closed,Fixed,03/Jun/19 06:52,3.1.2,3.1.1
+374,HIVE-21811,Closed,Fixed,31/May/19 06:11,4.0.0-alpha-1,4.0.0
+375,HIVE-21809,Closed,Fixed,30/May/19 19:20,2.3.6,2.3.5
+376,HIVE-21808,Closed,Fixed,30/May/19 19:19,3.1.2,3.1.1
+377,HIVE-21791,Closed,Fixed,24/May/19 14:13,4.0.0-alpha-1,3.1.1
+378,HIVE-21786,Closed,Fixed,23/May/19 18:50,"2.4.0, 4.0.0-alpha-1","2.3.5, 3.1.1, 4.0.0"
+379,HIVE-21778,Closed,Fixed,22/May/19 12:16,4.0.0-alpha-1,"2.3.5, 4.0.0"
+380,HIVE-21776,Closed,Fixed,22/May/19 10:27,4.0.0-alpha-1,4.0.0
+381,HIVE-21768,Closed,Fixed,21/May/19 22:51,4.0.0-alpha-1,"3.1.1, 4.0.0"
+382,HIVE-21758,Closed,Fixed,20/May/19 22:10,"3.1.2, 4.0.0-alpha-1",3.1.1
+383,HIVE-21756,Closed,Fixed,20/May/19 11:00,"3.1.2, 3.2.0",3.1.1
+384,HIVE-21755,Closed,Fixed,20/May/19 10:57,"3.1.2, 3.2.0",3.1.1
+385,HIVE-21753,Closed,Fixed,20/May/19 00:11,4.0.0-alpha-1,3.1.2
+386,HIVE-21742,Closed,Fixed,16/May/19 15:51,4.0.0-alpha-1,3.1.1
+387,HIVE-21730,Closed,Fixed,15/May/19 05:33,4.0.0-alpha-1,4.0.0
+388,HIVE-21729,Closed,Fixed,15/May/19 05:22,4.0.0-alpha-1,4.0.0
+389,HIVE-21722,Closed,Fixed,13/May/19 07:21,4.0.0-alpha-1,4.0.0
+390,HIVE-21717,Closed,Fixed,10/May/19 14:18,4.0.0-alpha-1,4.0.0
+391,HIVE-21711,Closed,Fixed,09/May/19 00:03,4.0.0-alpha-1,4.0.0
+392,HIVE-21706,Closed,Fixed,08/May/19 12:52,4.0.0-alpha-1,4.0.0
+393,HIVE-21700,Closed,Fixed,07/May/19 15:09,4.0.0-alpha-1,4.0.0
+394,HIVE-21698,Closed,Fixed,07/May/19 04:21,4.0.0-alpha-1,3.1.1
+395,HIVE-21694,Closed,Fixed,06/May/19 03:19,4.0.0-alpha-1,4.0.0
+396,HIVE-21686,Closed,Fixed,03/May/19 01:08,4.0.0-alpha-1,3.1.1
+397,HIVE-21677,Closed,Fixed,02/May/19 09:29,4.0.0-alpha-1,4.0.0
+398,HIVE-21675,Closed,Fixed,01/May/19 21:34,4.0.0-alpha-1,3.1.1
+399,HIVE-21669,Closed,Fixed,30/Apr/19 08:48,4.0.0-alpha-1,4.0.0
+400,HIVE-21660,Closed,Fixed,29/Apr/19 06:37,4.0.0-alpha-1,3.1.1
+401,HIVE-21654,Closed,Fixed,26/Apr/19 09:07,4.0.0-alpha-1,4.0.0
+402,HIVE-21641,Closed,Fixed,22/Apr/19 12:20,4.0.0-alpha-1,3.1.1
+403,HIVE-21631,Closed,Fixed,18/Apr/19 16:39,4.0.0-alpha-1,"3.1.1, 3.2.0"
+404,HIVE-21624,Closed,Fixed,17/Apr/19 16:33,4.0.0-alpha-1,"3.2.0, 4.0.0"
+405,HIVE-21597,Closed,Fixed,10/Apr/19 07:11,4.0.0-alpha-1,"3.2.0, 4.0.0"
+406,HIVE-21591,Closed,Fixed,08/Apr/19 17:02,"3.2.0, 4.0.0-alpha-1","3.2.0, 4.0.0"
+407,HIVE-21586,Closed,Fixed,05/Apr/19 17:53,"3.2.0, 4.0.0-alpha-1",3.1.0
+408,HIVE-21582,Closed,Fixed,04/Apr/19 20:43,4.0.0-alpha-1,4.0.0
+409,HIVE-21573,Closed,Fixed,04/Apr/19 06:47,4.0.0-alpha-1,3.0.0
+410,HIVE-21564,Closed,Fixed,02/Apr/19 05:23,"3.1.2, 3.2.0, 4.0.0-alpha-1",4.0.0
+411,HIVE-21540,Closed,Fixed,29/Mar/19 08:29,"3.1.2, 3.2.0, 4.0.0-alpha-1","3.1.0, 3.1.1"
+412,HIVE-21539,Closed,Fixed,29/Mar/19 05:01,4.0.0-alpha-1,4.0.0
+413,HIVE-21538,Closed,Fixed,29/Mar/19 00:14,4.0.0-alpha-1,3.1.0
+414,HIVE-21536,Closed,Fixed,28/Mar/19 19:30,2.3.5,2.3.4
+415,HIVE-21531,Closed,Fixed,28/Mar/19 05:53,4.0.0-alpha-1,"3.1.1, 4.0.0"
+416,HIVE-21517,Closed,Fixed,26/Mar/19 23:14,4.0.0-alpha-1,3.1.1
+417,HIVE-21516,Closed,Fixed,26/Mar/19 22:44,4.0.0-alpha-1,3.1.1
+418,HIVE-21513,Closed,Duplicate,26/Mar/19 20:28,4.0.0-alpha-2,"3.1.1, 4.0.0"
+419,HIVE-21508,Closed,Fixed,26/Mar/19 08:49,"2.3.7, 2.4.0, 3.1.3, 3.2.0, 4.0.0-alpha-1","2.3.4, 3.2.0"
+420,HIVE-21507,Closed,Fixed,26/Mar/19 07:02,4.0.0-alpha-1,3.1.1
+421,HIVE-21499,Closed,Fixed,24/Mar/19 22:06,4.0.0-alpha-1,3.1.0
+422,HIVE-21497,Closed,Fixed,24/Mar/19 04:30,4.0.0-alpha-1,4.0.0
+423,HIVE-21496,Closed,Fixed,23/Mar/19 08:39,4.0.0-alpha-1,4.0.0
+424,HIVE-21493,Closed,Fixed,22/Mar/19 18:22,4.0.0-alpha-1,3.1.1
+425,HIVE-21489,Closed,Fixed,22/Mar/19 09:27,"3.1.3, 4.0.0-alpha-1","2.3.4, 3.1.2"
+426,HIVE-21482,Closed,Fixed,19/Mar/19 23:46,4.0.0-alpha-1,4.0.0
+427,HIVE-21471,Closed,Fixed,19/Mar/19 06:20,4.0.0-alpha-1,4.0.0
+428,HIVE-21460,Closed,Fixed,16/Mar/19 07:08,"3.1.1, 4.0.0-alpha-1","3.1.1, 4.0.0"
+429,HIVE-21450,Closed,Not A Problem,15/Mar/19 01:54,4.0.0-alpha-2,4.0.0
+430,HIVE-21446,Closed,Fixed,14/Mar/19 02:36,4.0.0-alpha-1,4.0.0
+431,HIVE-21421,Closed,Fixed,11/Mar/19 11:40,4.0.0-alpha-1,4.0.0
+432,HIVE-21419,Resolved,Fixed,11/Mar/19 03:32,3.0.0,2.3.2
+433,HIVE-21415,Closed,Fixed,08/Mar/19 22:13,4.0.0-alpha-1,4.0.0
+434,HIVE-21407,Closed,Fixed,07/Mar/19 13:23,4.0.0-alpha-1,4.0.0
+435,HIVE-21403,Closed,Fixed,07/Mar/19 09:45,4.0.0-alpha-1,4.0.0
+436,HIVE-21402,Closed,Fixed,07/Mar/19 09:34,4.0.0-alpha-1,4.0.0
+437,HIVE-21400,Closed,Fixed,07/Mar/19 05:57,4.0.0-alpha-1,4.0.0
+438,HIVE-21397,Closed,Fixed,06/Mar/19 11:58,4.0.0-alpha-1,3.1.1
+439,HIVE-21390,Closed,Fixed,05/Mar/19 08:45,4.0.0-alpha-1,"3.2.0, 4.0.0"
+440,HIVE-21387,Closed,Fixed,05/Mar/19 02:13,4.0.0-alpha-1,4.0.0
+441,HIVE-21376,Closed,Fixed,03/Mar/19 08:06,"3.1.2, 3.2.0, 4.0.0-alpha-1",3.1.0
+442,HIVE-21344,Closed,Fixed,28/Feb/19 07:34,4.0.0-alpha-1,4.0.0
+443,HIVE-21343,Closed,Fixed,28/Feb/19 07:29,4.0.0-alpha-1,4.0.0
+444,HIVE-21342,Closed,Fixed,28/Feb/19 06:04,"3.1.2, 3.2.0, 4.0.0-alpha-1",3.1.0
+445,HIVE-21340,Closed,Fixed,28/Feb/19 00:18,4.0.0-alpha-1,4.0.0
+446,HIVE-21339,Closed,Fixed,27/Feb/19 23:44,4.0.0-alpha-1,4.0.0
+447,HIVE-21327,Closed,Fixed,26/Feb/19 14:15,4.0.0-alpha-1,4.0.0
+448,HIVE-21325,Closed,Fixed,26/Feb/19 09:12,4.0.0-alpha-1,4.0.0
+449,HIVE-21320,Closed,Fixed,25/Feb/19 18:32,4.0.0-alpha-1,4.0.0
+450,HIVE-21307,Closed,Fixed,22/Feb/19 06:01,4.0.0-alpha-1,4.0.0
+451,HIVE-21306,Closed,Fixed,22/Feb/19 05:31,4.0.0-alpha-1,4.0.0
+452,HIVE-21301,Closed,Fixed,21/Feb/19 02:29,"3.2.0, 4.0.0-alpha-1","3.2.0, 4.0.0"
+453,HIVE-21293,Closed,Fixed,19/Feb/19 18:16,"3.2.0, 4.0.0-alpha-1",4.0.0
+454,HIVE-21286,Closed,Fixed,19/Feb/19 09:17,4.0.0-alpha-1,4.0.0
+455,HIVE-21284,Closed,Fixed,18/Feb/19 13:43,4.0.0-alpha-1,4.0.0
+456,HIVE-21281,Closed,Fixed,16/Feb/19 11:35,4.0.0-alpha-1,4.0.0
+457,HIVE-21280,Closed,Fixed,16/Feb/19 11:28,4.0.0-alpha-1,"3.0.0, 3.1.1"
+458,HIVE-21269,Closed,Fixed,14/Feb/19 06:54,4.0.0-alpha-1,4.0.0
+459,HIVE-21261,Closed,Fixed,13/Feb/19 09:53,4.0.0-alpha-1,4.0.0
+460,HIVE-21260,Closed,Fixed,13/Feb/19 07:21,4.0.0-alpha-1,4.0.0
+461,HIVE-21254,Closed,Fixed,12/Feb/19 23:59,4.0.0-alpha-1,4.0.0
+462,HIVE-21238,Closed,Fixed,11/Feb/19 07:25,4.0.0-alpha-1,3.0.0
+463,HIVE-21235,Closed,Fixed,08/Feb/19 19:43,"3.2.0, 4.0.0-alpha-1",4.0.0
+464,HIVE-21233,Closed,Fixed,08/Feb/19 04:14,4.0.0-alpha-1,4.0.0
+465,HIVE-21232,Closed,Fixed,08/Feb/19 02:51,4.0.0-alpha-1,4.0.0
+466,HIVE-21227,Closed,Fixed,07/Feb/19 02:42,4.0.0-alpha-1,4.0.0
+467,HIVE-21223,Closed,Fixed,06/Feb/19 03:00,"3.2.0, 4.0.0-alpha-1","3.2.0, 4.0.0"
+468,HIVE-21222,Closed,Fixed,05/Feb/19 23:46,4.0.0-alpha-1,"3.2.0, 4.0.0"
+469,HIVE-21212,Closed,Fixed,04/Feb/19 19:41,4.0.0-alpha-1,4.0.0
+470,HIVE-21206,Closed,Fixed,04/Feb/19 06:01,4.0.0-alpha-1,4.0.0
+471,HIVE-21200,Resolved,Fixed,01/Feb/19 13:56,2.3.9,2.3.4
+472,HIVE-21186,Closed,Fixed,30/Jan/19 08:09,4.0.0-alpha-1,4.0.0
+473,HIVE-21185,Resolved,Duplicate,30/Jan/19 07:45,3.0.0,"2.1.1, 2.3.0"
+474,HIVE-21177,Closed,Fixed,29/Jan/19 17:57,4.0.0-alpha-1,3.0.0
+475,HIVE-21167,Closed,Fixed,25/Jan/19 18:24,4.0.0-alpha-1,3.1.1
+476,HIVE-21164,Closed,Fixed,25/Jan/19 02:00,4.0.0-alpha-1,3.1.1
+477,HIVE-21132,Closed,Fixed,17/Jan/19 23:06,4.0.0-alpha-1,4.0.0
+478,HIVE-21114,Closed,Fixed,11/Jan/19 00:19,4.0.0-alpha-1,4.0.0
+479,HIVE-21111,Closed,Fixed,09/Jan/19 06:11,4.0.0-alpha-1,"2.1.1, 2.3.4, 3.1.1"
+480,HIVE-21106,Closed,Won't Fix,09/Jan/19 01:37,4.0.0-alpha-2,3.0.0
+481,HIVE-21104,Closed,Fixed,08/Jan/19 23:25,4.0.0-alpha-1,"2.3.0, 3.0.0, 4.0.0"
+482,HIVE-21103,Closed,Fixed,08/Jan/19 20:28,4.0.0-alpha-1,4.0.0
+483,HIVE-21086,Closed,Won't Fix,04/Jan/19 13:12,4.0.0-alpha-2,4.0.0
+484,HIVE-21075,Closed,Fixed,28/Dec/18 11:21,4.0.0-alpha-1,3.0.0
+485,HIVE-21074,Closed,Fixed,28/Dec/18 08:23,4.0.0-alpha-1,"3.0.0, 3.1.0, 3.1.1"
+486,HIVE-21061,Closed,Fixed,20/Dec/18 13:13,4.0.0-alpha-1,3.1.0
+487,HIVE-21039,Closed,Fixed,13/Dec/18 19:00,"3.1.2, 3.2.0, 4.0.0-alpha-1",3.1.1
+488,HIVE-21038,Closed,Fixed,13/Dec/18 10:43,4.0.0-alpha-1,3.1.0
+489,HIVE-21036,Closed,Fixed,12/Dec/18 20:10,4.0.0-alpha-1,4.0.0
+490,HIVE-21035,Closed,Fixed,12/Dec/18 14:21,4.0.0-alpha-1,4.0.0
+491,HIVE-21033,Closed,Fixed,12/Dec/18 13:05,4.0.0-alpha-1,"2.0.0, 3.0.0"
+492,HIVE-21029,Closed,Fixed,11/Dec/18 06:05,4.0.0-alpha-1,"3.0.0, 3.1.0, 3.1.1"
+493,HIVE-21028,Closed,Fixed,11/Dec/18 00:52,"3.2.0, 4.0.0-alpha-1",3.0.0
+494,HIVE-21022,Closed,Fixed,10/Dec/18 05:12,4.0.0-alpha-1,4.0.0
+495,HIVE-21009,Closed,Fixed,05/Dec/18 14:50,4.0.0-alpha-1,"2.1.0, 2.1.1, 2.2.0, 2.3.0, 2.3.1, 2.3.2"
+496,HIVE-20989,Closed,Fixed,30/Nov/18 07:36,4.0.0-alpha-1,4.0.0
+497,HIVE-20988,Closed,Fixed,30/Nov/18 07:02,4.0.0-alpha-1,4.0.0
+498,HIVE-20979,Closed,Fixed,28/Nov/18 08:06,"3.1.1, 4.0.0-alpha-1",3.1.1
+499,HIVE-20969,Closed,Fixed,26/Nov/18 10:52,4.0.0-alpha-1,4.0.0
+500,HIVE-20953,Closed,Fixed,21/Nov/18 05:48,4.0.0-alpha-1,4.0.0
+501,HIVE-20951,Closed,Fixed,20/Nov/18 20:27,4.0.0-alpha-1,"3.1.1, 4.0.0"
+502,HIVE-20941,Closed,Fixed,19/Nov/18 22:25,4.0.0-alpha-1,3.0.0
+503,HIVE-20935,Closed,Fixed,16/Nov/18 21:58,4.0.0-alpha-1,3.1.1
+504,HIVE-20926,Closed,Fixed,15/Nov/18 22:15,4.0.0-alpha-1,4.0.0
+505,HIVE-20916,Closed,Fixed,14/Nov/18 19:33,"3.2.0, 4.0.0-alpha-1",4.0.0
+506,HIVE-20915,Closed,Fixed,14/Nov/18 18:44,4.0.0-alpha-1,4.0.0
+507,HIVE-20911,Closed,Fixed,14/Nov/18 06:56,4.0.0-alpha-1,4.0.0
+508,HIVE-20910,Closed,Fixed,13/Nov/18 22:03,4.0.0-alpha-1,4.0.0
+509,HIVE-20905,Closed,Fixed,12/Nov/18 11:31,4.0.0-alpha-1,4.0.0
+510,HIVE-20901,Closed,Duplicate,10/Nov/18 01:14,4.0.0-alpha-2,4.0.0
+511,HIVE-20899,Closed,Fixed,09/Nov/18 20:29,"3.2.0, 4.0.0-alpha-1",3.1.1
+512,HIVE-20870,Closed,Duplicate,06/Nov/18 06:20,4.0.0-alpha-2,4.0.0
+513,HIVE-20858,Closed,Fixed,01/Nov/18 23:12,4.0.0-alpha-1,3.1.0
+514,HIVE-20848,Closed,Fixed,31/Oct/18 20:28,4.0.0-alpha-1,3.1.0
+515,HIVE-20843,Resolved,Duplicate,31/Oct/18 00:29,3.0.0,"2.1.1, 3.0.0"
+516,HIVE-20842,Closed,Fixed,30/Oct/18 21:29,4.0.0-alpha-1,4.0.0
+517,HIVE-20841,Closed,Fixed,30/Oct/18 20:12,"3.2.0, 4.0.0-alpha-1","3.2.0, 4.0.0"
+518,HIVE-20833,Closed,Fixed,29/Oct/18 22:30,4.0.0-alpha-1,4.0.0
+519,HIVE-20817,Closed,Fixed,26/Oct/18 16:29,4.0.0-alpha-1,4.0.0
+520,HIVE-20806,Closed,Fixed,25/Oct/18 09:06,4.0.0-alpha-1,4.0.0
+521,HIVE-20805,Closed,Fixed,25/Oct/18 05:08,4.0.0-alpha-1,4.0.0
+522,HIVE-20801,Closed,Fixed,24/Oct/18 23:20,4.0.0-alpha-1,4.0.0
+523,HIVE-20792,Closed,Fixed,23/Oct/18 21:45,4.0.0-alpha-1,3.1.0
+524,HIVE-20785,Closed,Fixed,20/Oct/18 17:27,"3.2.0, 4.0.0-alpha-1",3.1.0
+525,HIVE-20771,Closed,Fixed,18/Oct/18 07:26,4.0.0-alpha-1,"1.2.2, 2.3.2, 3.1.0"
+526,HIVE-20762,Closed,Fixed,17/Oct/18 15:12,4.0.0-alpha-1,4.0.0
+527,HIVE-20761,Closed,Fixed,17/Oct/18 15:02,4.0.0-alpha-1,4.0.0
+528,HIVE-20751,Closed,Fixed,16/Oct/18 10:12,4.0.0-alpha-1,3.1.0
+529,HIVE-20742,Closed,Fixed,13/Oct/18 09:12,4.0.0-alpha-1,4.0.0
+530,HIVE-20734,Closed,Fixed,12/Oct/18 16:42,4.0.0-alpha-1,3.1.0
+531,HIVE-20719,Closed,Fixed,09/Oct/18 22:29,4.0.0-alpha-1,4.0.0
+532,HIVE-20714,Closed,Fixed,08/Oct/18 19:36,4.0.0-alpha-1,3.1.0
+533,HIVE-20682,Closed,Fixed,03/Oct/18 14:03,4.0.0-alpha-1,4.0.0
+534,HIVE-20680,Closed,Fixed,03/Oct/18 08:35,4.0.0-alpha-1,4.0.0
+535,HIVE-20679,Closed,Fixed,03/Oct/18 08:29,4.0.0-alpha-1,3.1.0
+536,HIVE-20678,Closed,Fixed,03/Oct/18 02:38,4.0.0-alpha-1,4.0.0
+537,HIVE-20676,Closed,Fixed,02/Oct/18 23:52,4.0.0-alpha-1,4.0.0
+538,HIVE-20659,Closed,Fixed,29/Sep/18 20:04,4.0.0-alpha-1,"1.2.1, 2.3.2, 3.0.0, 3.1.0"
+539,HIVE-20656,Closed,Fixed,28/Sep/18 22:54,4.0.0-alpha-1,"3.2.0, 4.0.0"
+540,HIVE-20649,Closed,Fixed,27/Sep/18 20:21,"3.2.0, 4.0.0-alpha-1","3.2.0, 4.0.0"
+541,HIVE-20648,Closed,Fixed,27/Sep/18 20:06,"3.2.0, 4.0.0-alpha-1","3.2.0, 4.0.0"
+542,HIVE-20636,Closed,Fixed,26/Sep/18 01:09,4.0.0-alpha-1,4.0.0
+543,HIVE-20632,Closed,Fixed,25/Sep/18 16:10,4.0.0-alpha-1,4.0.0
+544,HIVE-20631,Closed,Fixed,25/Sep/18 09:35,4.0.0-alpha-1,4.0.0
+545,HIVE-20629,Closed,Fixed,25/Sep/18 03:21,4.0.0-alpha-1,4.0.0
+546,HIVE-20627,Closed,Fixed,24/Sep/18 08:53,4.0.0-alpha-1,4.0.0
+547,HIVE-20621,Closed,Fixed,22/Sep/18 00:42,"3.2.0, 4.0.0-alpha-1","3.2.0, 4.0.0"
+548,HIVE-20612,Closed,Fixed,20/Sep/18 20:27,"3.2.0, 4.0.0-alpha-1",4.0.0
+549,HIVE-20610,Closed,Fixed,20/Sep/18 16:54,4.0.0-alpha-1,"3.0.0, 4.0.0"
+550,HIVE-20607,Closed,Fixed,20/Sep/18 05:08,"3.2.0, 4.0.0-alpha-1","3.1.0, 4.0.0"
+551,HIVE-20601,Closed,Fixed,19/Sep/18 20:27,4.0.0-alpha-1,"3.0.0, 4.0.0"
+552,HIVE-20599,Closed,Fixed,19/Sep/18 16:46,"3.1.0, 4.0.0-alpha-1",3.1.0
+553,HIVE-20595,Closed,Fixed,19/Sep/18 09:20,4.0.0-alpha-1,4.0.0
+554,HIVE-20593,Closed,Fixed,19/Sep/18 07:49,"3.1.2, 3.2.0, 4.0.0-alpha-1",3.1.0
+555,HIVE-20583,Closed,Fixed,17/Sep/18 20:31,"3.2.0, 4.0.0-alpha-1","3.2.0, 4.0.0"
+556,HIVE-20582,Closed,Fixed,17/Sep/18 19:58,"3.2.0, 4.0.0-alpha-1","3.2.0, 4.0.0"
+557,HIVE-20563,Closed,Fixed,14/Sep/18 19:08,4.0.0-alpha-1,4.0.0
+558,HIVE-20561,Closed,Fixed,14/Sep/18 16:30,4.0.0-alpha-1,4.0.0
+559,HIVE-20555,Closed,Fixed,13/Sep/18 21:46,"3.1.2, 3.2.0, 4.0.0-alpha-1","2.3.2, 3.1.0"
+560,HIVE-20544,Closed,Fixed,12/Sep/18 16:05,4.0.0-alpha-1,4.0.0
+561,HIVE-20542,Closed,Fixed,12/Sep/18 08:38,4.0.0-alpha-1,"3.2.0, 4.0.0"
+562,HIVE-20541,Closed,Fixed,12/Sep/18 06:12,"3.2.0, 4.0.0-alpha-1","3.2.0, 4.0.0"
+563,HIVE-20511,Closed,Fixed,06/Sep/18 15:39,4.0.0-alpha-1,4.0.0
+564,HIVE-20505,Closed,Fixed,05/Sep/18 13:24,4.0.0-alpha-1,4.0.0
+565,HIVE-20499,Closed,Fixed,04/Sep/18 18:14,4.0.0-alpha-1,3.1.0
+566,HIVE-20476,Closed,Fixed,28/Aug/18 10:38,"3.2.0, 4.0.0-alpha-1",3.1.0
+567,HIVE-20472,Closed,Fixed,28/Aug/18 00:08,4.0.0-alpha-1,4.0.0
+568,HIVE-20470,Closed,Won't Do,27/Aug/18 20:49,4.0.0-alpha-2,4.0.0
+569,HIVE-20462,Closed,Fixed,25/Aug/18 09:16,4.0.0-alpha-1,3.1.0
+570,HIVE-20451,Closed,Fixed,23/Aug/18 16:53,4.0.0-alpha-1,4.0.0
+571,HIVE-20441,Closed,Fixed,22/Aug/18 15:50,4.0.0-alpha-1,"1.2.1, 2.3.3"
+572,HIVE-20435,Closed,Won't Fix,22/Aug/18 00:40,4.0.0-alpha-2,3.0.0
+573,HIVE-20433,Closed,Fixed,21/Aug/18 18:10,4.0.0-alpha-1,3.1.0
+574,HIVE-20410,Closed,Fixed,17/Aug/18 00:51,4.0.0-alpha-1,3.0.0
+575,HIVE-20406,Closed,Fixed,16/Aug/18 18:36,4.0.0-alpha-1,3.0.0
+576,HIVE-20394,Closed,Fixed,15/Aug/18 16:18,4.0.0-alpha-1,4.0.0
+577,HIVE-20385,Closed,Fixed,14/Aug/18 17:45,4.0.0-alpha-1,4.0.0
+578,HIVE-20372,Closed,Fixed,13/Aug/18 12:18,4.0.0-alpha-1,3.1.0
+579,HIVE-20361,Closed,Fixed,10/Aug/18 16:42,4.0.0-alpha-1,4.0.0
+580,HIVE-20347,Closed,Fixed,09/Aug/18 03:22,"3.2.0, 4.0.0-alpha-1","3.2.0, 4.0.0"
+581,HIVE-20345,Closed,Fixed,09/Aug/18 01:36,4.0.0-alpha-1,"1.3.0, 2.0.0"
+582,HIVE-20343,Closed,Fixed,08/Aug/18 22:01,4.0.0-alpha-1,3.1.0
+583,HIVE-20331,Closed,Fixed,07/Aug/18 17:29,4.0.0-alpha-1,2.1.1
+584,HIVE-20316,Closed,Fixed,06/Aug/18 05:24,"3.2.0, 4.0.0-alpha-1",3.1.0
+585,HIVE-20304,Closed,Duplicate,03/Aug/18 09:21,4.0.0-alpha-2,"1.2.1, 2.3.3"
+586,HIVE-20303,Closed,Fixed,03/Aug/18 07:36,4.0.0-alpha-1,2.2.0
+587,HIVE-20290,Closed,Fixed,01/Aug/18 19:23,4.0.0-alpha-1,3.1.0
+588,HIVE-20281,Closed,Fixed,31/Jul/18 16:16,"3.2.0, 4.0.0-alpha-1","3.2.0, 4.0.0"
+589,HIVE-20277,Closed,Fixed,31/Jul/18 07:01,4.0.0-alpha-1,4.0.0
+590,HIVE-20274,Closed,Fixed,30/Jul/18 22:43,"3.2.0, 4.0.0-alpha-1","3.0.0, 4.0.0"
+591,HIVE-20258,Closed,Fixed,27/Jul/18 20:08,"3.2.0, 4.0.0-alpha-1","3.0.0, 4.0.0"
+592,HIVE-20228,Closed,Fixed,24/Jul/18 03:45,4.0.0-alpha-1,3.0.0
+593,HIVE-20226,Closed,Fixed,23/Jul/18 21:58,4.0.0-alpha-1,"3.0.0, 4.0.0"
+594,HIVE-20210,Closed,Fixed,19/Jul/18 07:27,4.0.0-alpha-1,"2.3.0, 2.3.1, 2.3.2"
+595,HIVE-20209,Closed,Fixed,19/Jul/18 07:07,"3.2.0, 4.0.0-alpha-1","3.0.0, 3.1.0, 4.0.0"
+596,HIVE-20193,Closed,Fixed,17/Jul/18 14:11,4.0.0-alpha-1,3.0.0
+597,HIVE-20192,Closed,Fixed,17/Jul/18 09:40,"3.2.0, 4.0.0-alpha-1","3.0.0, 3.1.0, 4.0.0"
+598,HIVE-20179,Closed,Fixed,16/Jul/18 11:42,"3.2.0, 4.0.0-alpha-1",4.0.0
+599,HIVE-20172,Closed,Fixed,13/Jul/18 19:39,4.0.0-alpha-1,2.1.1
+600,HIVE-20168,Closed,Fixed,13/Jul/18 14:42,"3.2.0, 4.0.0-alpha-1","3.0.0, 4.0.0"
+601,HIVE-20165,Closed,Fixed,13/Jul/18 06:56,"3.2.0, 4.0.0-alpha-1","3.2.0, 4.0.0"
+602,HIVE-20153,Closed,Fixed,12/Jul/18 16:35,4.0.0-alpha-1,2.3.2
+603,HIVE-20152,Closed,Fixed,12/Jul/18 13:54,4.0.0-alpha-1,3.0.0
+604,HIVE-20147,Closed,Fixed,11/Jul/18 23:20,"3.2.0, 4.0.0-alpha-1","3.2.0, 4.0.0"
+605,HIVE-20129,Closed,Fixed,09/Jul/18 22:28,"3.2.0, 4.0.0-alpha-1","3.2.0, 4.0.0"
+606,HIVE-20126,Closed,Fixed,09/Jul/18 21:51,"2.3.4, 2.4.0, 3.1.2, 3.2.0, 4.0.0-alpha-1","3.2.0, 4.0.0"
+607,HIVE-20116,Closed,Fixed,07/Jul/18 00:31,"3.2.0, 4.0.0-alpha-1",4.0.0
+608,HIVE-20112,Closed,Fixed,06/Jul/18 22:12,4.0.0-alpha-1,3.0.0
+609,HIVE-20111,Closed,Fixed,06/Jul/18 21:52,4.0.0-alpha-1,3.0.0
+610,HIVE-20105,Closed,Fixed,06/Jul/18 13:36,"3.2.0, 4.0.0-alpha-1",3.0.0
+611,HIVE-20103,Closed,Fixed,06/Jul/18 07:02,4.0.0-alpha-1,"3.0.0, 4.0.0"
+612,HIVE-20098,Closed,Fixed,05/Jul/18 20:40,4.0.0-alpha-1,"1.2.1, 4.0.0"
+613,HIVE-20088,Closed,Fixed,04/Jul/18 12:56,4.0.0-alpha-1,3.0.0
+614,HIVE-20085,Closed,Fixed,04/Jul/18 10:30,4.0.0-alpha-1,3.0.0
+615,HIVE-20080,Resolved,Fixed,03/Jul/18 23:39,2.4.0,2.1.0
+616,HIVE-20077,Closed,Fixed,03/Jul/18 20:50,4.0.0-alpha-1,"0.14.0, 2.3.2"
+617,HIVE-20076,Closed,Fixed,03/Jul/18 18:27,3.1.0,3.0.0
+618,HIVE-20074,Closed,Fixed,03/Jul/18 16:50,4.0.0-alpha-1,4.0.0
+619,HIVE-20067,Closed,Fixed,03/Jul/18 11:19,4.0.0-alpha-1,3.1.3
+620,HIVE-20066,Closed,Fixed,03/Jul/18 10:57,"3.2.0, 4.0.0-alpha-1","3.1.0, 4.0.0"
+621,HIVE-20059,Closed,Fixed,02/Jul/18 20:25,"3.2.0, 4.0.0-alpha-1","3.1.0, 3.2.0, 4.0.0"
+622,HIVE-20043,Closed,Fixed,01/Jul/18 05:59,4.0.0-alpha-1,3.0.0
+623,HIVE-20039,Closed,Fixed,30/Jun/18 17:13,"3.2.0, 4.0.0-alpha-1","2.3.2, 3.0.0"
+624,HIVE-20038,Closed,Fixed,29/Jun/18 23:46,"3.2.0, 4.0.0-alpha-1","3.1.3, 3.2.0, 4.0.0"
+625,HIVE-20028,Closed,Fixed,28/Jun/18 19:05,"3.2.0, 4.0.0-alpha-1","3.2.0, 4.0.0"
+626,HIVE-20025,Closed,Fixed,28/Jun/18 17:08,"3.2.0, 4.0.0-alpha-1",3.0.0
+627,HIVE-20016,Resolved,Fixed,27/Jun/18 17:16,2.3.10,4.0.0
+628,HIVE-20004,Closed,Fixed,27/Jun/18 01:00,"3.2.0, 4.0.0-alpha-1","3.0.1, 3.1.0, 4.0.0"
+629,HIVE-20001,Closed,Duplicate,26/Jun/18 22:35,4.0.0-alpha-2,3.0.0
+630,HIVE-19980,Closed,Fixed,25/Jun/18 18:18,"3.1.0, 4.0.0-alpha-1","3.1.0, 4.0.0"
+631,HIVE-19965,Closed,Fixed,21/Jun/18 21:06,3.1.0,3.0.0
+632,HIVE-19964,Closed,Fixed,21/Jun/18 20:19,"3.1.0, 4.0.0-alpha-1","3.1.0, 4.0.0"
+633,HIVE-19956,Closed,Fixed,21/Jun/18 08:19,"3.1.0, 4.0.0-alpha-1","3.1.0, 4.0.0"
+634,HIVE-19948,Closed,Fixed,19/Jun/18 23:38,4.0.0-alpha-1,2.2.0
+635,HIVE-19946,Closed,Fixed,19/Jun/18 12:43,"3.1.0, 4.0.0-alpha-1",3.0.0
+636,HIVE-19935,Closed,Fixed,18/Jun/18 19:15,4.0.0-alpha-1,3.1.0
+637,HIVE-19917,Closed,Fixed,15/Jun/18 22:06,3.1.0,3.0.0
+638,HIVE-19912,Closed,Fixed,15/Jun/18 16:48,"3.0.1, 3.1.0, 4.0.0-alpha-1",3.0.0
+639,HIVE-19908,Closed,Fixed,15/Jun/18 05:41,3.1.0,3.0.0
+640,HIVE-19903,Closed,Fixed,15/Jun/18 00:01,"3.1.0, 4.0.0-alpha-1",4.0.0
+641,HIVE-19890,Closed,Fixed,14/Jun/18 00:08,3.1.0,3.0.0
+642,HIVE-19888,Closed,Fixed,13/Jun/18 22:31,4.0.0-alpha-1,3.0.0
+643,HIVE-19887,Closed,Duplicate,13/Jun/18 21:55,4.0.0-alpha-2,4.0.0
+644,HIVE-19886,Closed,Fixed,13/Jun/18 21:28,4.0.0-alpha-1,"3.1.0, 4.0.0"
+645,HIVE-19884,Closed,Fixed,13/Jun/18 20:45,3.1.0,3.1.0
+646,HIVE-19877,Closed,Fixed,13/Jun/18 04:44,"3.1.0, 4.0.0-alpha-1","3.1.0, 4.0.0"
+647,HIVE-19876,Closed,Fixed,13/Jun/18 01:31,"3.1.0, 4.0.0-alpha-1","3.1.0, 4.0.0"
+648,HIVE-19875,Closed,Fixed,12/Jun/18 23:23,"3.1.0, 4.0.0-alpha-1","3.1.0, 4.0.0"
+649,HIVE-19873,Closed,Fixed,12/Jun/18 17:28,"3.1.0, 4.0.0-alpha-1","3.1.0, 4.0.0"
+650,HIVE-19864,Closed,Fixed,11/Jun/18 23:48,"3.1.0, 4.0.0-alpha-1","3.1.0, 4.0.0"
+651,HIVE-19861,Closed,Fixed,11/Jun/18 21:29,"3.1.0, 4.0.0-alpha-1",3.0.0
+652,HIVE-19860,Closed,Fixed,11/Jun/18 20:59,"3.2.0, 4.0.0-alpha-1",2.1.0
+653,HIVE-19857,Closed,Duplicate,11/Jun/18 16:04,3.1.0,3.1.0
+654,HIVE-19850,Closed,Fixed,11/Jun/18 05:18,4.0.0-alpha-1,3.0.0
+655,HIVE-19827,Closed,Fixed,08/Jun/18 09:54,3.1.0,3.1.0
+656,HIVE-19817,Closed,Fixed,06/Jun/18 09:34,"3.0.1, 3.1.0, 4.0.0-alpha-1","3.0.1, 3.1.0, 4.0.0"
+657,HIVE-19814,Closed,Fixed,06/Jun/18 08:01,4.0.0-alpha-1,"2.3.0, 2.4.0, 3.0.0, 4.0.0"
+658,HIVE-19806,Closed,Fixed,05/Jun/18 20:55,"3.2.0, 4.0.0-alpha-1",3.0.0
+659,HIVE-19801,Closed,Fixed,05/Jun/18 17:30,"3.1.0, 4.0.0-alpha-1","3.0.0, 3.1.0"
+660,HIVE-19794,Closed,Fixed,05/Jun/18 06:50,3.1.0,"3.1.0, 4.0.0"
+661,HIVE-19792,Closed,Fixed,05/Jun/18 00:26,"3.2.0, 4.0.0-alpha-1",4.0.0
+662,HIVE-19773,Closed,Fixed,02/Jun/18 00:36,3.1.0,"3.1.0, 4.0.0"
+663,HIVE-19772,Closed,Fixed,01/Jun/18 23:20,"3.0.1, 3.1.0, 4.0.0-alpha-1","3.0.1, 3.1.0, 4.0.0"
+664,HIVE-19771,Closed,Fixed,01/Jun/18 23:04,3.1.0,3.0.0
+665,HIVE-19750,Closed,Fixed,31/May/18 19:29,3.1.0,3.0.0
+666,HIVE-19749,Closed,Fixed,31/May/18 18:51,4.0.0-alpha-1,3.0.0
+667,HIVE-19734,Closed,Fixed,29/May/18 17:46,3.1.0,3.0.0
+668,HIVE-19728,Closed,Fixed,29/May/18 12:06,3.1.0,3.0.0
+669,HIVE-19726,Closed,Fixed,29/May/18 06:24,"2.4.0, 3.1.0, 4.0.0-alpha-1","2.4.0, 3.0.1, 3.1.0, 4.0.0"
+670,HIVE-19718,Closed,Fixed,25/May/18 23:08,4.0.0-alpha-1,3.0.0
+671,HIVE-19711,Closed,Fixed,25/May/18 06:39,4.0.0-alpha-1,3.0.0
+672,HIVE-19710,Resolved,Duplicate,25/May/18 06:10,3.0.0,3.0.0
+673,HIVE-19701,Closed,Fixed,24/May/18 21:39,4.0.0-alpha-1,4.0.0
+674,HIVE-19698,Closed,Fixed,24/May/18 17:33,"3.1.0, 4.0.0-alpha-1",3.1.0
+675,HIVE-19697,Closed,Fixed,24/May/18 17:22,"3.1.0, 4.0.0-alpha-1",3.1.0
+676,HIVE-19695,Closed,Fixed,24/May/18 14:39,3.1.0,3.0.0
+677,HIVE-19694,Closed,Fixed,24/May/18 14:10,4.0.0-alpha-1,3.0.0
+678,HIVE-19691,Closed,Fixed,24/May/18 02:47,"3.1.0, 4.0.0-alpha-1",3.0.0
+679,HIVE-19687,Closed,Fixed,23/May/18 23:37,3.1.0,3.0.0
+680,HIVE-19680,Closed,Fixed,23/May/18 17:13,"3.1.0, 4.0.0-alpha-1",3.0.0
+681,HIVE-19677,Closed,Fixed,23/May/18 16:41,"3.1.0, 4.0.0-alpha-1",3.1.0
+682,HIVE-19675,Closed,Fixed,23/May/18 13:31,"3.1.0, 4.0.0-alpha-1",3.0.0
+683,HIVE-19661,Closed,Fixed,22/May/18 20:57,4.0.0-alpha-1,3.0.0
+684,HIVE-19652,Closed,Duplicate,22/May/18 15:14,4.0.0-alpha-2,3.1.0
+685,HIVE-19632,Closed,Fixed,21/May/18 18:31,"3.1.0, 4.0.0-alpha-1",3.1.0
+686,HIVE-19629,Closed,Fixed,21/May/18 17:55,"3.1.0, 4.0.0-alpha-1",3.1.0
+687,HIVE-19614,Closed,Fixed,18/May/18 22:35,"3.0.1, 3.1.0, 4.0.0-alpha-1",3.1.0
+688,HIVE-19613,Closed,Fixed,18/May/18 22:25,"3.0.1, 3.1.0, 4.0.0-alpha-1",3.1.0
+689,HIVE-19588,Closed,Fixed,17/May/18 17:14,"3.0.1, 3.1.0, 4.0.0-alpha-1",3.1.0
+690,HIVE-19585,Resolved,Not A Problem,17/May/18 15:02,2.3.2,2.3.2
+691,HIVE-19580,Resolved,Not A Problem,17/May/18 06:51,2.3.2,2.3.2
+692,HIVE-19577,Closed,Fixed,16/May/18 22:22,"3.1.0, 4.0.0-alpha-1",3.0.0
+693,HIVE-19575,Closed,Fixed,16/May/18 18:48,"3.1.0, 4.0.0-alpha-1",3.1.0
+694,HIVE-19569,Closed,Fixed,16/May/18 03:40,"3.1.0, 4.0.0-alpha-1",3.0.0
+695,HIVE-19568,Closed,Fixed,16/May/18 01:49,"3.2.0, 4.0.0-alpha-1",3.1.0
+696,HIVE-19567,Closed,Fixed,16/May/18 01:02,"3.1.0, 4.0.0-alpha-1",3.1.0
+697,HIVE-19504,Closed,Fixed,11/May/18 17:53,"3.1.0, 4.0.0-alpha-1",3.0.0
+698,HIVE-19485,Closed,Fixed,10/May/18 09:56,"3.1.0, 4.0.0-alpha-1",3.1.0
+699,HIVE-19483,Closed,Fixed,10/May/18 02:02,3.0.0,3.0.0
+700,HIVE-19481,Closed,Fixed,09/May/18 21:44,"3.1.0, 4.0.0-alpha-1",3.0.0
+701,HIVE-19476,Closed,Fixed,09/May/18 10:12,3.0.0,3.0.0
+702,HIVE-19468,Closed,Fixed,08/May/18 22:05,4.0.0-alpha-1,3.1.0
+703,HIVE-19435,Closed,Fixed,07/May/18 06:08,"3.0.0, 3.1.0",3.0.0
+704,HIVE-19430,Closed,Fixed,05/May/18 06:41,4.0.0-alpha-1,3.0.0
+705,HIVE-19389,Closed,Fixed,02/May/18 22:37,3.1.0,"3.0.0, 3.1.0"
+706,HIVE-19388,Closed,Fixed,02/May/18 21:46,"2.4.0, 4.0.0-alpha-1","2.1.1, 2.2.0, 2.3.2, 3.0.0, 3.1.0"
+707,HIVE-19385,Closed,Fixed,02/May/18 17:51,3.1.0,"3.0.0, 3.1.0"
+708,HIVE-19382,Closed,Fixed,02/May/18 02:42,"3.1.0, 4.0.0-alpha-1",3.0.0
+709,HIVE-19365,Closed,Fixed,30/Apr/18 22:28,"3.0.0, 3.1.0",3.0.0
+710,HIVE-19358,Closed,Fixed,29/Apr/18 21:12,3.1.0,3.0.0
+711,HIVE-19339,Closed,Fixed,27/Apr/18 01:01,3.0.0,3.0.0
+712,HIVE-19330,Closed,Fixed,26/Apr/18 21:05,3.0.0,3.0.0
+713,HIVE-19327,Closed,Fixed,26/Apr/18 20:23,"3.0.0, 3.1.0",3.0.0
+714,HIVE-19315,Closed,Fixed,26/Apr/18 12:44,3.0.0,3.1.0
+715,HIVE-19310,Closed,Fixed,25/Apr/18 20:03,3.0.0,3.0.0
+716,HIVE-19280,Closed,Fixed,23/Apr/18 22:34,3.0.0,3.0.0
+717,HIVE-19277,Closed,Fixed,23/Apr/18 19:56,"3.0.0, 3.1.0","3.0.0, 3.1.0"
+718,HIVE-19250,Closed,Fixed,19/Apr/18 18:51,4.0.0-alpha-1,2.1.0
+719,HIVE-19249,Closed,Fixed,19/Apr/18 18:37,3.0.0,"3.0.0, 3.1.0"
+720,HIVE-19248,Closed,Fixed,19/Apr/18 17:45,"3.0.0, 3.1.0",3.0.0
+721,HIVE-19247,Closed,Fixed,19/Apr/18 17:02,"3.0.0, 3.1.0","1.2.1, 2.2.0, 2.3.2, 3.0.0"
+722,HIVE-19240,Closed,Fixed,18/Apr/18 21:13,3.0.0,3.0.0
+723,HIVE-19233,Closed,Fixed,17/Apr/18 22:09,3.0.0,3.0.0
+724,HIVE-19231,Closed,Fixed,17/Apr/18 21:44,"3.0.0, 3.1.0",2.1.0
+725,HIVE-19230,Closed,Fixed,17/Apr/18 21:00,"3.0.0, 3.1.0",2.1.0
+726,HIVE-19226,Closed,Fixed,17/Apr/18 10:40,3.0.0,3.0.0
+727,HIVE-19219,Closed,Fixed,16/Apr/18 06:08,"3.0.0, 3.1.0",3.0.0
+728,HIVE-19215,Closed,Fixed,13/Apr/18 23:03,3.0.0,3.0.0
+729,HIVE-19203,Closed,Fixed,13/Apr/18 13:56,4.0.0-alpha-1,3.0.0
+730,HIVE-19202,Closed,Fixed,13/Apr/18 10:09,4.0.0-alpha-1,2.1.1
+731,HIVE-19200,Closed,Fixed,13/Apr/18 08:14,"3.0.0, 3.1.0",3.0.0
+732,HIVE-19191,Closed,Fixed,12/Apr/18 19:55,3.0.0,3.0.0
+733,HIVE-19186,Closed,Fixed,12/Apr/18 00:11,"3.0.0, 3.1.0",3.0.0
+734,HIVE-19181,Closed,Fixed,11/Apr/18 21:34,4.0.0-alpha-1,"2.3.2, 3.0.0"
+735,HIVE-19168,Closed,Fixed,11/Apr/18 06:33,"3.0.0, 3.1.0","3.0.0, 3.1.0"
+736,HIVE-19151,Closed,Duplicate,10/Apr/18 15:22,3.0.0,3.0.0
+737,HIVE-19137,Closed,Fixed,09/Apr/18 21:03,3.0.0,3.0.0
+738,HIVE-19130,Closed,Fixed,09/Apr/18 10:18,3.0.0,3.0.0
+739,HIVE-19120,Closed,Fixed,05/Apr/18 17:12,"3.0.0, 3.1.0",3.0.0
+740,HIVE-19118,Closed,Fixed,05/Apr/18 15:48,"3.1.0, 4.0.0-alpha-1",3.0.0
+741,HIVE-19116,Closed,Fixed,05/Apr/18 08:26,3.0.0,3.0.0
+742,HIVE-19110,Closed,Fixed,04/Apr/18 17:43,"3.1.0, 4.0.0-alpha-1",3.0.0
+743,HIVE-19109,Closed,Fixed,04/Apr/18 17:24,"3.1.0, 4.0.0-alpha-1",3.0.0
+744,HIVE-19108,Closed,Fixed,04/Apr/18 16:30,"3.0.0, 3.1.0",3.0.0
+745,HIVE-19105,Closed,Fixed,04/Apr/18 13:37,3.0.0,3.0.0
+746,HIVE-19102,Closed,Fixed,04/Apr/18 07:48,3.0.0,3.0.0
+747,HIVE-19099,Closed,Won't Fix,03/Apr/18 17:11,3.0.0,3.0.0
+748,HIVE-19085,Closed,Fixed,30/Mar/18 16:20,3.0.0,2.3.2
+749,HIVE-19081,Closed,Fixed,29/Mar/18 22:25,4.0.0-alpha-1,3.0.0
+750,HIVE-19080,Closed,Fixed,29/Mar/18 20:31,3.0.0,3.0.0
+751,HIVE-19052,Closed,Fixed,26/Mar/18 20:03,3.0.0,3.0.0
+752,HIVE-19050,Closed,Fixed,26/Mar/18 16:55,"2.4.0, 3.0.0","2.4.0, 3.0.0"
+753,HIVE-19043,Closed,Fixed,24/Mar/18 03:32,3.0.0,3.0.0
+754,HIVE-19037,Closed,Fixed,23/Mar/18 15:17,3.0.0,3.0.0
+755,HIVE-19035,Closed,Fixed,23/Mar/18 11:42,3.0.0,3.0.0
+756,HIVE-19032,Closed,Fixed,22/Mar/18 22:55,3.0.0,3.0.0
+757,HIVE-19030,Closed,Fixed,22/Mar/18 22:08,3.0.0,3.0.0
+758,HIVE-19024,Closed,Fixed,22/Mar/18 19:37,3.0.0,3.0.0
+759,HIVE-19019,Closed,Fixed,22/Mar/18 00:35,3.0.0,3.0.0
+760,HIVE-19018,Closed,Fixed,22/Mar/18 00:34,3.0.0,3.0.0
+761,HIVE-19016,Closed,Fixed,21/Mar/18 23:45,"3.1.0, 4.0.0-alpha-1",3.0.0
+762,HIVE-19012,Closed,Fixed,21/Mar/18 20:37,3.0.0,3.0.0
+763,HIVE-19007,Closed,Fixed,21/Mar/18 10:02,3.0.0,3.0.0
+764,HIVE-18991,Closed,Fixed,19/Mar/18 19:49,3.0.0,3.0.0
+765,HIVE-18977,Closed,Fixed,16/Mar/18 16:28,4.0.0-alpha-1,3.0.0
+766,HIVE-18967,Closed,Fixed,15/Mar/18 18:02,3.0.0,3.0.0
+767,HIVE-18965,Closed,Fixed,15/Mar/18 17:56,3.0.0,3.0.0
+768,HIVE-18951,Closed,Fixed,14/Mar/18 01:49,3.0.0,3.0.0
+769,HIVE-18950,Closed,Won't Fix,13/Mar/18 21:59,3.0.0,3.0.0
+770,HIVE-18929,Closed,Fixed,11/Mar/18 16:48,4.0.0-alpha-1,2.3.2
+771,HIVE-18888,Closed,Fixed,07/Mar/18 01:08,3.0.0,"2.3.3, 3.0.0"
+772,HIVE-18886,Closed,Fixed,07/Mar/18 00:18,3.0.0,3.0.0
+773,HIVE-18885,Closed,Fixed,07/Mar/18 00:00,"2.3.3, 2.4.0",2.3.2
+774,HIVE-18874,Closed,Fixed,06/Mar/18 20:15,"3.1.2, 3.2.0, 4.0.0-alpha-1",3.1.0
+775,HIVE-18873,Closed,Fixed,06/Mar/18 17:34,4.0.0-alpha-1,3.0.0
+776,HIVE-18871,Closed,Fixed,06/Mar/18 09:51,"3.2.0, 4.0.0-alpha-1","2.2.1, 3.2.0, 4.0.0"
+777,HIVE-18859,Closed,Fixed,05/Mar/18 11:55,3.0.0,"1.2.0, 2.1.1"
+778,HIVE-18858,Closed,Fixed,05/Mar/18 11:29,3.0.0,3.0.0
+779,HIVE-18852,Closed,Fixed,02/Mar/18 22:29,4.0.0-alpha-1,2.4.0
+780,HIVE-18818,Closed,Fixed,28/Feb/18 01:02,3.0.0,3.0.0
+781,HIVE-18816,Closed,Fixed,27/Feb/18 23:30,"3.0.0, 3.1.0",3.0.0
+782,HIVE-18786,Closed,Fixed,23/Feb/18 17:50,4.0.0-alpha-1,"2.3.2, 2.3.3"
+783,HIVE-18776,Closed,Fixed,22/Feb/18 22:16,3.0.0,3.0.0
+784,HIVE-18768,Resolved,Fixed,22/Feb/18 04:17,3.0.0,"2.0.2, 3.0.0"
+785,HIVE-18767,Closed,Fixed,22/Feb/18 03:17,"2.3.4, 2.4.0, 3.1.1, 3.2.0, 4.0.0-alpha-1","2.3.3, 3.1.0, 3.2.0, 4.0.0"
+786,HIVE-18764,Closed,Fixed,21/Feb/18 23:50,3.0.0,3.0.0
+787,HIVE-18762,Resolved,Fixed,21/Feb/18 20:21,3.0.0,3.0.0
+788,HIVE-18742,Closed,Fixed,17/Feb/18 01:30,3.0.0,2.0.0
+789,HIVE-18735,Closed,Fixed,16/Feb/18 20:45,4.0.0-alpha-1,2.0.0
+790,HIVE-18713,Closed,Fixed,14/Feb/18 05:13,3.0.0,3.0.0
+791,HIVE-18708,Closed,Fixed,13/Feb/18 21:20,3.0.0,3.0.0
+792,HIVE-18702,Closed,Fixed,13/Feb/18 14:44,4.0.0-alpha-1,2.3.2
+793,HIVE-18688,Closed,Fixed,13/Feb/18 02:22,3.0.0,3.0.0
+794,HIVE-18680,Closed,Fixed,11/Feb/18 20:03,3.0.0,3.0.0
+795,HIVE-18675,Closed,Fixed,09/Feb/18 21:49,3.0.0,3.0.0
+796,HIVE-18665,Closed,Fixed,09/Feb/18 06:51,3.0.0,3.0.0
+797,HIVE-18653,Closed,Fixed,08/Feb/18 02:37,3.0.0,3.0.0
+798,HIVE-18646,Closed,Fixed,07/Feb/18 13:09,3.0.0,3.0.0
+799,HIVE-18645,Closed,Fixed,07/Feb/18 09:09,3.0.0,3.0.0
+800,HIVE-18641,Closed,Fixed,06/Feb/18 19:47,3.0.0,3.0.0
+801,HIVE-18638,Closed,Fixed,06/Feb/18 18:11,3.0.0,3.0.0
+802,HIVE-18637,Closed,Fixed,06/Feb/18 18:10,3.0.0,3.0.0
+803,HIVE-18631,Closed,Fixed,06/Feb/18 05:37,3.0.0,3.0.0
+804,HIVE-18628,Closed,Fixed,06/Feb/18 02:04,3.0.0,3.0.0
+805,HIVE-18624,Closed,Fixed,05/Feb/18 16:45,"2.4.0, 3.1.2, 3.2.0, 4.0.0-alpha-1","2.0.0, 2.3.2, 3.0.0"
+806,HIVE-18617,Closed,Fixed,03/Feb/18 02:16,3.0.0,3.0.0
+807,HIVE-18614,Closed,Fixed,02/Feb/18 17:00,3.0.0,3.0.0
+808,HIVE-18613,Closed,Fixed,02/Feb/18 16:50,3.0.0,3.0.0
+809,HIVE-18611,Closed,Fixed,02/Feb/18 07:33,3.0.0,"2.3.2, 3.0.0"
+810,HIVE-18610,Closed,Fixed,02/Feb/18 06:46,3.0.0,3.0.0
+811,HIVE-18601,Closed,Fixed,01/Feb/18 09:30,3.0.0,3.0.0
+812,HIVE-18599,Closed,Fixed,01/Feb/18 07:58,3.0.0,3.0.0
+813,HIVE-18590,Closed,Fixed,31/Jan/18 05:29,3.0.0,3.0.0
+814,HIVE-18589,Closed,Fixed,31/Jan/18 04:37,3.0.0,3.0.0
+815,HIVE-18579,Closed,Fixed,30/Jan/18 03:14,3.0.0,3.0.0
+816,HIVE-18574,Closed,Fixed,29/Jan/18 22:09,3.0.0,3.0.0
+817,HIVE-18562,Closed,Fixed,28/Jan/18 20:50,3.0.0,3.0.0
+818,HIVE-18558,Closed,Fixed,26/Jan/18 19:14,3.0.0,3.0.0
+819,HIVE-18551,Closed,Fixed,26/Jan/18 01:21,3.0.0,3.0.0
+820,HIVE-18547,Closed,Fixed,25/Jan/18 22:01,3.0.0,3.0.0
+821,HIVE-18546,Closed,Fixed,25/Jan/18 17:42,3.0.0,3.0.0
+822,HIVE-18531,Closed,Fixed,24/Jan/18 23:46,3.0.0,3.0.0
+823,HIVE-18529,Closed,Fixed,24/Jan/18 22:36,3.0.0,"2.3.2, 3.0.0"
+824,HIVE-18524,Closed,Fixed,24/Jan/18 17:14,3.0.0,3.0.0
+825,HIVE-18521,Closed,Fixed,24/Jan/18 04:30,3.0.0,3.0.0
+826,HIVE-18517,Closed,Fixed,23/Jan/18 08:40,3.0.0,3.0.0
+827,HIVE-18501,Closed,Fixed,19/Jan/18 20:01,3.0.0,3.0.0
+828,HIVE-18473,Closed,Fixed,17/Jan/18 21:06,3.0.0,3.0.0
+829,HIVE-18472,Closed,Fixed,17/Jan/18 19:26,"2.4.0, 3.0.0",3.0.0
+830,HIVE-18467,Closed,Fixed,17/Jan/18 09:05,3.0.0,3.0.0
+831,HIVE-18465,Closed,Fixed,17/Jan/18 07:26,3.0.0,3.0.0
+832,HIVE-18459,Closed,Fixed,16/Jan/18 20:35,3.0.0,2.1.0
+833,HIVE-18450,Closed,Fixed,13/Jan/18 00:40,3.0.0,3.0.0
+834,HIVE-18426,Closed,Fixed,10/Jan/18 17:30,3.0.0,3.0.0
+835,HIVE-18422,Closed,Fixed,10/Jan/18 03:09,"2.4.0, 3.0.0","2.4.0, 3.0.0"
+836,HIVE-18421,Closed,Fixed,10/Jan/18 03:00,3.0.0,"2.1.1, 2.2.0, 2.3.2, 3.0.0"
+837,HIVE-18419,Closed,Fixed,10/Jan/18 00:04,3.0.0,3.0.0
+838,HIVE-18416,Closed,Fixed,09/Jan/18 21:33,3.0.0,3.0.0
+839,HIVE-18390,Closed,Fixed,06/Jan/18 12:13,3.0.0,2.1.1
+840,HIVE-18384,Closed,Fixed,05/Jan/18 19:02,3.0.0,3.0.0
+841,HIVE-18380,Closed,Fixed,04/Jan/18 22:54,3.0.0,3.0.0
+842,HIVE-18379,Closed,Fixed,04/Jan/18 22:28,3.0.0,3.0.0
+843,HIVE-18365,Closed,Fixed,03/Jan/18 18:29,3.0.0,3.0.0
+844,HIVE-18359,Closed,Fixed,02/Jan/18 23:21,3.0.0,3.0.0
+845,HIVE-18355,Closed,Fixed,02/Jan/18 11:14,3.0.0,3.0.0
+846,HIVE-18352,Closed,Fixed,02/Jan/18 04:58,3.0.0,3.0.0
+847,HIVE-18341,Closed,Fixed,26/Dec/17 06:43,3.0.0,3.0.0
+848,HIVE-18321,Closed,Fixed,20/Dec/17 20:35,3.0.0,3.0.0
+849,HIVE-18284,Closed,Fixed,15/Dec/17 16:36,4.0.0-alpha-1,"2.3.1, 2.3.2, 3.0.0, 3.1.1, 3.1.2, 4.0.0"
+850,HIVE-18269,Closed,Fixed,13/Dec/17 09:18,3.0.0,3.0.0
+851,HIVE-18201,Closed,Fixed,01/Dec/17 21:59,4.0.0-alpha-1,3.0.0
+852,HIVE-18115,Resolved,Invalid,21/Nov/17 15:54,2.4.0,"2.3.1, 2.3.2"
+853,HIVE-17966,Closed,Fixed,02/Nov/17 15:36,3.0.0,3.0.0
+854,HIVE-17952,Closed,Fixed,01/Nov/17 00:30,3.0.0,3.0.0
+855,HIVE-17833,Closed,Fixed,18/Oct/17 23:31,3.0.0,3.0.0
+856,HIVE-17735,Closed,Fixed,07/Oct/17 00:10,3.0.0,3.0.0
+857,HIVE-17539,Closed,Won't Fix,15/Sep/17 09:04,4.0.0-alpha-2,3.0.0
+858,HIVE-17463,Closed,Fixed,06/Sep/17 15:44,3.0.0,3.0.0
+859,HIVE-17457,Closed,Fixed,05/Sep/17 23:37,3.0.0,3.0.0
+860,HIVE-17098,Closed,Fixed,14/Jul/17 16:36,3.0.0,2.1.1
+861,HIVE-16907,Closed,Fixed,15/Jun/17 08:17,4.0.0-alpha-1,"1.1.0, 2.1.1"
+862,HIVE-16839,Closed,Fixed,07/Jun/17 01:55,"3.2.0, 4.0.0-alpha-1","0.13.1, 1.1.0, 2.3.4, 3.0.0"
+863,HIVE-16826,Closed,Fixed,05/Jun/17 21:54,3.0.0,"2.1.1, 3.0.0"
+864,HIVE-16821,Closed,Fixed,03/Jun/17 07:40,3.0.0,"2.1.1, 3.0.0"
+865,HIVE-16491,Closed,Fixed,21/Apr/17 03:15,3.0.0,2.3.0
+866,HIVE-16404,Closed,Fixed,06/Apr/17 20:42,3.0.0,2.2.0
+867,HIVE-16100,Closed,Fixed,03/Mar/17 08:27,4.0.0-alpha-1,"1.2.1, 2.1.1, 2.2.0"
+868,HIVE-15995,Closed,Fixed,21/Feb/17 11:58,3.0.0,"1.2.1, 2.1.0, 3.0.0"
+869,HIVE-15956,Closed,Fixed,17/Feb/17 01:01,4.0.0-alpha-1,"1.3.0, 2.2.0"
+870,HIVE-15820,Closed,Fixed,06/Feb/17 07:02,4.0.0-alpha-1,"1.2.1, 2.1.1"
+871,HIVE-15680,Closed,Fixed,20/Jan/17 17:21,"2.4.0, 3.0.0","1.1.0, 2.2.0"
+872,HIVE-15406,Closed,Fixed,09/Dec/16 09:38,4.0.0-alpha-1,4.0.0
+873,HIVE-15190,Closed,Fixed,13/Nov/16 22:20,"3.1.0, 4.0.0-alpha-1","2.1.0, 2.2.0, 3.1.0, 4.0.0"
+874,HIVE-15077,Closed,Fixed,26/Oct/16 20:37,3.0.0,2.3.0
+875,HIVE-14981,Closed,Incomplete,15/Oct/16 23:18,4.0.0-alpha-2,2.2.0
+876,HIVE-14792,Closed,Fixed,19/Sep/16 22:51,"2.2.1, 2.4.0, 3.0.0","1.2.1, 2.1.0"
+877,HIVE-14737,Closed,Fixed,12/Sep/16 12:51,4.0.0-alpha-1,"1.1.0, 3.1.1"
+878,HIVE-14557,Closed,Fixed,17/Aug/16 13:26,4.0.0-alpha-1,"1.1.0, 2.1.0"
+879,HIVE-14516,Closed,Fixed,10/Aug/16 23:37,4.0.0-alpha-1,2.2.0
+880,HIVE-14032,Closed,Fixed,16/Jun/16 15:03,3.0.0,2.0.1
+881,HIVE-13000,Closed,Fixed,04/Feb/16 17:35,3.0.0,"0.13.0, 1.0.0, 1.2.1, 2.2.0"
+882,HIVE-12812,Closed,Fixed,08/Jan/16 20:00,4.0.0-alpha-1,"1.2.1, 2.1.0"
+883,HIVE-12451,Resolved,Fixed,18/Nov/15 01:16,3.0.0,"1.3.0, 2.0.0"
+884,HIVE-18316,Closed,Fixed,19/Dec/17 20:32,3.0.0,3.0.0
+885,HIVE-18293,Closed,Fixed,18/Dec/17 19:33,3.0.0,2.1.1
+886,HIVE-18290,Closed,Duplicate,18/Dec/17 10:22,3.0.0,3.0.0
+887,HIVE-18266,Closed,Fixed,12/Dec/17 20:09,3.0.0,3.0.0
+888,HIVE-18250,Closed,Fixed,07/Dec/17 23:31,3.0.0,"2.0.0, 2.1.0, 2.2.0, 2.3.0"
+889,HIVE-18213,Closed,Fixed,04/Dec/17 21:24,3.0.0,3.0.0
+890,HIVE-18195,Closed,Fixed,01/Dec/17 18:26,3.0.0,3.0.0
+891,HIVE-18194,Closed,Duplicate,01/Dec/17 06:34,3.0.0,3.0.0
+892,HIVE-18188,Closed,Fixed,30/Nov/17 20:22,3.0.0,3.0.0
+893,HIVE-18160,Closed,Fixed,28/Nov/17 08:49,3.0.0,3.0.0
+894,HIVE-18124,Closed,Fixed,22/Nov/17 00:47,3.0.0,3.0.0
+895,HIVE-18109,Closed,Fixed,21/Nov/17 00:23,3.0.0,3.0.0
+896,HIVE-18090,Closed,Fixed,17/Nov/17 08:18,3.0.0,"1.3.0, 2.0.0"
+897,HIVE-18069,Closed,Fixed,15/Nov/17 21:25,3.0.0,3.0.0
+898,HIVE-18067,Closed,Fixed,15/Nov/17 05:50,3.0.0,3.0.0
+899,HIVE-18050,Closed,Fixed,13/Nov/17 09:17,3.0.0,2.3.0
+900,HIVE-18046,Closed,Fixed,10/Nov/17 20:12,3.0.0,3.0.0
+901,HIVE-18026,Closed,Fixed,09/Nov/17 02:14,3.0.0,3.0.0
+902,HIVE-18017,Closed,Fixed,08/Nov/17 15:53,3.0.0,"2.2.0, 2.3.0"
+903,HIVE-18016,Closed,Fixed,08/Nov/17 15:42,3.0.0,"2.4.0, 3.0.0"
+904,HIVE-18007,Closed,Fixed,07/Nov/17 23:22,3.0.0,3.0.0
+905,HIVE-18006,Closed,Fixed,07/Nov/17 21:33,3.0.0,3.0.0
+906,HIVE-17985,Resolved,Fixed,06/Nov/17 03:28,"1.2.3, 2.3.1","1.2.2, 2.3.0, 3.0.0"
+907,HIVE-17953,Closed,Fixed,01/Nov/17 00:47,3.0.0,3.0.0
+908,HIVE-17948,Resolved,Fixed,31/Oct/17 18:18,2.3.2,2.3.2
+909,HIVE-17942,Closed,Fixed,30/Oct/17 21:25,"2.4.0, 3.0.0",2.1.1
+910,HIVE-17928,Resolved,Fixed,28/Oct/17 17:34,2.3.2,2.3.2
+911,HIVE-17882,Closed,Fixed,24/Oct/17 08:44,3.0.0,3.0.0
+912,HIVE-17872,Closed,Not A Problem,21/Oct/17 00:10,3.0.0,"2.4.0, 3.0.0"
+913,HIVE-17853,Closed,Fixed,19/Oct/17 22:15,"2.2.1, 2.4.0, 3.0.0","2.2.1, 2.4.0, 3.0.0"
+914,HIVE-17834,Closed,Fixed,19/Oct/17 00:35,3.0.0,3.0.0
+915,HIVE-17832,Closed,Fixed,18/Oct/17 22:08,"2.4.0, 3.0.0",2.1.1
+916,HIVE-17831,Closed,Fixed,18/Oct/17 21:05,"2.1.2, 2.2.1, 2.3.2, 2.4.0, 3.0.0","2.2.1, 2.3.1, 2.4.0, 3.0.0"
+917,HIVE-17829,Closed,Fixed,18/Oct/17 06:02,3.0.0,2.1.0
+918,HIVE-17828,Closed,Fixed,18/Oct/17 04:42,3.0.0,3.0.0
+919,HIVE-17825,Closed,Fixed,17/Oct/17 05:14,3.0.0,3.0.0
+920,HIVE-17822,Closed,Fixed,16/Oct/17 22:35,3.0.0,3.0.0
+921,HIVE-17815,Closed,Fixed,16/Oct/17 06:40,3.0.0,3.0.0
+922,HIVE-17806,Closed,Fixed,13/Oct/17 22:31,3.0.0,3.0.0
+923,HIVE-17803,Closed,Fixed,13/Oct/17 21:04,"2.2.1, 2.4.0, 3.0.0","2.2.0, 3.0.0"
+924,HIVE-17798,Closed,Fixed,13/Oct/17 14:12,3.0.0,3.0.0
+925,HIVE-17791,Resolved,Fixed,12/Oct/17 18:52,"2.2.1, 2.4.0","2.2.0, 2.4.0"
+926,HIVE-17781,Closed,Fixed,11/Oct/17 23:59,"2.2.1, 2.4.0, 3.0.0",3.0.0
+927,HIVE-17764,Closed,Fixed,10/Oct/17 22:17,"2.4.0, 3.0.0",2.1.1
+928,HIVE-17762,Closed,Fixed,10/Oct/17 17:26,3.0.0,3.0.0
+929,HIVE-17761,Closed,Fixed,10/Oct/17 17:21,3.0.0,3.0.0
+930,HIVE-17749,Closed,Fixed,10/Oct/17 01:03,3.0.0,3.0.0
+931,HIVE-17746,Closed,Fixed,09/Oct/17 14:17,3.0.0,3.0.0
+932,HIVE-17726,Closed,Fixed,06/Oct/17 14:03,3.0.0,3.0.0
+933,HIVE-17723,Closed,Fixed,06/Oct/17 09:46,3.0.0,3.0.0
+934,HIVE-17721,Closed,Fixed,06/Oct/17 05:51,3.0.0,3.0.0
+935,HIVE-17720,Closed,Fixed,06/Oct/17 05:32,3.0.0,3.0.0
+936,HIVE-17715,Closed,Duplicate,05/Oct/17 22:00,3.0.0,3.0.0
+937,HIVE-17706,Closed,Fixed,05/Oct/17 07:59,3.0.0,3.0.0
+938,HIVE-17705,Closed,Fixed,05/Oct/17 06:52,"2.2.1, 2.3.1, 2.4.0",2.4.0
+939,HIVE-17682,Closed,Fixed,03/Oct/17 19:53,3.0.0,"1.2.2, 2.3.0, 3.0.0"
+940,HIVE-17679,Closed,Fixed,03/Oct/17 16:41,3.0.0,2.1.1
+941,HIVE-17665,Closed,Fixed,02/Oct/17 18:02,"2.2.1, 2.3.1, 2.4.0, 3.0.0","2.4.0, 3.0.0"
+942,HIVE-17664,Closed,Fixed,02/Oct/17 17:02,"2.1.2, 2.2.1, 2.3.1, 2.4.0, 3.0.0","2.1.0, 2.1.1, 2.2.0, 2.3.0"
+943,HIVE-17659,Closed,Fixed,30/Sep/17 00:01,"2.4.0, 3.0.0","2.1.0, 2.1.1, 2.2.0"
+944,HIVE-17635,Closed,Fixed,28/Sep/17 15:54,3.0.0,3.0.0
+945,HIVE-17633,Closed,Fixed,28/Sep/17 08:18,3.0.0,3.0.0
+946,HIVE-17624,Closed,Fixed,27/Sep/17 21:11,3.0.0,2.1.1
+947,HIVE-17623,Closed,Fixed,27/Sep/17 19:26,3.0.0,3.0.0
+948,HIVE-17621,Closed,Fixed,27/Sep/17 17:51,"2.2.1, 2.4.0, 3.0.0","2.2.0, 3.0.0"
+949,HIVE-17620,Closed,Fixed,27/Sep/17 16:55,3.0.0,"2.2.0, 2.3.0, 3.0.0"
+950,HIVE-17619,Closed,Fixed,27/Sep/17 16:50,3.0.0,2.1.1
+951,HIVE-17615,Closed,Fixed,27/Sep/17 07:13,3.0.0,3.0.0
+952,HIVE-17602,Closed,Fixed,26/Sep/17 04:20,3.0.0,3.0.0
+953,HIVE-17595,Closed,Fixed,25/Sep/17 10:23,3.0.0,3.0.0
+954,HIVE-17594,Closed,Fixed,25/Sep/17 07:16,3.0.0,3.0.0
+955,HIVE-17582,Closed,Fixed,22/Sep/17 17:37,3.0.0,3.0.0
+956,HIVE-17576,Closed,Fixed,22/Sep/17 00:07,"2.2.1, 2.4.0, 3.0.0","2.2.0, 2.4.0, 3.0.0"
+957,HIVE-17562,Closed,Fixed,20/Sep/17 00:34,"2.2.1, 2.3.1, 2.4.0",2.4.0
+958,HIVE-17556,Closed,Fixed,19/Sep/17 11:30,3.0.0,3.0.0
+959,HIVE-17554,Closed,Fixed,19/Sep/17 06:34,3.0.0,3.0.0
+960,HIVE-17530,Closed,Fixed,14/Sep/17 02:14,3.0.0,"1.1.0, 3.0.0"
+961,HIVE-17512,Closed,Fixed,12/Sep/17 06:01,3.0.0,3.0.0
+962,HIVE-17510,Closed,Fixed,12/Sep/17 00:22,3.0.0,3.0.0
+963,HIVE-17485,Closed,Duplicate,08/Sep/17 07:09,3.0.0,3.0.0
+964,HIVE-17479,Closed,Fixed,07/Sep/17 19:09,3.0.0,3.0.0
+965,HIVE-17472,Closed,Fixed,06/Sep/17 23:25,"2.2.1, 2.3.2, 2.4.0, 3.0.0","2.2.0, 3.0.0"
+966,HIVE-17464,Closed,Fixed,06/Sep/17 18:06,3.0.0,3.0.0
+967,HIVE-17460,Closed,Not A Problem,06/Sep/17 04:40,3.0.0,"2.1.0, 2.2.0"
+968,HIVE-17453,Closed,Fixed,05/Sep/17 09:24,3.0.0,3.0.0
+969,HIVE-17429,Closed,Fixed,01/Sep/17 21:19,"2.1.0, 2.1.1, 2.2.1, 2.3.4, 2.4.0, 3.0.0","2.1.0, 2.2.0, 2.3.0, 2.3.1, 2.3.2"
+970,HIVE-17420,Closed,Fixed,31/Aug/17 17:42,3.0.0,3.0.0
+971,HIVE-17419,Closed,Fixed,31/Aug/17 15:23,3.0.0,3.0.0
+972,HIVE-17417,Closed,Fixed,31/Aug/17 01:29,"2.4.0, 3.0.0","2.4.0, 3.0.0"
+973,HIVE-17410,Closed,Fixed,29/Aug/17 21:19,3.0.0,3.0.0
+974,HIVE-17403,Closed,Fixed,29/Aug/17 01:58,"2.4.0, 3.0.0","1.3.0, 2.4.0, 3.0.0"
+975,HIVE-17394,Closed,Fixed,28/Aug/17 17:14,3.0.0,"1.1.0, 3.0.0"
+976,HIVE-17392,Closed,Fixed,25/Aug/17 18:50,3.0.0,3.0.0
+977,HIVE-17391,Closed,Fixed,25/Aug/17 18:11,3.0.0,"2.2.0, 2.3.0"
+978,HIVE-17389,Closed,Fixed,25/Aug/17 14:00,3.0.0,3.0.0
+979,HIVE-17378,Closed,Fixed,23/Aug/17 22:19,3.0.0,3.0.0
+980,HIVE-17377,Closed,Fixed,23/Aug/17 22:06,3.0.0,3.0.0
+981,HIVE-17368,Closed,Fixed,22/Aug/17 01:27,"2.4.0, 3.0.0","1.1.0, 2.0.0, 2.1.0, 2.2.0"
+982,HIVE-17367,Closed,Fixed,21/Aug/17 21:49,3.0.0,3.0.0
+983,HIVE-17365,Closed,Fixed,21/Aug/17 18:20,3.0.0,3.0.0
+984,HIVE-17357,Closed,Fixed,18/Aug/17 16:52,3.0.0,3.0.0
+985,HIVE-17352,Closed,Fixed,17/Aug/17 23:21,3.0.0,"2.1.1, 2.2.0"
+986,HIVE-17348,Closed,Fixed,17/Aug/17 14:57,3.0.0,3.0.0
+987,HIVE-17336,Closed,Fixed,16/Aug/17 17:01,3.0.0,3.0.0
+988,HIVE-17333,Closed,Fixed,16/Aug/17 14:18,"2.3.0, 3.0.0",3.0.0
+989,HIVE-17322,Closed,Fixed,15/Aug/17 09:47,3.0.0,3.0.0
+990,HIVE-17309,Closed,Fixed,13/Aug/17 14:34,3.0.0,"1.2.2, 2.1.1, 2.2.0"
+991,HIVE-17305,Closed,Fixed,12/Aug/17 06:43,3.0.0,3.0.0
+992,HIVE-17298,Closed,Duplicate,11/Aug/17 04:40,3.0.0,3.0.0
+993,HIVE-17286,Closed,Fixed,10/Aug/17 01:55,3.0.0,3.0.0
+994,HIVE-17285,Closed,Fixed,10/Aug/17 01:43,3.0.0,3.0.0
+995,HIVE-17276,Closed,Fixed,09/Aug/17 00:20,3.0.0,3.0.0
+996,HIVE-17275,Closed,Fixed,08/Aug/17 22:52,"2.2.1, 2.4.0, 3.0.0",2.2.0
+997,HIVE-17274,Closed,Fixed,08/Aug/17 22:20,"2.4.0, 3.0.0","1.3.0, 2.4.0, 3.0.0"
+998,HIVE-17272,Closed,Fixed,08/Aug/17 20:57,"2.4.0, 3.0.0",2.1.1
+999,HIVE-17270,Closed,Done,08/Aug/17 16:13,3.0.0,3.0.0
+1000,HIVE-17265,Closed,Fixed,08/Aug/17 01:44,3.0.0,3.0.0
+1001,HIVE-17240,Closed,Fixed,03/Aug/17 09:38,3.0.0,"1.1.1, 1.2.2, 2.2.0"
+1002,HIVE-17233,Closed,Fixed,02/Aug/17 20:49,"2.4.0, 3.0.0","2.2.0, 3.0.0"
+1003,HIVE-17220,Closed,Fixed,31/Jul/17 22:19,3.0.0,3.0.0
+1004,HIVE-17218,Closed,Fixed,31/Jul/17 21:26,"2.4.0, 3.0.0","1.2.2, 2.2.0, 3.0.0"
+1005,HIVE-17189,Closed,Fixed,27/Jul/17 22:13,"2.3.2, 2.4.0, 3.0.0",2.1.1
+1006,HIVE-17188,Closed,Fixed,27/Jul/17 20:41,"2.2.0, 2.4.0, 3.0.0",2.2.0
+1007,HIVE-17181,Closed,Fixed,27/Jul/17 04:23,"2.4.0, 3.0.0","2.2.0, 3.0.0"
+1008,HIVE-17169,Closed,Fixed,25/Jul/17 17:23,"2.3.2, 2.4.0, 3.0.0",3.0.0
+1009,HIVE-17155,Closed,Fixed,21/Jul/17 21:44,3.0.0,"2.3.7, 3.0.0"
+1010,HIVE-17150,Closed,Fixed,21/Jul/17 16:24,"2.3.2, 2.4.0, 3.0.0",2.3.0
+1011,HIVE-17149,Closed,Fixed,21/Jul/17 14:32,3.0.0,3.0.0
+1012,HIVE-17148,Closed,Fixed,21/Jul/17 12:09,3.0.0,2.1.1
+1013,HIVE-17147,Closed,Fixed,21/Jul/17 08:55,3.0.0,3.0.0
+1014,HIVE-17144,Closed,Fixed,21/Jul/17 06:53,3.0.0,3.0.0
+1015,HIVE-17109,Closed,Fixed,17/Jul/17 14:32,3.0.0,3.0.0
+1016,HIVE-17088,Closed,Fixed,13/Jul/17 22:14,3.0.0,3.0.0
+1017,HIVE-17086,Closed,Fixed,13/Jul/17 20:59,3.0.0,3.0.0
+1018,HIVE-17085,Closed,Fixed,13/Jul/17 20:56,"2.4.0, 3.0.0","2.2.0, 2.3.0, 3.0.0"
+1019,HIVE-17079,Closed,Fixed,12/Jul/17 18:13,3.0.0,3.0.0
+1020,HIVE-17073,Closed,Fixed,11/Jul/17 12:57,3.0.0,3.0.0
+1021,HIVE-17069,Closed,Fixed,10/Jul/17 21:13,3.0.0,3.0.0
+1022,HIVE-17067,Closed,Fixed,10/Jul/17 08:32,3.0.0,3.0.0
+1023,HIVE-17052,Closed,Fixed,06/Jul/17 11:48,3.0.0,3.0.0
+1024,HIVE-17002,Closed,Duplicate,30/Jun/17 14:50,3.0.0,2.1.1
+1025,HIVE-16960,Closed,Fixed,26/Jun/17 16:28,3.0.0,3.0.0
+1026,HIVE-16958,Closed,Fixed,26/Jun/17 08:24,3.0.0,"2.2.0, 2.3.0"
+1027,HIVE-16943,Closed,Fixed,22/Jun/17 14:22,3.0.0,3.0.0
+1028,HIVE-16942,Closed,Fixed,22/Jun/17 14:21,3.0.0,3.0.0
+1029,HIVE-16939,Closed,Fixed,22/Jun/17 04:35,"2.3.3, 2.4.0, 3.0.0","2.3.0, 2.3.1, 2.3.2, 3.0.0"
+1030,HIVE-16937,Closed,Fixed,22/Jun/17 03:37,3.0.0,3.0.0
+1031,HIVE-16927,Closed,Fixed,21/Jun/17 01:00,"2.4.0, 3.0.0",3.0.0
+1032,HIVE-16920,Closed,Fixed,20/Jun/17 09:35,3.0.0,3.0.0
+1033,HIVE-16918,Closed,Fixed,19/Jun/17 17:31,3.0.0,3.0.0
+1034,HIVE-16910,Closed,Fixed,15/Jun/17 18:49,3.0.0,"2.1.1, 3.0.0"
+1035,HIVE-16902,Closed,Fixed,14/Jun/17 19:13,3.0.0,3.0.0
+1036,HIVE-16898,Closed,Fixed,14/Jun/17 09:24,3.0.0,3.0.0
+1037,HIVE-16888,Closed,Fixed,13/Jun/17 07:38,3.0.0,3.0.0
+1038,HIVE-16886,Closed,Fixed,12/Jun/17 21:00,3.0.0,"2.3.2, 2.3.3, 3.0.0"
+1039,HIVE-16877,Closed,Fixed,10/Jun/17 14:01,3.0.0,"1.2.1, 2.1.1"
+1040,HIVE-16846,Closed,Fixed,07/Jun/17 19:25,3.0.0,3.0.0
+1041,HIVE-16845,Closed,Fixed,07/Jun/17 17:07,3.0.0,2.1.1
+1042,HIVE-16832,Closed,Fixed,06/Jun/17 18:59,3.0.0,2.2.0
+1043,HIVE-16828,Closed,Fixed,06/Jun/17 07:16,3.0.0,"1.2.0, 2.1.1, 2.2.0"
+1044,HIVE-16801,Closed,Fixed,01/Jun/17 07:18,3.0.0,2.1.1
+1045,HIVE-16793,Closed,Fixed,30/May/17 22:28,3.0.0,3.0.0
+1046,HIVE-16776,Closed,Fixed,26/May/17 18:33,3.0.0,3.0.0
+1047,HIVE-16769,Closed,Fixed,26/May/17 14:10,3.0.0,2.0.0
+1048,HIVE-16756,Closed,Fixed,25/May/17 05:13,"2.4.0, 3.0.0",2.3.0
+1049,HIVE-16743,Closed,Fixed,23/May/17 21:46,3.0.0,3.0.0
+1050,HIVE-16738,Closed,Duplicate,23/May/17 06:52,3.0.0,3.0.0
+1051,HIVE-16737,Closed,Fixed,23/May/17 05:32,"2.4.0, 3.0.0",3.0.0
+1052,HIVE-16708,Closed,Fixed,18/May/17 11:26,"2.4.0, 3.0.0",2.3.2
+1053,HIVE-16698,Closed,Fixed,17/May/17 16:56,3.0.0,3.0.0
+1054,HIVE-16693,Closed,Fixed,17/May/17 13:33,3.0.0,3.0.0
+1055,HIVE-16683,Closed,Fixed,16/May/17 17:50,2.2.0,"2.1.1, 2.2.0"
+1056,HIVE-16678,Closed,Fixed,16/May/17 11:57,3.0.0,3.0.0
+1057,HIVE-16677,Closed,Fixed,16/May/17 10:45,3.0.0,3.0.0
+1058,HIVE-16658,Closed,Fixed,12/May/17 03:23,3.0.0,3.0.0
+1059,HIVE-16654,Closed,Fixed,11/May/17 20:41,3.0.0,2.0.0
+1060,HIVE-16645,Closed,Fixed,11/May/17 11:44,3.0.0,3.0.0
+1061,HIVE-16640,Closed,Fixed,11/May/17 03:15,"2.3.0, 3.0.0",3.0.0
+1062,HIVE-16625,Closed,Fixed,09/May/17 16:24,3.0.0,3.0.0
+1063,HIVE-16603,Closed,Fixed,08/May/17 11:01,3.0.0,3.0.0
+1064,HIVE-16584,Closed,Fixed,04/May/17 14:23,3.0.0,3.0.0
+1065,HIVE-16577,Closed,Fixed,03/May/17 19:32,"2.3.0, 3.0.0","2.2.0, 2.3.0, 2.4.0, 3.0.0"
+1066,HIVE-16554,Closed,Fixed,27/Apr/17 22:56,3.0.0,"2.0.1, 2.1.1"
+1067,HIVE-16546,Closed,Fixed,27/Apr/17 01:59,3.0.0,3.0.0
+1068,HIVE-16539,Closed,Fixed,26/Apr/17 17:15,"2.4.0, 3.0.0",2.1.1
+1069,HIVE-16538,Closed,Fixed,26/Apr/17 13:40,3.0.0,3.0.0
+1070,HIVE-16533,Closed,Fixed,25/Apr/17 20:37,3.0.0,"2.1.1, 3.0.0"
+1071,HIVE-16524,Closed,Fixed,25/Apr/17 01:22,3.0.0,3.0.0
+1072,HIVE-16507,Closed,Fixed,21/Apr/17 22:10,3.0.0,"2.0.0, 2.2.0, 2.3.0"
+1073,HIVE-16487,Closed,Fixed,20/Apr/17 12:08,"2.3.2, 2.4.0, 3.0.0",3.0.0
+1074,HIVE-16465,Closed,Fixed,18/Apr/17 02:09,"2.3.0, 2.4.0, 3.0.0",2.2.0
+1075,HIVE-16451,Closed,Fixed,14/Apr/17 14:12,3.0.0,3.0.0
+1076,HIVE-16450,Closed,Fixed,14/Apr/17 13:59,3.0.0,2.0.0
+1077,HIVE-16436,Closed,Fixed,13/Apr/17 04:28,3.0.0,3.0.0
+1078,HIVE-16421,Closed,Fixed,11/Apr/17 23:02,3.0.0,2.1.0
+1079,HIVE-16413,Closed,Fixed,10/Apr/17 06:48,"1.3.0, 2.4.0, 3.0.0","1.2.2, 1.3.0, 2.1.1"
+1080,HIVE-16409,Closed,Fixed,08/Apr/17 08:55,3.0.0,3.0.0
+1081,HIVE-16393,Closed,Fixed,06/Apr/17 00:02,3.0.0,3.0.0
+1082,HIVE-16388,Closed,Fixed,05/Apr/17 18:27,3.0.0,3.0.0
+1083,HIVE-16385,Closed,Fixed,05/Apr/17 18:06,"2.3.0, 3.0.0","2.0.0, 2.1.0"
+1084,HIVE-16384,Closed,Fixed,05/Apr/17 18:03,3.0.0,3.0.0
+1085,HIVE-16380,Closed,Fixed,05/Apr/17 04:35,"2.3.0, 2.4.0, 3.0.0",3.0.0
+1086,HIVE-16357,Closed,Cannot Reproduce,03/Apr/17 13:12,3.0.0,"2.3.0, 3.0.0"
+1087,HIVE-16347,Closed,Fixed,31/Mar/17 17:13,3.0.0,2.2.0
+1088,HIVE-16335,Closed,Fixed,30/Mar/17 16:26,"2.4.0, 3.0.0","2.1.1, 2.2.0"
+1089,HIVE-16333,Closed,Fixed,30/Mar/17 06:27,3.0.0,"2.2.0, 3.0.0"
+1090,HIVE-16329,Closed,Fixed,29/Mar/17 22:43,3.0.0,"2.2.0, 3.0.0"
+1091,HIVE-16316,Closed,Fixed,28/Mar/17 15:00,3.0.0,3.0.0
+1092,HIVE-16310,Resolved,Fixed,28/Mar/17 05:26,2.3.0,2.3.0
+1093,HIVE-16301,Resolved,Fixed,27/Mar/17 02:36,2.3.0,2.3.0
+1094,HIVE-16299,Closed,Fixed,26/Mar/17 20:16,3.0.0,2.2.0
+1095,HIVE-16287,Closed,Fixed,23/Mar/17 20:34,"1.3.0, 2.3.0, 2.4.0, 3.0.0",2.1.0
+1096,HIVE-16282,Closed,Fixed,22/Mar/17 18:48,3.0.0,2.2.0
+1097,HIVE-16274,Resolved,Fixed,21/Mar/17 22:00,2.3.0,2.1.0
+1098,HIVE-16254,Closed,Fixed,20/Mar/17 09:04,3.0.0,2.2.0
+1099,HIVE-16219,Closed,Fixed,15/Mar/17 08:51,"2.3.0, 3.0.0",2.2.0
+1100,HIVE-16208,Resolved,Fixed,14/Mar/17 19:03,2.3.0,2.2.0
+1101,HIVE-16193,Closed,Fixed,13/Mar/17 23:44,"2.2.0, 2.3.0, 3.0.0",2.2.0
+1102,HIVE-16190,Resolved,Fixed,13/Mar/17 21:45,2.3.0,2.2.0
+1103,HIVE-16187,Resolved,Fixed,13/Mar/17 11:46,2.3.0,2.2.0
+1104,HIVE-16180,Resolved,Fixed,11/Mar/17 00:39,2.3.0,2.2.0
+1105,HIVE-16174,Closed,Fixed,10/Mar/17 09:33,3.0.0,2.2.0
+1106,HIVE-16163,Resolved,Fixed,10/Mar/17 00:06,2.3.0,2.1.0
+1107,HIVE-16155,Resolved,Fixed,09/Mar/17 11:37,2.3.0,2.1.1
+1108,HIVE-16150,Resolved,Fixed,08/Mar/17 22:34,2.3.0,2.2.0
+1109,HIVE-16117,Closed,Fixed,06/Mar/17 08:55,"2.2.0, 3.0.0",2.2.0
+1110,HIVE-16113,Closed,Fixed,05/Mar/17 12:34,3.0.0,"1.2.1, 2.1.1, 2.2.0"
+1111,HIVE-16109,Resolved,Fixed,03/Mar/17 23:49,2.3.0,2.2.0
+1112,HIVE-16107,Resolved,Fixed,03/Mar/17 20:23,2.3.0,"2.0.1, 2.1.1"
+1113,HIVE-16106,Resolved,Fixed,03/Mar/17 20:17,2.3.0,2.1.1
+1114,HIVE-16103,Resolved,Fixed,03/Mar/17 19:39,2.3.0,2.2.0
+1115,HIVE-16102,Resolved,Fixed,03/Mar/17 09:53,2.3.0,"1.3.0, 2.2.0"
+1116,HIVE-16101,Resolved,Fixed,03/Mar/17 09:38,2.3.0,2.2.0
+1117,HIVE-16094,Closed,Fixed,02/Mar/17 22:49,2.2.0,2.2.0
+1118,HIVE-16087,Resolved,Fixed,02/Mar/17 08:58,2.3.0,2.2.0
+1119,HIVE-16074,Resolved,Fixed,01/Mar/17 08:51,2.3.0,2.1.1
+1120,HIVE-16072,Resolved,Fixed,01/Mar/17 03:52,2.3.0,2.2.0
+1121,HIVE-16070,Resolved,Fixed,01/Mar/17 03:01,2.3.0,2.2.0
+1122,HIVE-16061,Closed,Fixed,28/Feb/17 20:01,3.0.0,2.1.1
+1123,HIVE-16057,Closed,Fixed,28/Feb/17 14:03,3.0.0,2.2.0
+1124,HIVE-16054,Resolved,Fixed,28/Feb/17 05:33,2.3.0,2.2.0
+1125,HIVE-16050,Closed,Fixed,27/Feb/17 19:17,2.2.0,2.2.0
+1126,HIVE-16043,Resolved,Fixed,27/Feb/17 04:33,2.3.0,2.2.0
+1127,HIVE-16034,Closed,Fixed,24/Feb/17 11:44,2.2.0,2.2.0
+1128,HIVE-16033,Closed,Fixed,24/Feb/17 04:20,2.2.0,2.2.0
+1129,HIVE-16028,Closed,Fixed,23/Feb/17 19:16,2.2.0,2.2.0
+1130,HIVE-16024,Resolved,Fixed,23/Feb/17 15:09,2.3.0,2.2.0
+1131,HIVE-16023,Closed,Fixed,23/Feb/17 12:03,2.2.0,2.2.0
+1132,HIVE-16013,Closed,Fixed,22/Feb/17 22:37,2.2.0,2.2.0
+1133,HIVE-16007,Closed,Fixed,22/Feb/17 13:41,"2.3.0, 3.0.0",2.2.0
+1134,HIVE-15999,Closed,Fixed,21/Feb/17 22:05,2.2.0,2.2.0
+1135,HIVE-15994,Closed,Fixed,21/Feb/17 10:24,2.2.0,2.2.0
+1136,HIVE-15992,Resolved,Fixed,21/Feb/17 03:51,2.3.0,2.2.0
+1137,HIVE-15990,Closed,Fixed,20/Feb/17 17:30,2.2.0,2.2.0
+1138,HIVE-15971,Closed,Fixed,17/Feb/17 22:55,2.2.0,2.2.0
+1139,HIVE-15958,Closed,Fixed,17/Feb/17 02:23,2.2.0,2.2.0
+1140,HIVE-15951,Closed,Fixed,16/Feb/17 22:14,2.2.0,2.2.0
+1141,HIVE-15934,Resolved,Fixed,16/Feb/17 00:26,2.3.0,2.2.0
+1142,HIVE-15914,Closed,Fixed,14/Feb/17 17:06,2.2.0,2.2.0
+1143,HIVE-15906,Closed,Fixed,14/Feb/17 04:48,2.2.0,2.2.0
+1144,HIVE-15903,Resolved,Fixed,14/Feb/17 02:30,2.3.0,"2.1.0, 2.1.1"
+1145,HIVE-15902,Closed,Fixed,14/Feb/17 02:16,2.2.0,2.1.0
+1146,HIVE-15900,Closed,Fixed,13/Feb/17 22:40,2.2.0,2.2.0
+1147,HIVE-15891,Closed,Fixed,13/Feb/17 18:52,2.2.0,2.2.0
+1148,HIVE-15886,Closed,Fixed,12/Feb/17 04:54,2.2.0,2.2.0
+1149,HIVE-15877,Closed,Fixed,10/Feb/17 19:00,2.2.0,2.2.0
+1150,HIVE-15874,Closed,Fixed,10/Feb/17 03:43,2.2.0,"1.2.1, 2.1.1"
+1151,HIVE-15867,Resolved,Fixed,09/Feb/17 22:31,2.3.0,2.1.1
+1152,HIVE-15862,Resolved,Fixed,09/Feb/17 13:00,2.2.0,2.1.0
+1153,HIVE-15859,Resolved,Fixed,09/Feb/17 10:43,2.3.0,2.1.1
+1154,HIVE-15855,Resolved,Fixed,09/Feb/17 01:56,2.3.0,2.2.0
+1155,HIVE-15850,Closed,Fixed,08/Feb/17 12:27,2.2.0,2.2.0
+1156,HIVE-15849,Resolved,Fixed,08/Feb/17 12:05,2.3.0,2.2.0
+1157,HIVE-15847,Resolved,Fixed,08/Feb/17 05:06,2.3.0,2.2.0
+1158,HIVE-15827,Closed,Fixed,06/Feb/17 19:50,2.2.0,2.2.0
+1159,HIVE-15809,Resolved,Fixed,04/Feb/17 00:20,2.3.0,2.2.0
+1160,HIVE-15806,Closed,Fixed,03/Feb/17 19:15,2.2.0,2.2.0
+1161,HIVE-15804,Closed,Fixed,03/Feb/17 16:58,2.2.0,2.2.0
+1162,HIVE-15782,Resolved,Fixed,01/Feb/17 18:46,2.3.0,2.2.0
+1163,HIVE-15778,Resolved,Fixed,01/Feb/17 04:20,2.3.0,2.1.1
+1164,HIVE-15769,Closed,Fixed,31/Jan/17 17:55,2.2.0,"2.0.0, 2.1.0"
+1165,HIVE-15767,Closed,Fixed,31/Jan/17 12:21,3.0.0,"1.2.1, 2.1.1"
+1166,HIVE-15766,Resolved,Fixed,31/Jan/17 11:56,2.3.0,"2.0.0, 2.1.1"
+1167,HIVE-15760,Closed,Fixed,31/Jan/17 01:04,2.2.0,2.2.0
+1168,HIVE-15754,Resolved,Fixed,30/Jan/17 19:42,2.3.0,2.2.0
+1169,HIVE-15752,Closed,Fixed,30/Jan/17 17:46,2.2.0,"1.2.0, 1.2.1, 2.0.0, 2.1.0, 2.1.1"
+1170,HIVE-15750,Closed,Fixed,30/Jan/17 12:28,2.2.0,2.2.0
+1171,HIVE-15746,Resolved,Fixed,27/Jan/17 22:52,2.3.0,2.1.1
+1172,HIVE-15739,Closed,Fixed,26/Jan/17 21:34,3.0.0,2.2.0
+1173,HIVE-15686,Resolved,Fixed,20/Jan/17 22:29,2.4.0,2.2.0
+1174,HIVE-15685,Closed,Fixed,20/Jan/17 22:21,2.2.0,2.2.0
+1175,HIVE-15679,Resolved,Fixed,20/Jan/17 10:33,2.3.0,"2.1.1, 2.2.0"
+1176,HIVE-15669,Closed,Fixed,20/Jan/17 01:03,2.2.0,2.2.0
+1177,HIVE-15655,Closed,Fixed,18/Jan/17 03:54,2.2.0,2.2.0
+1178,HIVE-15651,Closed,Fixed,17/Jan/17 22:26,2.2.0,2.2.0
+1179,HIVE-15650,Closed,Fixed,17/Jan/17 21:24,2.2.0,2.2.0
+1180,HIVE-15646,Closed,Fixed,17/Jan/17 06:48,2.2.0,2.1.0
+1181,HIVE-15644,Resolved,Fixed,17/Jan/17 00:10,2.3.0,2.2.0
+1182,HIVE-15639,Closed,Fixed,16/Jan/17 12:55,3.0.0,2.2.0
+1183,HIVE-15637,Closed,Fixed,16/Jan/17 11:19,3.0.0,2.2.0
+1184,HIVE-15636,Closed,Fixed,16/Jan/17 11:06,3.0.0,2.2.0
+1185,HIVE-15635,Closed,Fixed,16/Jan/17 10:38,3.0.0,2.2.0
+1186,HIVE-15633,Closed,Fixed,16/Jan/17 09:29,2.2.0,2.2.0
+1187,HIVE-15632,Closed,Fixed,16/Jan/17 09:21,3.0.0,2.2.0
+1188,HIVE-15630,Closed,Fixed,15/Jan/17 06:21,3.0.0,2.2.0
+1189,HIVE-15589,Closed,Fixed,11/Jan/17 23:25,2.2.0,2.2.0
+1190,HIVE-15583,Closed,Fixed,11/Jan/17 13:43,2.2.0,2.2.0
+1191,HIVE-15576,Resolved,Fixed,10/Jan/17 23:53,2.3.0,2.2.0
+1192,HIVE-15563,Resolved,Fixed,08/Jan/17 21:57,2.3.0,2.2.0
+1193,HIVE-15552,Closed,Fixed,06/Jan/17 13:55,3.0.0,2.1.0
+1194,HIVE-15517,Closed,Fixed,27/Dec/16 11:26,2.2.0,"1.2.1, 2.0.0, 2.1.0"
+1195,HIVE-15503,Closed,Fixed,23/Dec/16 01:26,2.2.0,2.2.0
+1196,HIVE-15494,Resolved,Fixed,22/Dec/16 00:39,2.3.0,2.2.0
+1197,HIVE-15493,Closed,Fixed,22/Dec/16 00:31,2.2.0,2.2.0
+1198,HIVE-15487,Closed,Fixed,21/Dec/16 19:50,2.2.0,2.2.0
+1199,HIVE-15484,Resolved,Fixed,21/Dec/16 08:56,2.3.0,2.2.0
+1200,HIVE-15483,Closed,Fixed,21/Dec/16 06:48,3.0.0,"1.3.0, 2.2.0"
+1201,HIVE-15482,Closed,Fixed,21/Dec/16 05:53,2.2.0,2.2.0
+1202,HIVE-15476,Resolved,Fixed,20/Dec/16 19:25,2.3.0,2.2.0
+1203,HIVE-15474,Closed,Fixed,20/Dec/16 11:57,2.2.0,2.2.0
+1204,HIVE-15472,Closed,Fixed,20/Dec/16 06:07,2.2.0,2.2.0
+1205,HIVE-15459,Closed,Fixed,16/Dec/16 23:38,2.2.0,2.2.0
+1206,HIVE-15445,Closed,Fixed,16/Dec/16 16:51,2.2.0,2.2.0
+1207,HIVE-15442,Closed,Fixed,16/Dec/16 03:02,3.0.0,3.0.0
+1208,HIVE-15438,Resolved,Fixed,15/Dec/16 18:23,2.3.0,"1.1.0, 2.2.0"
+1209,HIVE-15421,Resolved,Fixed,12/Dec/16 22:24,2.3.0,2.2.0
+1210,HIVE-15417,Closed,Fixed,12/Dec/16 14:21,2.2.0,2.2.0
+1211,HIVE-15407,Resolved,Fixed,09/Dec/16 09:58,2.3.0,2.2.0
+1212,HIVE-15403,Closed,Fixed,09/Dec/16 07:56,2.2.0,2.2.0
+1213,HIVE-15386,Resolved,Fixed,08/Dec/16 05:54,2.3.0,2.1.1
+1214,HIVE-15378,Resolved,Fixed,07/Dec/16 08:55,2.3.0,2.2.0
+1215,HIVE-15376,Closed,Fixed,06/Dec/16 23:46,2.2.0,2.2.0
+1216,HIVE-15369,Closed,Fixed,06/Dec/16 14:56,2.2.0,2.2.0
+1217,HIVE-15362,Resolved,Fixed,05/Dec/16 22:49,2.3.0,2.2.0
+1218,HIVE-15361,Resolved,Fixed,05/Dec/16 18:24,2.3.0,2.2.0
+1219,HIVE-15355,Closed,Fixed,04/Dec/16 21:47,2.2.0,"2.1.0, 2.2.0"
+1220,HIVE-15347,Closed,Fixed,02/Dec/16 22:10,2.2.0,2.2.0
+1221,HIVE-15329,Resolved,Fixed,01/Dec/16 14:52,2.3.0,"2.0.0, 2.1.0"
+1222,HIVE-15327,Closed,Fixed,01/Dec/16 11:28,2.2.0,"1.3.0, 2.2.0"
+1223,HIVE-15311,Closed,Fixed,29/Nov/16 23:52,2.2.0,"1.2.0, 2.0.0, 2.1.0"
+1224,HIVE-15308,Closed,Fixed,29/Nov/16 20:23,2.2.0,2.1.0
+1225,HIVE-15306,Closed,Fixed,29/Nov/16 19:01,"2.1.1, 2.2.0","2.1.1, 2.2.0"
+1226,HIVE-15297,Closed,Fixed,28/Nov/16 21:44,2.2.0,"2.0.0, 2.1.0"
+1227,HIVE-15295,Closed,Fixed,28/Nov/16 20:51,"2.1.1, 2.2.0","2.1.0, 2.2.0"
+1228,HIVE-15291,Closed,Fixed,28/Nov/16 09:02,2.2.0,2.1.0
+1229,HIVE-15283,Resolved,Fixed,24/Nov/16 10:21,2.3.0,2.2.0
+1230,HIVE-15282,Resolved,Fixed,24/Nov/16 10:15,2.3.0,2.2.0
+1231,HIVE-15275,Resolved,Fixed,23/Nov/16 18:38,2.3.0,2.2.0
+1232,HIVE-15273,Closed,Fixed,23/Nov/16 16:01,2.2.0,2.2.0
+1233,HIVE-15267,Closed,Fixed,22/Nov/16 21:15,3.0.0,"1.2.1, 2.1.0"
+1234,HIVE-15266,Resolved,Fixed,22/Nov/16 19:29,2.3.0,2.2.0
+1235,HIVE-15257,Resolved,Fixed,22/Nov/16 05:59,2.3.0,"2.1.0, 2.2.0"
+1236,HIVE-15251,Closed,Fixed,21/Nov/16 18:57,2.2.0,2.2.0
+1237,HIVE-15247,Resolved,Fixed,18/Nov/16 23:37,2.3.0,"1.2.1, 2.0.0, 2.1.0"
+1238,HIVE-15239,Resolved,Fixed,18/Nov/16 04:17,2.3.0,"1.2.0, 2.1.0"
+1239,HIVE-15237,Resolved,Fixed,18/Nov/16 00:05,2.3.0,2.1.0
+1240,HIVE-15234,Closed,Fixed,17/Nov/16 20:03,2.2.0,"2.0.0, 2.1.0"
+1241,HIVE-15233,Resolved,Fixed,17/Nov/16 19:54,2.3.0,2.2.0
+1242,HIVE-15211,Closed,Fixed,15/Nov/16 20:33,2.2.0,2.2.0
+1243,HIVE-15196,Closed,Fixed,14/Nov/16 10:33,2.2.0,2.2.0
+1244,HIVE-15181,Closed,Fixed,10/Nov/16 23:05,"1.3.0, 2.1.1, 2.2.0","1.2.1, 2.1.0"
+1245,HIVE-15160,Closed,Fixed,08/Nov/16 18:42,3.0.0,"2.0.0, 2.1.0, 2.2.0, 2.3.0"
+1246,HIVE-15155,Resolved,Fixed,08/Nov/16 13:02,2.3.0,2.1.0
+1247,HIVE-15143,Closed,Fixed,07/Nov/16 20:56,2.2.0,2.2.0
+1248,HIVE-15137,Closed,Fixed,05/Nov/16 04:21,"2.1.1, 2.2.0","2.1.1, 2.2.0"
+1249,HIVE-15123,Closed,Fixed,03/Nov/16 23:38,"2.1.1, 2.2.0","2.1.0, 2.2.0"
+1250,HIVE-15099,Closed,Fixed,31/Oct/16 18:07,"1.3.0, 2.1.1, 2.2.0","1.2.1, 1.3.0, 2.1.0, 2.2.0"
+1251,HIVE-15096,Resolved,Fixed,29/Oct/16 03:00,2.3.0,"2.0.0, 2.0.1, 2.1.0"
+1252,HIVE-15091,Resolved,Fixed,28/Oct/16 13:31,2.3.0,2.2.0
+1253,HIVE-15090,Closed,Fixed,28/Oct/16 12:11,"2.1.1, 2.2.0","1.3.0, 2.0.1, 2.1.0, 2.2.0"
+1254,HIVE-15070,Closed,Fixed,26/Oct/16 14:11,2.2.0,2.1.0
+1255,HIVE-15065,Closed,Fixed,26/Oct/16 01:10,2.2.0,2.2.0
+1256,HIVE-15054,Resolved,Fixed,25/Oct/16 15:53,2.3.0,2.0.0
+1257,HIVE-15046,Closed,Fixed,24/Oct/16 21:16,2.2.0,2.2.0
+1258,HIVE-15036,Closed,Fixed,22/Oct/16 22:33,2.2.0,2.2.0
+1259,HIVE-15035,Closed,Fixed,22/Oct/16 22:22,"2.2.0, 2.3.0",2.1.0
+1260,HIVE-15030,Resolved,Fixed,21/Oct/16 12:08,2.3.0,2.1.0
+1261,HIVE-15029,Closed,Fixed,21/Oct/16 11:29,2.2.0,2.1.0
+1262,HIVE-14991,Resolved,Fixed,17/Oct/16 21:03,2.3.0,2.2.0
+1263,HIVE-14982,Closed,Fixed,16/Oct/16 19:01,2.2.0,2.1.0
+1264,HIVE-14966,Closed,Fixed,14/Oct/16 20:25,2.2.0,"1.2.1, 2.1.0"
+1265,HIVE-14960,Resolved,Fixed,14/Oct/16 15:16,2.3.0,2.1.0
+1266,HIVE-14959,Closed,Fixed,14/Oct/16 07:13,"2.1.1, 2.2.0",2.1.0
+1267,HIVE-14924,Closed,Fixed,10/Oct/16 22:40,2.2.0,"2.1.0, 2.2.0"
+1268,HIVE-14873,Closed,Fixed,01/Oct/16 06:44,2.2.0,2.1.0
+1269,HIVE-14865,Closed,Fixed,30/Sep/16 01:54,2.2.0,2.1.1
+1270,HIVE-14843,Closed,Fixed,27/Sep/16 05:34,2.2.0,2.2.0
+1271,HIVE-14839,Resolved,Fixed,25/Sep/16 12:07,2.3.0,2.1.0
+1272,HIVE-14837,Closed,Fixed,24/Sep/16 04:37,2.2.0,2.2.0
+1273,HIVE-14831,Closed,Fixed,23/Sep/16 18:44,2.2.0,2.2.0
+1274,HIVE-14820,Resolved,Fixed,22/Sep/16 19:45,2.3.0,2.0.1
+1275,HIVE-14819,Closed,Fixed,22/Sep/16 19:16,"2.1.0, 2.2.0",2.1.0
+1276,HIVE-14814,Closed,Fixed,22/Sep/16 00:57,"1.3.0, 2.1.1, 2.2.0","1.3.0, 2.1.0, 2.2.0"
+1277,HIVE-14805,Closed,Fixed,21/Sep/16 16:39,2.2.0,2.0.1
+1278,HIVE-14798,Resolved,Fixed,20/Sep/16 14:30,2.1.1,2.1.0
+1279,HIVE-14783,Closed,Fixed,17/Sep/16 01:15,2.2.0,2.2.0
+1280,HIVE-14779,Closed,Fixed,16/Sep/16 18:18,"2.1.1, 2.2.0","1.3.0, 2.1.0"
+1281,HIVE-14773,Closed,Fixed,16/Sep/16 12:51,2.2.0,"1.2.0, 2.1.0"
+1282,HIVE-14766,Closed,Fixed,15/Sep/16 20:20,"2.1.1, 2.2.0","2.1.1, 2.2.0"
+1283,HIVE-14751,Closed,Fixed,14/Sep/16 07:27,2.2.0,2.2.0
+1284,HIVE-14739,Closed,Fixed,12/Sep/16 21:33,2.2.0,2.2.0
+1285,HIVE-14727,Resolved,Fixed,09/Sep/16 09:04,2.3.0,2.2.0
+1286,HIVE-14726,Closed,Fixed,08/Sep/16 23:15,2.2.0,2.1.0
+1287,HIVE-14707,Resolved,Fixed,06/Sep/16 17:29,2.3.0,2.2.0
+1288,HIVE-14706,Closed,Fixed,06/Sep/16 12:55,2.2.0,"2.1.0, 2.1.1"
+1289,HIVE-14697,Closed,Fixed,02/Sep/16 16:54,"2.1.1, 2.2.0",2.1.0
+1290,HIVE-14694,Resolved,Fixed,02/Sep/16 08:34,2.3.0,2.2.0
+1291,HIVE-14690,Closed,Fixed,01/Sep/16 22:39,"1.3.0, 2.2.0","1.3.0, 2.1.0"
+1292,HIVE-14686,Resolved,Fixed,01/Sep/16 09:33,2.3.0,"1.2.1, 2.1.0"
+1293,HIVE-14678,Closed,Fixed,31/Aug/16 14:47,3.0.0,"2.1.0, 2.2.0"
+1294,HIVE-14674,Closed,Fixed,31/Aug/16 00:29,"1.3.0, 2.1.1, 2.2.0","1.3.0, 2.1.0"
+1295,HIVE-14658,Resolved,Fixed,27/Aug/16 07:14,2.3.0,"1.3.0, 2.2.0"
+1296,HIVE-14652,Closed,Fixed,26/Aug/16 01:33,"2.1.1, 2.2.0","2.1.0, 2.2.0"
+1297,HIVE-14648,Closed,Fixed,25/Aug/16 22:47,2.2.0,2.2.0
+1298,HIVE-14647,Resolved,Fixed,25/Aug/16 20:51,2.3.0,2.2.0
+1299,HIVE-14634,Resolved,Fixed,25/Aug/16 18:49,2.3.0,"1.3.0, 2.1.1"
+1300,HIVE-14624,Closed,Fixed,24/Aug/16 21:10,2.2.0,2.2.0
+1301,HIVE-14619,Closed,Fixed,24/Aug/16 19:05,"2.1.1, 2.2.0",2.1.0
+1302,HIVE-14617,Resolved,Fixed,24/Aug/16 16:30,2.3.0,2.1.0
+1303,HIVE-14607,Closed,Fixed,22/Aug/16 23:04,2.2.0,2.2.0
+1304,HIVE-14591,Closed,Fixed,19/Aug/16 23:40,"2.1.1, 2.2.0","1.2.1, 2.1.0"
+1305,HIVE-14570,Resolved,Fixed,18/Aug/16 09:23,2.3.0,"1.3.0, 2.2.0"
+1306,HIVE-14566,Closed,Fixed,18/Aug/16 01:35,"2.1.1, 2.2.0","2.0.1, 2.1.0, 2.2.0"
+1307,HIVE-14564,Closed,Fixed,18/Aug/16 00:11,3.0.0,2.1.0
+1308,HIVE-14563,Closed,Fixed,17/Aug/16 23:49,"2.1.1, 2.2.0",2.1.0
+1309,HIVE-14556,Resolved,Fixed,17/Aug/16 09:19,2.3.0,"1.3.0, 2.2.0"
+1310,HIVE-14530,Closed,Fixed,12/Aug/16 08:17,"2.1.1, 2.2.0",2.1.0
+1311,HIVE-14529,Resolved,Duplicate,12/Aug/16 08:17,2.1.1,2.1.0
+1312,HIVE-14483,Closed,Fixed,09/Aug/16 14:22,"1.3.0, 2.0.2, 2.1.1, 2.2.0",2.1.0
+1313,HIVE-14479,Closed,Fixed,08/Aug/16 22:56,"1.3.0, 2.1.1, 2.2.0",2.2.0
+1314,HIVE-14463,Resolved,Fixed,08/Aug/16 08:21,2.3.0,2.1.0
+1315,HIVE-14448,Closed,Fixed,05/Aug/16 23:50,"2.1.1, 2.2.0",2.2.0
+1316,HIVE-14447,Closed,Fixed,05/Aug/16 21:54,"1.3.0, 2.1.1, 2.2.0","1.3.0, 2.1.1, 2.2.0"
+1317,HIVE-14446,Closed,Fixed,05/Aug/16 21:51,"2.1.1, 2.2.0","1.3.0, 2.1.1, 2.2.0"
+1318,HIVE-14435,Closed,Fixed,05/Aug/16 09:47,"2.1.1, 2.2.0",2.2.0
+1319,HIVE-14433,Closed,Fixed,04/Aug/16 21:02,"2.1.1, 2.2.0","2.0.1, 2.1.1, 2.2.0"
+1320,HIVE-14424,Closed,Fixed,04/Aug/16 08:25,"2.1.1, 2.2.0",2.1.0
+1321,HIVE-14420,Closed,Fixed,04/Aug/16 00:32,2.2.0,"2.1.1, 2.2.0"
+1322,HIVE-14414,Closed,Fixed,03/Aug/16 18:26,"1.3.0, 2.1.1, 2.2.0","1.3.0, 2.1.1, 2.2.0"
+1323,HIVE-14402,Closed,Fixed,02/Aug/16 18:17,2.1.1,"2.1.0, 2.2.0"
+1324,HIVE-14400,Closed,Fixed,02/Aug/16 00:13,"2.1.1, 2.2.0",2.2.0
+1325,HIVE-14397,Closed,Fixed,01/Aug/16 07:57,"2.1.1, 2.2.0","2.1.0, 2.2.0"
+1326,HIVE-14394,Closed,Fixed,31/Jul/16 19:10,"2.1.1, 2.2.0",2.1.0
+1327,HIVE-14393,Closed,Fixed,31/Jul/16 00:41,"2.1.1, 2.2.0","2.0.0, 2.1.0"
+1328,HIVE-14384,Resolved,Fixed,29/Jul/16 18:20,2.3.0,2.2.0
+1329,HIVE-14381,Closed,Fixed,29/Jul/16 06:22,"1.3.0, 2.1.1, 2.2.0","1.3.0, 2.1.0, 2.2.0"
+1330,HIVE-14367,Closed,Fixed,28/Jul/16 02:20,2.2.0,"2.0.0, 2.1.0"
+1331,HIVE-14363,Closed,Fixed,27/Jul/16 21:44,"2.1.1, 2.2.0",2.2.0
+1332,HIVE-14360,Closed,Fixed,27/Jul/16 16:16,2.2.0,2.2.0
+1333,HIVE-14357,Closed,Fixed,27/Jul/16 12:35,"2.1.1, 2.2.0",2.1.1
+1334,HIVE-14355,Closed,Fixed,27/Jul/16 09:03,"2.1.1, 2.2.0","2.1.0, 2.2.0"
+1335,HIVE-14350,Closed,Fixed,27/Jul/16 02:47,"1.3.0, 2.1.1, 2.2.0","1.3.0, 2.1.1"
+1336,HIVE-14349,Closed,Fixed,26/Jul/16 23:53,"1.3.0, 2.1.1, 2.2.0","1.2.1, 2.2.0"
+1337,HIVE-14348,Resolved,Fixed,26/Jul/16 23:13,2.3.0,"1.2.1, 2.1.1"
+1338,HIVE-14346,Resolved,Fixed,26/Jul/16 21:18,2.3.0,"2.1.1, 2.2.0"
+1339,HIVE-14345,Resolved,Fixed,26/Jul/16 20:28,2.3.0,"1.1.0, 2.2.0"
+1340,HIVE-14343,Resolved,Fixed,26/Jul/16 18:33,2.3.0,2.2.0
+1341,HIVE-14342,Closed,Fixed,26/Jul/16 18:16,"2.1.1, 2.2.0",2.0.0
+1342,HIVE-14339,Closed,Fixed,26/Jul/16 17:21,"1.3.0, 2.1.1, 2.2.0","1.3.0, 2.1.0, 2.2.0"
+1343,HIVE-14338,Closed,Fixed,26/Jul/16 17:19,"2.1.1, 2.2.0",2.1.0
+1344,HIVE-14333,Closed,Fixed,26/Jul/16 01:29,"2.1.1, 2.2.0","2.1.0, 2.2.0"
+1345,HIVE-14330,Closed,Fixed,25/Jul/16 22:25,"1.3.0, 2.1.1, 2.2.0","1.3.0, 2.1.0"
+1346,HIVE-14326,Closed,Fixed,25/Jul/16 13:04,"2.1.1, 2.2.0","2.1.0, 2.2.0"
+1347,HIVE-14324,Closed,Fixed,25/Jul/16 08:23,"2.1.1, 2.2.0","1.3.0, 2.0.0, 2.1.0, 2.2.0"
+1348,HIVE-14322,Closed,Fixed,24/Jul/16 06:42,"2.0.2, 2.1.1, 2.2.0","2.0.0, 2.0.1, 2.1.0"
+1349,HIVE-14313,Closed,Fixed,22/Jul/16 19:02,2.2.0,2.2.0
+1350,HIVE-14311,Closed,Fixed,22/Jul/16 17:56,"1.3.0, 2.1.1, 2.2.0","1.3.0, 2.1.1, 2.2.0"
+1351,HIVE-14310,Closed,Fixed,21/Jul/16 22:52,"2.1.1, 2.2.0","2.1.0, 2.2.0"
+1352,HIVE-14308,Closed,Fixed,21/Jul/16 15:47,"2.1.1, 2.2.0",2.1.0
+1353,HIVE-14296,Closed,Fixed,20/Jul/16 19:22,"2.1.1, 2.2.0",2.0.0
+1354,HIVE-14295,Resolved,Fixed,20/Jul/16 11:43,2.3.0,"1.3.0, 2.1.0"
+1355,HIVE-14294,Resolved,Fixed,20/Jul/16 04:28,2.3.0,"1.2.1, 2.1.0"
+1356,HIVE-14293,Closed,Fixed,19/Jul/16 23:56,"2.1.1, 2.2.0",2.1.0
+1357,HIVE-14292,Closed,Fixed,19/Jul/16 23:54,"1.3.0, 2.1.1, 2.2.0","1.3.0, 2.1.0"
+1358,HIVE-14278,Closed,Fixed,19/Jul/16 08:48,2.2.0,2.2.0
+1359,HIVE-14268,Closed,Fixed,18/Jul/16 15:43,"2.1.1, 2.2.0",2.2.0
+1360,HIVE-14258,Resolved,Fixed,16/Jul/16 05:06,2.1.0,2.1.0
+1361,HIVE-14254,Resolved,Fixed,15/Jul/16 21:05,2.3.0,2.1.0
+1362,HIVE-14253,Closed,Fixed,15/Jul/16 20:15,"2.1.1, 2.2.0","2.1.1, 2.2.0"
+1363,HIVE-14251,Closed,Fixed,15/Jul/16 18:25,2.2.0,2.0.0
+1364,HIVE-14244,Closed,Fixed,14/Jul/16 23:54,"2.1.1, 2.2.0","1.3.0, 2.1.0"
+1365,HIVE-14241,Closed,Fixed,14/Jul/16 20:04,"1.3.0, 2.1.1, 2.2.0","1.3.0, 2.0.0"
+1366,HIVE-14236,Closed,Fixed,14/Jul/16 04:42,"2.1.1, 2.2.0","2.0.0, 2.1.0"
+1367,HIVE-14234,Resolved,Fixed,14/Jul/16 00:59,2.3.0,"1.3.0, 2.1.0"
+1368,HIVE-14229,Closed,Fixed,13/Jul/16 20:03,2.2.0,2.0.0
+1369,HIVE-14223,Closed,Fixed,13/Jul/16 03:45,"2.1.1, 2.2.0","2.0.1, 2.1.1, 2.2.0"
+1370,HIVE-14222,Closed,Fixed,13/Jul/16 00:23,"1.3.0, 2.0.2, 2.1.1, 2.2.0","1.2.1, 2.2.0"
+1371,HIVE-14215,Closed,Fixed,12/Jul/16 11:47,"2.1.1, 2.2.0",2.2.0
+1372,HIVE-14210,Closed,Fixed,11/Jul/16 23:58,"1.2.2, 1.3.0, 2.1.1, 2.2.0","1.2.1, 2.0.0, 2.1.0"
+1373,HIVE-14197,Closed,Fixed,08/Jul/16 17:45,"2.1.1, 2.2.0","2.1.0, 2.2.0"
+1374,HIVE-14195,Closed,Fixed,08/Jul/16 15:50,"2.1.1, 2.2.0",2.2.0
+1375,HIVE-14192,Closed,Fixed,08/Jul/16 00:30,"1.3.0, 2.1.1, 2.2.0","1.3.0, 2.1.0"
+1376,HIVE-14184,Closed,Fixed,07/Jul/16 11:29,"2.1.1, 2.2.0","2.1.0, 2.2.0"
+1377,HIVE-14178,Closed,Fixed,07/Jul/16 00:13,"2.1.1, 2.2.0","1.2.1, 2.1.0, 2.2.0"
+1378,HIVE-14176,Closed,Fixed,06/Jul/16 22:45,"2.1.1, 2.2.0","2.1.0, 2.2.0"
+1379,HIVE-14175,Closed,Fixed,06/Jul/16 22:04,"2.1.1, 2.2.0","1.2.1, 2.1.0"
+1380,HIVE-14155,Resolved,Fixed,02/Jul/16 18:25,2.3.0,2.2.0
+1381,HIVE-14153,Closed,Fixed,01/Jul/16 23:51,"1.3.0, 2.1.1, 2.2.0","1.2.1, 2.0.0, 2.0.1, 2.1.0"
+1382,HIVE-14149,Closed,Fixed,01/Jul/16 21:24,2.2.0,2.1.0
+1383,HIVE-14147,Closed,Fixed,01/Jul/16 15:41,"1.3.0, 2.1.1, 2.2.0",2.2.0
+1384,HIVE-14146,Resolved,Fixed,01/Jul/16 13:22,2.3.0,2.2.0
+1385,HIVE-14144,Closed,Fixed,01/Jul/16 07:20,"2.1.1, 2.2.0",2.1.0
+1386,HIVE-14142,Resolved,Fixed,01/Jul/16 02:27,2.3.0,2.2.0
+1387,HIVE-14141,Resolved,Fixed,30/Jun/16 21:45,2.3.0,2.1.0
+1388,HIVE-14135,Resolved,Fixed,29/Jun/16 23:59,2.3.0,2.2.0
+1389,HIVE-14132,Closed,Fixed,29/Jun/16 22:48,"2.1.1, 2.2.0","2.0.0, 2.1.0"
+1390,HIVE-14126,Resolved,Fixed,29/Jun/16 17:59,2.3.0,2.1.0
+1391,HIVE-14122,Closed,Fixed,29/Jun/16 07:50,"2.1.1, 2.2.0","2.1.0, 2.2.0"
+1392,HIVE-14115,Resolved,Fixed,28/Jun/16 05:52,2.3.0,2.1.0
+1393,HIVE-14109,Resolved,Fixed,27/Jun/16 21:26,2.3.0,2.2.0
+1394,HIVE-14098,Closed,Fixed,27/Jun/16 09:01,"2.1.1, 2.2.0",2.1.0
+1395,HIVE-14092,Closed,Fixed,24/Jun/16 21:19,"2.1.1, 2.2.0",2.2.0
+1396,HIVE-14090,Closed,Fixed,24/Jun/16 16:15,"2.1.1, 2.2.0","1.1.0, 2.1.0"
+1397,HIVE-14089,Closed,Fixed,24/Jun/16 08:17,2.2.0,2.2.0
+1398,HIVE-14083,Closed,Fixed,23/Jun/16 19:05,"2.1.1, 2.2.0",2.2.0
+1399,HIVE-14079,Closed,Fixed,22/Jun/16 22:52,"2.1.1, 2.2.0",2.2.0
+1400,HIVE-14076,Closed,Fixed,22/Jun/16 18:25,"2.1.1, 2.2.0",2.2.0
+1401,HIVE-14074,Closed,Fixed,22/Jun/16 05:47,2.2.0,2.0.1
+1402,HIVE-14073,Closed,Fixed,21/Jun/16 22:35,"1.3.0, 2.1.1, 2.2.0",2.1.0
+1403,HIVE-14062,Closed,Fixed,20/Jun/16 22:03,"2.1.1, 2.2.0",2.1.0
+1404,HIVE-14060,Closed,Fixed,20/Jun/16 21:18,2.2.0,"2.1.0, 2.2.0"
+1405,HIVE-14059,Closed,Fixed,20/Jun/16 15:02,"2.1.1, 2.2.0","2.1.0, 2.2.0"
+1406,HIVE-14054,Resolved,Fixed,18/Jun/16 00:48,2.3.0,2.2.0
+1407,HIVE-14053,Closed,Fixed,17/Jun/16 22:49,2.2.0,2.1.0
+1408,HIVE-14038,Closed,Fixed,16/Jun/16 18:45,"1.3.0, 2.1.1, 2.2.0",2.0.0
+1409,HIVE-14027,Closed,Fixed,15/Jun/16 22:52,"1.3.0, 2.1.1, 2.2.0","1.2.1, 2.2.0"
+1410,HIVE-14022,Closed,Fixed,15/Jun/16 18:59,"2.1.1, 2.2.0",2.2.0
+1411,HIVE-14019,Resolved,Duplicate,15/Jun/16 18:08,2.0.0,"1.2.1, 2.0.1"
+1412,HIVE-14015,Closed,Fixed,14/Jun/16 23:47,"2.1.0, 2.2.0","1.1.0, 2.0.0"
+1413,HIVE-14013,Resolved,Fixed,14/Jun/16 19:06,2.3.0,2.2.0
+1414,HIVE-14010,Closed,Fixed,14/Jun/16 07:07,"1.3.0, 2.1.0, 2.2.0","2.1.0, 2.2.0"
+1415,HIVE-14007,Resolved,Fixed,13/Jun/16 21:39,2.3.0,2.2.0
+1416,HIVE-14006,Closed,Fixed,13/Jun/16 20:32,2.1.0,2.0.0
+1417,HIVE-14004,Closed,Fixed,13/Jun/16 17:50,"1.3.0, 2.1.1, 2.2.0","1.3.0, 2.1.0"
+1418,HIVE-14003,Closed,Fixed,13/Jun/16 15:13,2.1.1,2.1.0
+1419,HIVE-13997,Closed,Fixed,12/Jun/16 02:39,"2.1.1, 2.2.0",2.1.0
+1420,HIVE-13989,Resolved,Fixed,10/Jun/16 00:47,"2.2.1, 2.3.0","1.2.1, 2.0.0"
+1421,HIVE-13987,Resolved,Fixed,09/Jun/16 22:38,2.3.0,2.0.1
+1422,HIVE-13985,Closed,Fixed,09/Jun/16 21:00,"1.3.0, 2.1.1, 2.2.0","1.3.0, 2.2.0"
+1423,HIVE-13973,Closed,Fixed,08/Jun/16 14:37,2.1.0,2.1.0
+1424,HIVE-13972,Closed,Fixed,08/Jun/16 05:27,"1.3.0, 2.1.0","1.3.0, 2.1.0, 2.2.0"
+1425,HIVE-13961,Closed,Fixed,07/Jun/16 18:04,"1.3.0, 2.1.0","1.3.0, 2.1.0, 2.2.0"
+1426,HIVE-13955,Closed,Fixed,06/Jun/16 20:59,2.1.0,2.1.0
+1427,HIVE-13954,Closed,Fixed,06/Jun/16 18:52,"1.3.0, 2.1.0, 2.2.0",2.2.0
+1428,HIVE-13945,Resolved,Fixed,03/Jun/16 23:59,2.3.0,2.1.0
+1429,HIVE-13934,Closed,Fixed,02/Jun/16 23:45,"2.1.1, 2.2.0",2.1.0
+1430,HIVE-13932,Closed,Fixed,02/Jun/16 21:45,"1.3.0, 2.1.1, 2.2.0","1.0.0, 2.0.0"
+1431,HIVE-13929,Closed,Fixed,02/Jun/16 18:23,"1.3.0, 2.1.0","1.3.0, 2.1.0"
+1432,HIVE-13927,Closed,Fixed,02/Jun/16 17:12,2.1.0,"2.1.0, 2.2.0"
+1433,HIVE-13924,Closed,Fixed,02/Jun/16 06:53,"2.1.0, 2.2.0","2.1.0, 2.2.0"
+1434,HIVE-13912,Closed,Fixed,02/Jun/16 00:14,"1.3.0, 2.1.0","1.3.0, 2.1.0"
+1435,HIVE-13911,Closed,Fixed,01/Jun/16 23:57,2.1.0,2.1.0
+1436,HIVE-13904,Closed,Fixed,01/Jun/16 15:50,2.1.0,"2.0.1, 2.1.0, 2.2.0"
+1437,HIVE-13900,Resolved,Fixed,31/May/16 15:42,2.3.0,2.2.0
+1438,HIVE-13887,Resolved,Fixed,29/May/16 05:34,2.3.0,2.1.0
+1439,HIVE-13883,Resolved,Fixed,28/May/16 02:18,2.3.0,"1.1.1, 1.2.0, 1.2.1, 2.0.1"
+1440,HIVE-13882,Closed,Fixed,27/May/16 20:38,2.2.0,2.1.0
+1441,HIVE-13878,Closed,Fixed,27/May/16 14:22,2.2.0,2.1.0
+1442,HIVE-13876,Closed,Fixed,27/May/16 09:28,2.1.0,2.1.0
+1443,HIVE-13872,Closed,Fixed,27/May/16 03:57,2.2.0,2.1.0
+1444,HIVE-13867,Closed,Fixed,26/May/16 22:22,2.1.0,2.1.0
+1445,HIVE-13863,Closed,Fixed,26/May/16 13:52,2.1.0,2.1.0
+1446,HIVE-13861,Closed,Fixed,26/May/16 10:03,2.1.0,2.1.0
+1447,HIVE-13859,Closed,Fixed,26/May/16 05:04,2.1.0,2.1.0
+1448,HIVE-13858,Closed,Fixed,26/May/16 01:41,2.1.0,2.0.0
+1449,HIVE-13856,Closed,Fixed,25/May/16 21:50,"1.3.0, 2.1.0","1.3.0, 2.1.0, 2.2.0"
+1450,HIVE-13849,Closed,Fixed,25/May/16 16:58,2.1.0,"2.1.0, 2.2.0"
+1451,HIVE-13845,Closed,Fixed,25/May/16 10:13,2.1.0,2.1.0
+1452,HIVE-13844,Closed,Fixed,25/May/16 09:58,2.1.0,2.0.0
+1453,HIVE-13841,Closed,Fixed,25/May/16 02:04,"1.3.0, 2.1.0",2.1.0
+1454,HIVE-13840,Closed,Fixed,25/May/16 01:23,"1.3.0, 2.1.0",2.1.0
+1455,HIVE-13837,Closed,Fixed,24/May/16 23:13,2.1.0,2.0.0
+1456,HIVE-13834,Resolved,Fixed,24/May/16 18:09,2.3.0,"1.3.0, 2.1.0"
+1457,HIVE-13833,Closed,Fixed,24/May/16 17:51,"1.3.0, 2.1.0","2.0.0, 2.1.0"
+1458,HIVE-13832,Closed,Fixed,24/May/16 15:35,2.1.0,2.1.0
+1459,HIVE-13831,Closed,Fixed,24/May/16 10:58,2.1.0,2.1.0
+1460,HIVE-13821,Closed,Fixed,23/May/16 18:28,2.1.0,2.1.0
+1461,HIVE-13818,Closed,Fixed,23/May/16 07:32,2.1.0,2.1.0
+1462,HIVE-13813,Resolved,Fixed,20/May/16 21:54,2.3.0,"1.3.0, 2.0.0"
+1463,HIVE-13809,Closed,Fixed,20/May/16 17:55,"2.1.1, 2.2.0","2.0.0, 2.1.0"
+1464,HIVE-13784,Closed,Fixed,18/May/16 18:54,2.1.0,2.1.0
+1465,HIVE-13767,Closed,Fixed,16/May/16 17:31,"1.3.0, 2.1.0",2.1.0
+1466,HIVE-13756,Closed,Fixed,13/May/16 09:20,2.2.0,"1.2.1, 2.0.0"
+1467,HIVE-13754,Closed,Fixed,13/May/16 01:17,2.2.0,"1.2.1, 2.0.0"
+1468,HIVE-13753,Closed,Fixed,12/May/16 22:48,"1.3.0, 2.1.0","1.3.0, 2.1.0"
+1469,HIVE-13751,Closed,Fixed,12/May/16 19:35,2.1.0,2.1.0
+1470,HIVE-13744,Closed,Fixed,12/May/16 00:18,"2.1.1, 2.2.0",2.2.0
+1471,HIVE-13743,Closed,Fixed,12/May/16 00:06,2.1.0,2.1.0
+1472,HIVE-13730,Closed,Fixed,10/May/16 19:52,2.1.0,2.1.0
+1473,HIVE-13728,Closed,Fixed,10/May/16 16:35,2.1.0,2.1.0
+1474,HIVE-13725,Closed,Fixed,10/May/16 00:45,"1.3.0, 2.1.1, 2.2.0","1.2.1, 2.0.0"
+1475,HIVE-13720,Closed,Fixed,09/May/16 17:31,2.1.0,2.1.0
+1476,HIVE-13719,Closed,Fixed,09/May/16 17:28,2.1.0,2.1.0
+1477,HIVE-13712,Closed,Fixed,07/May/16 05:36,2.1.0,2.1.0
+1478,HIVE-13705,Closed,Fixed,06/May/16 16:14,2.1.0,2.1.0
+1479,HIVE-13704,Closed,Fixed,06/May/16 11:25,"2.1.1, 2.2.0","1.3.0, 2.0.0"
+1480,HIVE-13701,Closed,Fixed,06/May/16 00:52,2.1.0,2.1.0
+1481,HIVE-13700,Closed,Fixed,05/May/16 22:18,2.1.0,2.1.0
+1482,HIVE-13699,Closed,Fixed,05/May/16 22:14,2.1.0,2.0.0
+1483,HIVE-13693,Closed,Fixed,05/May/16 17:40,2.1.0,"1.3.0, 2.0.0, 2.1.0"
+1484,HIVE-13686,Closed,Fixed,04/May/16 10:35,2.1.0,2.1.0
+1485,HIVE-13683,Closed,Fixed,03/May/16 22:51,2.1.0,2.1.0
+1486,HIVE-13676,Closed,Fixed,03/May/16 08:15,2.1.0,"1.2.0, 2.0.0"
+1487,HIVE-13671,Closed,Fixed,02/May/16 21:24,2.1.0,2.1.0
+1488,HIVE-13665,Resolved,Duplicate,02/May/16 02:50,2.3.0,"1.1.0, 2.2.0"
+1489,HIVE-13645,Closed,Fixed,28/Apr/16 19:42,"1.2.2, 1.3.0, 2.0.1, 2.1.0",2.1.0
+1490,HIVE-13628,Closed,Fixed,27/Apr/16 17:17,2.1.0,2.1.0
+1491,HIVE-13622,Closed,Fixed,27/Apr/16 01:01,"1.3.0, 2.1.0","1.3.0, 2.1.0"
+1492,HIVE-13621,Closed,Fixed,27/Apr/16 00:45,2.1.0,"2.0.1, 2.1.0"
+1493,HIVE-13619,Closed,Fixed,26/Apr/16 22:48,2.1.0,"2.0.0, 2.1.0"
+1494,HIVE-13618,Closed,Fixed,26/Apr/16 22:43,2.1.0,2.0.0
+1495,HIVE-13608,Closed,Fixed,25/Apr/16 21:12,2.1.0,2.0.0
+1496,HIVE-13602,Closed,Fixed,25/Apr/16 04:07,2.1.0,"1.2.2, 2.0.0"
+1497,HIVE-13599,Closed,Fixed,24/Apr/16 05:06,2.1.0,2.1.0
+1498,HIVE-13572,Closed,Fixed,21/Apr/16 03:20,2.1.0,2.1.0
+1499,HIVE-13570,Closed,Fixed,21/Apr/16 00:51,2.1.0,2.0.0
+1500,HIVE-13563,Closed,Fixed,20/Apr/16 22:39,"1.3.0, 2.1.0",2.1.0
+1501,HIVE-13561,Closed,Fixed,20/Apr/16 21:41,2.1.0,"1.2.0, 1.2.1, 2.0.0"
+1502,HIVE-13553,Closed,Fixed,20/Apr/16 01:04,2.1.0,2.0.0
+1503,HIVE-13542,Closed,Fixed,18/Apr/16 23:10,2.1.0,2.0.0
+1504,HIVE-13540,Resolved,Fixed,18/Apr/16 21:58,2.3.0,2.2.0
+1505,HIVE-13533,Closed,Fixed,18/Apr/16 09:15,2.1.0,2.1.0
+1506,HIVE-13523,Closed,Fixed,14/Apr/16 23:07,"2.0.1, 2.1.0",2.0.0
+1507,HIVE-13512,Closed,Fixed,14/Apr/16 02:54,2.1.0,2.0.0
+1508,HIVE-13510,Closed,Fixed,13/Apr/16 23:20,2.1.0,2.1.0
+1509,HIVE-13494,Closed,Fixed,12/Apr/16 20:27,2.1.0,"2.0.1, 2.1.0"
+1510,HIVE-13488,Closed,Fixed,12/Apr/16 01:14,2.1.0,2.1.0
+1511,HIVE-13487,Closed,Fixed,12/Apr/16 01:12,2.1.0,2.1.0
+1512,HIVE-13485,Closed,Fixed,11/Apr/16 22:04,2.1.0,2.1.0
+1513,HIVE-13463,Closed,Fixed,08/Apr/16 20:04,"2.0.1, 2.1.0",2.0.0
+1514,HIVE-13458,Closed,Fixed,07/Apr/16 21:51,"1.3.0, 2.1.0",2.1.0
+1515,HIVE-13452,Resolved,Fixed,07/Apr/16 02:08,2.3.0,"1.0.0, 1.1.0, 1.2.0, 2.0.0, 2.1.0"
+1516,HIVE-13440,Closed,Fixed,06/Apr/16 22:37,2.1.0,"1.2.1, 2.0.0"
+1517,HIVE-13439,Closed,Fixed,06/Apr/16 21:20,2.1.0,"1.2.1, 2.0.0"
+1518,HIVE-13438,Closed,Fixed,06/Apr/16 18:35,2.1.0,2.1.0
+1519,HIVE-13434,Closed,Fixed,06/Apr/16 14:13,2.1.0,2.1.0
+1520,HIVE-13428,Closed,Fixed,05/Apr/16 20:53,"2.0.1, 2.1.0",2.0.0
+1521,HIVE-13423,Closed,Fixed,05/Apr/16 13:49,2.2.0,2.0.0
+1522,HIVE-13410,Closed,Fixed,02/Apr/16 01:22,2.1.0,2.0.0
+1523,HIVE-13405,Closed,Fixed,01/Apr/16 17:16,"1.3.0, 2.0.1, 2.1.0",2.0.0
+1524,HIVE-13396,Closed,Fixed,31/Mar/16 01:14,"2.0.1, 2.1.0",2.1.0
+1525,HIVE-13395,Closed,Fixed,31/Mar/16 00:57,"1.3.0, 2.1.0","1.2.0, 2.0.0"
+1526,HIVE-13394,Closed,Fixed,31/Mar/16 00:54,"1.2.2, 2.0.1, 2.1.0","1.2.1, 2.0.0"
+1527,HIVE-13390,Closed,Fixed,30/Mar/16 22:07,"1.2.2, 1.3.0, 2.0.1, 2.1.0","1.2.1, 2.0.0"
+1528,HIVE-13388,Closed,Fixed,30/Mar/16 17:42,2.1.0,2.1.0
+1529,HIVE-13383,Closed,Fixed,30/Mar/16 07:11,2.2.0,"2.0.0, 2.1.0"
+1530,HIVE-13381,Closed,Fixed,30/Mar/16 02:01,2.1.0,"1.0.0, 1.1.0, 1.2.0, 2.0.0"
+1531,HIVE-13373,Closed,Fixed,29/Mar/16 01:35,2.1.0,"1.0.0, 1.1.0, 1.2.0, 2.0.0"
+1532,HIVE-13361,Closed,Fixed,24/Mar/16 22:00,"1.3.0, 2.0.1, 2.1.0","1.3.0, 2.0.0, 2.1.0"
+1533,HIVE-13343,Closed,Fixed,23/Mar/16 23:08,2.1.0,2.1.0
+1534,HIVE-13342,Closed,Fixed,23/Mar/16 22:33,2.1.0,2.1.0
+1535,HIVE-13335,Resolved,Fixed,23/Mar/16 01:25,2.3.0,"1.3.0, 2.0.0"
+1536,HIVE-13333,Closed,Fixed,23/Mar/16 00:34,2.1.0,2.0.0
+1537,HIVE-13330,Closed,Fixed,22/Mar/16 20:29,"1.3.0, 2.0.1, 2.1.0","1.3.0, 2.0.0, 2.1.0"
+1538,HIVE-13327,Closed,Fixed,22/Mar/16 04:43,"2.0.1, 2.1.0",2.1.0
+1539,HIVE-13326,Closed,Fixed,21/Mar/16 23:18,2.1.0,2.0.0
+1540,HIVE-13325,Closed,Fixed,21/Mar/16 23:07,"1.3.0, 2.1.0","1.3.0, 2.1.0"
+1541,HIVE-13320,Closed,Fixed,21/Mar/16 19:14,2.1.0,"1.2.1, 1.3.0, 2.0.0, 2.1.0"
+1542,HIVE-13300,Closed,Fixed,17/Mar/16 20:37,2.1.0,2.0.0
+1543,HIVE-13299,Closed,Fixed,17/Mar/16 18:26,"2.0.1, 2.1.0",2.0.0
+1544,HIVE-13293,Closed,Fixed,16/Mar/16 06:17,2.1.0,2.0.0
+1545,HIVE-13291,Closed,Fixed,16/Mar/16 03:32,"1.3.0, 2.1.0",2.1.0
+1546,HIVE-13287,Closed,Fixed,15/Mar/16 09:56,2.1.0,2.1.0
+1547,HIVE-13286,Closed,Fixed,15/Mar/16 01:06,"2.0.1, 2.1.0",2.0.0
+1548,HIVE-13285,Closed,Fixed,15/Mar/16 00:29,"1.3.0, 2.0.1, 2.1.0","0.14.0, 1.0.0, 1.1.0, 1.2.0, 1.3.0, 2.0.0, 2.1.0"
+1549,HIVE-13269,Closed,Fixed,11/Mar/16 20:31,2.1.0,2.1.0
+1550,HIVE-13267,Closed,Fixed,11/Mar/16 09:50,2.1.0,2.1.0
+1551,HIVE-13264,Closed,Fixed,11/Mar/16 02:46,"2.1.1, 2.2.0","1.2.1, 2.0.1"
+1552,HIVE-13262,Closed,Fixed,11/Mar/16 00:57,2.1.0,2.1.0
+1553,HIVE-13261,Closed,Fixed,10/Mar/16 22:58,2.1.0,"1.0.0, 1.1.0, 2.0.0"
+1554,HIVE-13260,Closed,Fixed,10/Mar/16 21:12,2.1.0,2.0.0
+1555,HIVE-13258,Closed,Fixed,10/Mar/16 02:50,2.2.0,2.1.0
+1556,HIVE-13255,Closed,Fixed,10/Mar/16 01:40,"2.0.1, 2.1.0",2.1.0
+1557,HIVE-13251,Closed,Fixed,09/Mar/16 22:29,2.1.0,2.1.0
+1558,HIVE-13246,Closed,Fixed,09/Mar/16 19:39,"1.3.0, 2.1.0",2.1.0
+1559,HIVE-13242,Closed,Fixed,09/Mar/16 16:28,"2.0.1, 2.1.0",2.1.0
+1560,HIVE-13240,Closed,Fixed,09/Mar/16 02:29,"1.3.0, 2.0.1, 2.1.0","1.2.1, 1.3.0, 2.0.0"
+1561,HIVE-13236,Closed,Fixed,08/Mar/16 21:51,"2.0.1, 2.1.0",2.0.0
+1562,HIVE-13233,Closed,Fixed,08/Mar/16 19:18,2.1.0,2.1.0
+1563,HIVE-13227,Closed,Fixed,08/Mar/16 08:29,2.1.0,2.1.0
+1564,HIVE-13223,Closed,Fixed,08/Mar/16 00:13,2.1.0,2.1.0
+1565,HIVE-13217,Closed,Fixed,07/Mar/16 18:50,2.1.0,"1.2.1, 2.0.0"
+1566,HIVE-13216,Closed,Fixed,07/Mar/16 05:51,"1.3.0, 2.1.0","1.2.0, 1.2.1, 2.0.0"
+1567,HIVE-13210,Closed,Fixed,04/Mar/16 22:47,2.1.0,2.1.0
+1568,HIVE-13209,Closed,Fixed,04/Mar/16 21:39,2.1.0,2.1.0
+1569,HIVE-13201,Closed,Fixed,03/Mar/16 19:22,"1.3.0, 2.1.0",2.0.0
+1570,HIVE-13200,Closed,Fixed,03/Mar/16 16:29,"1.3.0, 2.0.1, 2.1.0","1.0.0, 2.0.0"
+1571,HIVE-13199,Closed,Fixed,03/Mar/16 00:50,"2.0.1, 2.1.0",2.1.0
+1572,HIVE-13197,Closed,Fixed,02/Mar/16 12:09,2.1.0,"2.0.1, 2.1.0"
+1573,HIVE-13191,Closed,Fixed,01/Mar/16 19:29,"1.3.0, 2.1.1, 2.2.0","2.0.0, 2.1.0"
+1574,HIVE-13186,Closed,Fixed,29/Feb/16 22:53,"1.3.0, 2.1.0",2.0.0
+1575,HIVE-13185,Closed,Fixed,29/Feb/16 21:44,2.1.0,2.1.0
+1576,HIVE-13175,Closed,Fixed,27/Feb/16 01:26,"1.3.0, 2.1.0",2.0.0
+1577,HIVE-13174,Closed,Fixed,26/Feb/16 23:34,"1.3.0, 2.1.0",2.0.0
+1578,HIVE-13169,Closed,Fixed,26/Feb/16 06:56,2.1.0,"1.2.1, 2.0.0"
+1579,HIVE-13163,Closed,Fixed,26/Feb/16 01:26,2.1.0,"2.0.0, 2.1.0"
+1580,HIVE-13159,Closed,Fixed,25/Feb/16 22:20,2.2.0,2.0.0
+1581,HIVE-13153,Closed,Fixed,25/Feb/16 02:50,"2.0.1, 2.1.0",2.1.0
+1582,HIVE-13151,Closed,Fixed,24/Feb/16 23:04,"1.3.0, 2.0.1, 2.1.0",2.0.0
+1583,HIVE-13144,Closed,Fixed,24/Feb/16 14:04,"1.3.0, 2.0.1, 2.1.0","1.2.1, 2.0.0"
+1584,HIVE-13141,Closed,Fixed,24/Feb/16 07:54,2.1.0,"1.2.0, 2.0.0"
+1585,HIVE-13135,Closed,Fixed,24/Feb/16 03:27,2.1.0,2.1.0
+1586,HIVE-13134,Closed,Fixed,24/Feb/16 03:04,"2.0.1, 2.1.0","2.0.0, 2.0.1, 2.1.0"
+1587,HIVE-13128,Closed,Fixed,23/Feb/16 21:30,2.1.0,2.1.0
+1588,HIVE-13126,Closed,Fixed,23/Feb/16 19:03,"2.0.1, 2.1.0",2.0.0
+1589,HIVE-13110,Closed,Fixed,20/Feb/16 06:34,"2.0.1, 2.1.0",2.1.0
+1590,HIVE-13108,Closed,Fixed,20/Feb/16 02:52,"1.3.0, 2.0.1, 2.1.0","1.2.1, 1.3.0, 2.0.0, 2.0.1"
+1591,HIVE-13105,Closed,Fixed,20/Feb/16 01:47,"2.0.1, 2.1.0",2.0.0
+1592,HIVE-13101,Closed,Fixed,19/Feb/16 22:06,2.1.0,2.0.0
+1593,HIVE-13100,Closed,Fixed,19/Feb/16 22:00,2.1.0,2.1.0
+1594,HIVE-13096,Closed,Fixed,19/Feb/16 14:41,2.1.0,"2.0.0, 2.1.0"
+1595,HIVE-13094,Closed,Fixed,19/Feb/16 08:33,2.1.0,"2.0.0, 2.1.0"
+1596,HIVE-13089,Closed,Fixed,18/Feb/16 20:55,2.1.0,2.1.0
+1597,HIVE-13087,Closed,Fixed,18/Feb/16 19:04,2.1.0,2.1.0
+1598,HIVE-13086,Closed,Fixed,18/Feb/16 18:47,"2.0.1, 2.1.0",2.1.0
+1599,HIVE-13083,Closed,Fixed,18/Feb/16 06:33,"1.3.0, 2.0.1, 2.1.0","0.13.0, 0.14.0, 1.0.0, 1.1.0, 1.2.0, 1.3.0, 2.0.0, 2.1.0"
+1600,HIVE-13082,Closed,Fixed,18/Feb/16 05:22,"1.3.0, 2.1.0",2.0.0
+1601,HIVE-13079,Closed,Fixed,18/Feb/16 01:18,"2.0.1, 2.1.0",2.1.0
+1602,HIVE-13077,Closed,Fixed,17/Feb/16 20:37,2.1.0,2.1.0
+1603,HIVE-13070,Closed,Fixed,17/Feb/16 10:14,2.1.0,2.1.0
+1604,HIVE-13065,Closed,Fixed,16/Feb/16 21:11,"1.3.0, 2.1.0","1.1.0, 2.0.0"
+1605,HIVE-13062,Closed,Fixed,15/Feb/16 19:33,2.1.0,"2.0.0, 2.1.0"
+1606,HIVE-13042,Closed,Fixed,11/Feb/16 16:34,"1.3.0, 2.1.0","1.3.0, 2.0.0, 2.1.0"
+1607,HIVE-13039,Closed,Fixed,10/Feb/16 21:06,"1.3.0, 2.1.0","1.2.1, 2.0.0"
+1608,HIVE-13036,Closed,Fixed,10/Feb/16 20:38,"2.0.1, 2.1.0","2.0.0, 2.1.0"
+1609,HIVE-13032,Closed,Fixed,09/Feb/16 22:14,2.0.0,"2.0.0, 2.1.0"
+1610,HIVE-13024,Closed,Fixed,08/Feb/16 20:52,2.0.0,2.0.0
+1611,HIVE-13016,Closed,Fixed,05/Feb/16 21:32,"1.3.0, 2.1.0","1.3.0, 2.1.0"
+1612,HIVE-13015,Closed,Fixed,05/Feb/16 19:33,2.1.0,2.1.0
+1613,HIVE-12999,Closed,Fixed,04/Feb/16 03:29,"1.3.0, 2.1.0","1.2.0, 1.3.0, 2.0.0, 2.1.0"
+1614,HIVE-12996,Closed,Fixed,03/Feb/16 23:08,"1.3.0, 2.1.0",2.0.0
+1615,HIVE-12995,Closed,Fixed,03/Feb/16 22:42,2.1.0,2.1.0
+1616,HIVE-12993,Closed,Fixed,03/Feb/16 19:46,2.1.0,"2.0.0, 2.1.0"
+1617,HIVE-12992,Closed,Fixed,03/Feb/16 19:23,"1.2.2, 2.0.1, 2.1.0","1.2.1, 2.0.0"
+1618,HIVE-12990,Closed,Fixed,03/Feb/16 08:37,"2.0.1, 2.1.0",2.1.0
+1619,HIVE-12981,Closed,Fixed,02/Feb/16 12:01,"1.2.2, 1.3.0, 2.1.0","1.2.1, 2.0.0"
+1620,HIVE-12964,Closed,Fixed,29/Jan/16 20:05,2.0.0,"2.0.0, 2.1.0"
+1621,HIVE-12947,Closed,Fixed,27/Jan/16 22:23,2.0.0,2.0.0
+1622,HIVE-12945,Closed,Fixed,27/Jan/16 19:08,2.0.0,2.0.0
+1623,HIVE-12937,Closed,Fixed,26/Jan/16 23:19,"1.2.2, 1.3.0, 2.0.1, 2.1.0","1.2.1, 1.3.0, 2.0.0, 2.1.0"
+1624,HIVE-12933,Closed,Fixed,26/Jan/16 18:51,2.1.0,"2.0.0, 2.1.0"
+1625,HIVE-12931,Closed,Fixed,26/Jan/16 16:00,2.0.0,2.0.0
+1626,HIVE-12927,Closed,Fixed,26/Jan/16 02:31,2.1.0,2.0.0
+1627,HIVE-12926,Closed,Fixed,26/Jan/16 00:59,2.0.0,2.0.0
+1628,HIVE-12911,Closed,Fixed,22/Jan/16 11:24,2.0.0,"2.0.0, 2.1.0"
+1629,HIVE-12909,Closed,Fixed,22/Jan/16 02:18,"1.3.0, 2.1.0","1.2.1, 2.0.0"
+1630,HIVE-12905,Closed,Fixed,21/Jan/16 20:13,2.0.0,"1.0.1, 1.2.1, 2.0.0"
+1631,HIVE-12904,Closed,Fixed,21/Jan/16 19:45,2.0.0,2.0.0
+1632,HIVE-12893,Closed,Fixed,20/Jan/16 03:05,"1.3.0, 2.0.0","1.3.0, 2.0.0"
+1633,HIVE-12879,Closed,Fixed,15/Jan/16 17:52,2.0.0,"2.0.0, 2.1.0"
+1634,HIVE-12864,Closed,Fixed,13/Jan/16 19:17,2.0.0,"2.0.0, 2.1.0"
+1635,HIVE-12837,Closed,Fixed,11/Jan/16 18:45,2.1.0,2.1.0
+1636,HIVE-12826,Closed,Fixed,09/Jan/16 13:29,2.0.0,"1.3.0, 2.0.0, 2.1.0"
+1637,HIVE-12824,Closed,Fixed,09/Jan/16 01:45,2.0.0,2.0.0
+1638,HIVE-12820,Closed,Fixed,08/Jan/16 23:48,2.0.0,"2.0.0, 2.1.0"
+1639,HIVE-12815,Closed,Fixed,08/Jan/16 21:49,"1.3.0, 2.0.0",2.0.0
+1640,HIVE-12809,Closed,Fixed,08/Jan/16 02:52,2.0.0,"2.0.0, 2.1.0"
+1641,HIVE-12808,Closed,Fixed,07/Jan/16 23:42,2.1.0,"1.2.1, 2.0.0"
+1642,HIVE-12800,Closed,Fixed,07/Jan/16 18:00,2.0.0,"2.0.0, 2.1.0"
+1643,HIVE-12797,Closed,Fixed,06/Jan/16 23:01,2.0.0,2.0.0
+1644,HIVE-12792,Closed,Fixed,06/Jan/16 21:21,2.1.0,2.1.0
+1645,HIVE-12786,Closed,Fixed,06/Jan/16 01:59,2.0.0,2.0.0
+1646,HIVE-12784,Closed,Fixed,05/Jan/16 19:52,"1.3.0, 2.1.0",2.0.0
+1647,HIVE-12768,Closed,Fixed,31/Dec/15 02:27,2.0.0,2.0.0
+1648,HIVE-12766,Closed,Fixed,30/Dec/15 23:44,2.0.0,2.0.0
+1649,HIVE-12762,Closed,Fixed,30/Dec/15 16:53,2.0.0,"2.0.0, 2.1.0"
+1650,HIVE-12758,Closed,Fixed,29/Dec/15 23:04,2.0.0,"2.0.0, 2.1.0"
+1651,HIVE-12757,Closed,Fixed,29/Dec/15 21:44,2.1.0,2.1.0
+1652,HIVE-12752,Closed,Fixed,28/Dec/15 05:58,2.1.0,2.1.0
+1653,HIVE-12743,Closed,Fixed,24/Dec/15 03:57,2.0.0,"2.0.0, 2.1.0"
+1654,HIVE-12741,Closed,Fixed,24/Dec/15 00:55,"1.3.0, 2.0.0","2.0.0, 2.1.0"
+1655,HIVE-12740,Closed,Fixed,23/Dec/15 20:05,2.0.0,2.0.0
+1656,HIVE-12735,Closed,Fixed,23/Dec/15 00:23,"1.3.0, 2.0.0","1.3.0, 2.0.0, 2.1.0"
+1657,HIVE-12734,Closed,Fixed,22/Dec/15 23:56,"2.2.1, 3.0.0","1.2.1, 2.0.0, 2.2.0, 3.0.0"
+1658,HIVE-12728,Closed,Fixed,22/Dec/15 06:51,2.0.0,"2.0.0, 2.1.0"
+1659,HIVE-12726,Closed,Fixed,22/Dec/15 02:52,2.0.0,2.0.0
+1660,HIVE-12725,Closed,Fixed,22/Dec/15 00:09,"1.3.0, 2.1.0","1.3.0, 2.0.0"
+1661,HIVE-12724,Closed,Fixed,21/Dec/15 23:54,"1.3.0, 2.0.0","1.3.0, 2.0.0"
+1662,HIVE-12712,Closed,Fixed,19/Dec/15 00:32,"1.3.0, 2.0.0","2.0.0, 2.1.0"
+1663,HIVE-12708,Closed,Fixed,18/Dec/15 18:02,"2.1.0, spark-branch","1.1.0, 1.2.0, 2.0.0"
+1664,HIVE-12698,Closed,Fixed,17/Dec/15 01:14,"1.3.0, 2.0.0","1.3.0, 2.0.0"
+1665,HIVE-12694,Closed,Fixed,16/Dec/15 20:11,2.0.0,"2.0.0, 2.1.0"
+1666,HIVE-12688,Closed,Fixed,16/Dec/15 05:34,2.0.0,"1.3.0, 2.0.0"
+1667,HIVE-12687,Closed,Fixed,16/Dec/15 02:42,2.0.0,"2.0.0, 2.1.0"
+1668,HIVE-12685,Closed,Fixed,16/Dec/15 00:49,2.0.0,"2.0.0, 2.1.0"
+1669,HIVE-12684,Closed,Fixed,16/Dec/15 00:06,"1.3.0, 2.0.0","1.3.0, 2.0.0, 2.1.0"
+1670,HIVE-12662,Closed,Fixed,12/Dec/15 10:46,2.0.0,"2.0.0, 2.1.0"
+1671,HIVE-12657,Closed,Fixed,11/Dec/15 21:42,2.0.0,2.0.0
+1672,HIVE-12656,Resolved,Fixed,11/Dec/15 19:18,2.3.0,2.1.0
+1673,HIVE-12644,Closed,Fixed,10/Dec/15 12:31,2.0.0,2.1.0
+1674,HIVE-12643,Closed,Fixed,10/Dec/15 01:23,2.1.0,2.0.0
+1675,HIVE-12635,Closed,Fixed,09/Dec/15 20:20,2.1.0,2.1.0
+1676,HIVE-12633,Closed,Fixed,09/Dec/15 19:48,2.0.0,"2.0.0, 2.1.0"
+1677,HIVE-12614,Resolved,Fixed,08/Dec/15 09:27,2.3.0,"1.3.0, 2.1.0"
+1678,HIVE-12609,Closed,Fixed,07/Dec/15 21:54,2.0.0,"2.0.0, 2.1.0"
+1679,HIVE-12601,Closed,Fixed,04/Dec/15 23:56,2.0.0,2.0.0
+1680,HIVE-12599,Closed,Fixed,04/Dec/15 22:12,2.0.0,2.0.0
+1681,HIVE-12596,Closed,Fixed,04/Dec/15 20:01,2.0.0,2.0.0
+1682,HIVE-12590,Closed,Fixed,04/Dec/15 01:31,2.0.0,"1.0.1, 1.1.1, 1.2.1, 2.0.0"
+1683,HIVE-12584,Closed,Fixed,03/Dec/15 21:11,"1.3.0, 2.0.0","1.3.0, 2.0.0, 2.1.0"
+1684,HIVE-12578,Closed,Fixed,03/Dec/15 00:01,2.0.0,2.0.0
+1685,HIVE-12577,Closed,Fixed,02/Dec/15 22:42,2.0.0,2.0.0
+1686,HIVE-12542,Closed,Fixed,30/Nov/15 16:51,2.0.0,2.0.0
+1687,HIVE-12537,Closed,Fixed,28/Nov/15 00:33,2.0.0,"0.14.0, 1.0.1, 1.1.1, 1.2.1, 1.3.0, 2.0.0"
+1688,HIVE-12532,Closed,Fixed,26/Nov/15 13:39,2.0.0,2.0.0
+1689,HIVE-12510,Closed,Implemented,24/Nov/15 20:40,2.0.0,2.0.0
+1690,HIVE-12509,Closed,Fixed,24/Nov/15 15:43,2.0.0,2.0.0
+1691,HIVE-12508,Closed,Duplicate,24/Nov/15 12:48,2.0.0,2.0.0
+1692,HIVE-12503,Closed,Fixed,24/Nov/15 03:05,2.0.0,2.0.0
+1693,HIVE-12500,Closed,Fixed,24/Nov/15 00:11,"1.3.0, 2.0.0","1.3.0, 2.0.0"
+1694,HIVE-12498,Closed,Fixed,23/Nov/15 21:33,"1.3.0, 2.0.0","1.3.0, 2.0.0"
+1695,HIVE-12491,Closed,Fixed,22/Nov/15 06:53,2.0.0,"1.3.0, 2.0.0"
+1696,HIVE-12490,Closed,Fixed,21/Nov/15 12:24,"1.3.0, 2.0.0",2.0.0
+1697,HIVE-12487,Closed,Fixed,20/Nov/15 20:09,2.0.0,2.0.0
+1698,HIVE-12479,Closed,Fixed,20/Nov/15 10:05,2.0.0,"1.3.0, 2.0.0"
+1699,HIVE-12478,Closed,Fixed,20/Nov/15 08:38,2.1.0,"2.0.0, 2.1.0"
+1700,HIVE-12477,Closed,Fixed,20/Nov/15 03:35,2.0.0,2.0.0
+1701,HIVE-12473,Closed,Fixed,19/Nov/15 23:33,"1.3.0, 2.0.0","1.2.1, 1.3.0, 2.0.0"
+1702,HIVE-12472,Resolved,Fixed,19/Nov/15 22:46,"1.3.0, 2.0.0","1.3.0, 2.0.0"
+1703,HIVE-12465,Closed,Fixed,19/Nov/15 11:33,"1.3.0, 2.0.0","1.3.0, 2.0.0"
+1704,HIVE-12463,Closed,Fixed,19/Nov/15 08:13,"1.3.0, 2.0.0","1.2.1, 1.3.0, 2.0.0"
+1705,HIVE-12462,Closed,Invalid,19/Nov/15 06:24,2.0.0,2.0.0
+1706,HIVE-12456,Closed,Fixed,18/Nov/15 20:18,2.0.0,2.0.0
+1707,HIVE-12450,Closed,Fixed,18/Nov/15 01:08,"1.3.0, 2.0.0","1.2.0, 1.2.1, 1.3.0, 2.0.0"
+1708,HIVE-12445,Closed,Fixed,17/Nov/15 23:50,2.0.0,2.0.0
+1709,HIVE-12435,Closed,Fixed,17/Nov/15 16:51,2.0.0,2.0.0
+1710,HIVE-12407,Closed,Fixed,13/Nov/15 15:10,2.0.0,2.0.0
+1711,HIVE-12404,Closed,Duplicate,13/Nov/15 06:17,2.0.0,2.0.0
+1712,HIVE-12399,Closed,Fixed,12/Nov/15 22:08,"1.3.0, 2.0.0",2.0.0
+1713,HIVE-12396,Closed,Fixed,12/Nov/15 19:28,2.0.0,2.0.0
+1714,HIVE-12391,Closed,Fixed,12/Nov/15 14:11,"1.3.0, 2.0.0","1.3.0, 2.0.0"
+1715,HIVE-12385,Closed,Fixed,11/Nov/15 22:04,2.0.0,2.0.0
+1716,HIVE-12378,Closed,Fixed,10/Nov/15 20:15,"1.3.0, 2.0.0","1.0.0, 1.1.0, 2.0.0"
+1717,HIVE-12364,Closed,Fixed,07/Nov/15 02:04,"1.3.0, 2.0.0","1.3.0, 2.0.0"
+1718,HIVE-12363,Closed,Fixed,07/Nov/15 01:29,"1.3.0, 2.0.0","1.3.0, 2.0.0"
+1719,HIVE-12349,Closed,Fixed,05/Nov/15 20:23,"1.3.0, 2.0.0","1.2.1, 1.3.0, 2.0.0"
+1720,HIVE-12344,Closed,Fixed,05/Nov/15 08:14,"0.14.1, 1.0.2, 1.1.2, 1.2.2, 1.3.0, 2.0.0","0.14.0, 1.0.0, 1.0.1, 1.1.0, 1.1.1, 1.2.0, 1.2.1, 1.3.0, 2.0.0"
+1721,HIVE-12332,Closed,Fixed,04/Nov/15 04:37,2.0.0,2.0.0
+1722,HIVE-12330,Closed,Fixed,04/Nov/15 01:28,2.0.0,2.0.0
+1723,HIVE-12315,Closed,Fixed,02/Nov/15 18:05,"1.3.0, 2.0.0","0.14.0, 1.0.1, 1.1.1, 1.2.1, 2.0.0"
+1724,HIVE-12304,Closed,Fixed,30/Oct/15 17:17,2.0.0,2.0.0
+1725,HIVE-12302,Closed,Fixed,30/Oct/15 06:45,2.0.0,2.0.0
+1726,HIVE-12281,Closed,Fixed,28/Oct/15 00:48,2.0.0,"1.3.0, 2.0.0"
+1727,HIVE-12261,Closed,Fixed,25/Oct/15 05:48,"1.3.0, 2.0.0","1.3.0, 2.0.0"
+1728,HIVE-12260,Closed,Fixed,24/Oct/15 22:18,2.0.0,2.0.0
+1729,HIVE-12257,Closed,Fixed,24/Oct/15 02:18,"1.3.0, 2.0.0","1.3.0, 2.0.0"
+1730,HIVE-12246,Closed,Fixed,23/Oct/15 18:08,2.0.0,2.0.0
+1731,HIVE-12238,Closed,Fixed,23/Oct/15 01:10,2.0.0,"1.2.1, 1.3.0, 2.0.0"
+1732,HIVE-12234,Closed,Fixed,22/Oct/15 21:09,2.0.0,2.0.0
+1733,HIVE-12223,Closed,Fixed,21/Oct/15 17:54,"1.3.0, 2.0.0","1.3.0, 2.0.0"
+1734,HIVE-12215,Closed,Fixed,19/Oct/15 19:24,"1.3.0, 2.0.0",2.0.0
+1735,HIVE-12210,Closed,Fixed,18/Oct/15 21:03,2.0.0,2.0.0
+1736,HIVE-12208,Closed,Fixed,18/Oct/15 07:10,"1.3.0, 2.0.0",2.0.0
+1737,HIVE-12207,Closed,Fixed,18/Oct/15 06:34,2.0.0,2.0.0
+1738,HIVE-12204,Closed,Fixed,16/Oct/15 21:09,"1.3.0, 2.0.0","1.0.1, 1.2.1, 2.0.0"
+1739,HIVE-12198,Closed,Fixed,15/Oct/15 21:56,2.0.0,2.0.0
+1740,HIVE-12189,Closed,Fixed,15/Oct/15 18:15,"1.3.0, 2.0.0","1.1.0, 2.0.0"
+1741,HIVE-12171,Closed,Fixed,14/Oct/15 02:54,2.0.0,2.0.0
+1742,HIVE-12166,Closed,Fixed,13/Oct/15 22:48,2.0.0,2.0.0
+1743,HIVE-12165,Closed,Fixed,13/Oct/15 21:33,"2.0.1, 2.1.0",2.1.0
+1744,HIVE-12090,Closed,Fixed,12/Oct/15 08:06,"1.3.0, 2.0.0","1.3.0, 2.0.0"
+1745,HIVE-12058,Closed,Fixed,07/Oct/15 20:44,"1.3.0, 2.0.0","0.14.0, 1.1.0, 2.0.0"
+1746,HIVE-12039,Closed,Fixed,05/Oct/15 23:38,2.1.0,"1.3.0, 2.0.0"
+1747,HIVE-12021,Closed,Fixed,02/Oct/15 18:15,"1.2.2, 1.3.0, 2.0.0","1.2.1, 1.3.0, 2.0.0"
+1748,HIVE-12008,Closed,Fixed,01/Oct/15 19:26,2.0.0,2.0.0
+1749,HIVE-11980,Closed,Fixed,28/Sep/15 19:47,2.0.0,2.0.0
+1750,HIVE-11975,Closed,Fixed,28/Sep/15 17:48,"1.2.2, 1.3.0, 2.0.0","1.2.0, 1.3.0, 2.0.0"
+1751,HIVE-11966,Resolved,Fixed,25/Sep/15 17:59,"1.3.0, 2.0.1, 2.1.0","1.3.0, 2.0.0"
+1752,HIVE-11954,Closed,Fixed,24/Sep/15 22:29,2.0.0,2.0.0
+1753,HIVE-11945,Closed,Fixed,24/Sep/15 10:15,"1.3.0, 2.0.0","1.3.0, 2.0.0"
+1754,HIVE-11932,Closed,Fixed,23/Sep/15 11:23,"1.3.0, 2.0.0","1.3.0, 2.0.0"
+1755,HIVE-11928,Closed,Fixed,23/Sep/15 01:26,"1.3.0, 2.0.0","1.3.0, 2.0.0"
+1756,HIVE-11922,Closed,Fixed,22/Sep/15 20:56,"1.3.0, 2.0.0","1.3.0, 2.0.0"
+1757,HIVE-11889,Closed,Fixed,18/Sep/15 22:53,"1.3.0, 2.0.0","1.3.0, 2.0.0"
+1758,HIVE-11875,Closed,Fixed,17/Sep/15 23:39,2.0.0,"1.3.0, 2.0.0"
+1759,HIVE-11863,Resolved,Fixed,17/Sep/15 07:01,2.3.0,"1.3.0, 2.0.0"
+1760,HIVE-11860,Closed,Fixed,17/Sep/15 05:19,"1.3.0, 2.0.0","1.3.0, 2.0.0"
+1761,HIVE-11843,Closed,Fixed,16/Sep/15 15:32,2.0.0,2.0.0
+1762,HIVE-11842,Closed,Fixed,16/Sep/15 14:37,2.0.0,2.0.0
+1763,HIVE-11841,Closed,Fixed,16/Sep/15 14:13,"1.1.2, 1.2.2, 1.3.0, 2.0.0","0.14.0, 1.0.0, 1.0.1, 1.2.1, 1.3.0, 2.0.0"
+1764,HIVE-11838,Closed,Fixed,16/Sep/15 06:48,"1.3.0, 2.0.0","1.3.0, 2.0.0"
+1765,HIVE-11835,Closed,Fixed,16/Sep/15 00:16,"1.3.0, 2.0.0","1.1.0, 1.2.0, 2.0.0"
+1766,HIVE-11832,Closed,Fixed,15/Sep/15 21:17,"1.2.2, 1.3.0, 2.0.0","1.3.0, 2.0.0"
+1767,HIVE-11826,Closed,Fixed,15/Sep/15 15:07,"1.3.0, 2.0.0",2.0.0
+1768,HIVE-11824,Closed,Fixed,15/Sep/15 07:07,"1.3.0, 2.0.0","1.3.0, 2.0.0"
+1769,HIVE-11821,Closed,Fixed,14/Sep/15 23:30,"1.3.0, 2.0.0","1.3.0, 2.0.0"
+1770,HIVE-11820,Closed,Fixed,14/Sep/15 22:20,2.0.0,2.0.0
+1771,HIVE-11813,Closed,Fixed,14/Sep/15 15:45,2.0.0,2.0.0
+1772,HIVE-11801,Closed,Duplicate,11/Sep/15 18:21,2.0.0,"0.14.0, 1.1.0, 1.2.0, 2.0.0"
+1773,HIVE-11795,Resolved,Won't Fix,11/Sep/15 03:07,1.2.1,"1.2.1, 2.0.0"
+1774,HIVE-11792,Closed,Fixed,10/Sep/15 22:33,2.0.0,2.0.0
+1775,HIVE-11781,Closed,Fixed,10/Sep/15 09:11,2.0.0,2.0.0
+1776,HIVE-11761,Closed,Fixed,08/Sep/15 18:23,"1.3.0, 2.0.0","1.2.0, 2.0.0"
+1777,HIVE-11751,Closed,Fixed,07/Sep/15 22:59,2.0.0,2.0.0
+1778,HIVE-11745,Closed,Fixed,04/Sep/15 22:35,"1.2.2, 1.3.0, 2.0.0","1.1.0, 1.2.0, 2.0.0"
+1779,HIVE-11726,Closed,Fixed,03/Sep/15 16:50,2.0.0,2.0.0
+1780,HIVE-11723,Closed,Fixed,03/Sep/15 02:58,2.0.0,"1.1.1, 1.2.0, 2.0.0"
+1781,HIVE-11721,Closed,Fixed,02/Sep/15 20:37,2.0.0,"1.1.0, 1.2.1, 2.0.0"
+1782,HIVE-11710,Closed,Fixed,01/Sep/15 19:12,2.0.0,2.0.0
+1783,HIVE-11705,Closed,Fixed,01/Sep/15 01:45,2.0.0,2.0.0
+1784,HIVE-11698,Closed,Fixed,31/Aug/15 17:57,2.0.0,2.0.0
+1785,HIVE-11696,Closed,Fixed,31/Aug/15 15:03,"1.3.0, 2.0.0","1.2.0, 2.0.0"
+1786,HIVE-11669,Closed,Fixed,27/Aug/15 19:34,"1.3.0, 2.0.0","1.3.0, 2.0.0"
+1787,HIVE-11658,Closed,Fixed,26/Aug/15 22:13,"1.3.0, 2.0.0","1.3.0, 2.0.0"
+1788,HIVE-11652,Closed,Fixed,26/Aug/15 12:08,"1.3.0, 2.0.0","1.3.0, 2.0.0"
+1789,HIVE-11604,Closed,Fixed,19/Aug/15 13:40,2.0.0,"1.1.0, 1.2.0, 2.0.0"
+1790,HIVE-11602,Closed,Fixed,19/Aug/15 09:31,2.0.0,2.0.0
+1791,HIVE-11596,Closed,Fixed,18/Aug/15 19:48,"1.3.0, 2.0.0",2.0.0
+1792,HIVE-11594,Closed,Fixed,18/Aug/15 08:43,"1.3.0, 2.0.0","1.3.0, 2.0.0"
+1793,HIVE-11592,Closed,Fixed,18/Aug/15 00:48,"1.3.0, 2.0.0","1.3.0, 2.0.0"
+1794,HIVE-11590,Closed,Fixed,17/Aug/15 22:52,2.0.0,2.0.0
+1795,HIVE-11581,Closed,Fixed,17/Aug/15 18:10,"1.3.0, 2.0.0","1.3.0, 2.0.0"
+1796,HIVE-11578,Closed,Fixed,17/Aug/15 02:04,"1.3.0, 2.0.0","1.3.0, 2.0.0"
+1797,HIVE-11573,Closed,Fixed,15/Aug/15 06:16,2.0.0,2.0.0
+1798,HIVE-11556,Closed,Fixed,14/Aug/15 09:58,"1.3.0, 2.0.0","1.3.0, 2.0.0"
+1799,HIVE-11546,Closed,Fixed,13/Aug/15 07:18,"1.3.0, 2.0.0","1.3.0, 2.0.0"
+1800,HIVE-11541,Closed,Fixed,12/Aug/15 23:14,"1.3.0, 2.0.0","1.3.0, 2.0.0"
+1801,HIVE-11511,Closed,Fixed,10/Aug/15 14:08,"1.3.0, 2.0.0",2.0.0
+1802,HIVE-11498,Closed,Fixed,07/Aug/15 05:03,"1.2.1, 1.3.0, 2.0.0","1.2.0, 1.3.0, 2.0.0"
+1803,HIVE-11497,Closed,Fixed,07/Aug/15 00:59,"1.3.0, 2.0.0","1.0.0, 1.3.0, 2.0.0"
+1804,HIVE-11493,Closed,Fixed,06/Aug/15 20:29,2.0.0,"0.14.0, 1.0.0, 1.2.0, 1.2.1, 2.0.0"
+1805,HIVE-11476,Closed,Fixed,05/Aug/15 22:25,"1.3.0, 2.0.0","1.3.0, 2.0.0"
+1806,HIVE-11472,Closed,Fixed,05/Aug/15 20:32,"1.3.0, 2.0.0","1.3.0, 2.0.0"
+1807,HIVE-11468,Closed,Fixed,05/Aug/15 18:19,"1.3.0, 2.0.0","1.3.0, 2.0.0"
+1808,HIVE-11462,Closed,Fixed,05/Aug/15 04:38,"1.3.0, 2.0.0","1.3.0, 2.0.0"
+1809,HIVE-11452,Closed,Fixed,04/Aug/15 08:25,2.0.0,2.0.0
+1810,HIVE-11451,Closed,Fixed,04/Aug/15 07:58,2.0.0,2.0.0
+1811,HIVE-11434,Closed,Fixed,01/Aug/15 13:32,"1.3.0, 2.0.0",2.0.0
+1812,HIVE-11433,Closed,Fixed,01/Aug/15 06:30,"1.3.0, 2.0.0","1.1.0, 1.2.0, 2.0.0"
+1813,HIVE-11430,Closed,Fixed,31/Jul/15 22:59,"1.3.0, 2.0.0",2.0.0
+1814,HIVE-11428,Closed,Fixed,31/Jul/15 21:36,"1.3.0, 2.0.0","1.3.0, 2.0.0"
+1815,HIVE-11425,Closed,Fixed,31/Jul/15 17:50,2.0.0,2.0.0
+1816,HIVE-11413,Closed,Fixed,30/Jul/15 19:02,2.0.0,2.0.0
+1817,HIVE-11406,Closed,Fixed,29/Jul/15 23:39,"1.3.0, 2.0.0","1.3.0, 2.0.0"
+1818,HIVE-11397,Closed,Fixed,29/Jul/15 02:39,"1.3.0, 2.0.0","1.3.0, 2.0.0"
+1819,HIVE-11375,Closed,Fixed,27/Jul/15 09:50,2.0.0,2.0.0
+1820,HIVE-11312,Closed,Fixed,19/Jul/15 23:13,2.0.0,"1.2.0, 1.2.1, 1.3.0, 2.0.0"
+1821,HIVE-11303,Closed,Fixed,18/Jul/15 01:31,"1.3.0, 2.0.0","1.2.0, 1.3.0, 2.0.0"
+1822,HIVE-11297,Closed,Fixed,17/Jul/15 20:49,3.0.0,3.0.0
+1823,HIVE-11293,Closed,Fixed,17/Jul/15 18:45,2.0.0,2.0.0
+1824,HIVE-11284,Closed,Fixed,16/Jul/15 20:13,2.0.0,2.0.0
+1825,HIVE-11258,Closed,Fixed,14/Jul/15 19:14,"1.3.0, 2.0.0",2.0.0
+1826,HIVE-11255,Closed,Fixed,14/Jul/15 15:39,"1.3.0, 2.0.0",2.0.0
+1827,HIVE-11230,Closed,Fixed,10/Jul/15 17:01,2.0.0,2.0.0
+1828,HIVE-11229,Closed,Fixed,10/Jul/15 14:24,2.0.0,2.0.0
+1829,HIVE-11228,Closed,Fixed,10/Jul/15 13:59,2.0.0,2.0.0
+1830,HIVE-11221,Closed,Fixed,09/Jul/15 21:10,"1.3.0, 2.0.0","1.3.0, 2.0.0"
+1831,HIVE-11215,Closed,Fixed,09/Jul/15 07:20,"1.3.0, 2.0.0","1.2.0, 1.3.0, 2.0.0"
+1832,HIVE-11202,Closed,Fixed,08/Jul/15 06:38,2.0.0,2.0.0
+1833,HIVE-11198,Closed,Fixed,08/Jul/15 01:06,"1.3.0, 2.0.0","1.3.0, 2.0.0"
+1834,HIVE-11194,Closed,Fixed,07/Jul/15 21:15,"1.3.0, 2.0.0",2.0.0
+1835,HIVE-11157,Closed,Fixed,01/Jul/15 02:59,"1.3.0, 2.0.0","1.3.0, 2.0.0"
+1836,HIVE-11135,Closed,Fixed,27/Jun/15 16:21,2.0.0,2.0.0
+1837,HIVE-11122,Closed,Fixed,26/Jun/15 02:57,"1.3.0, 2.0.0","1.3.0, 2.0.0"
+1838,HIVE-11120,Closed,Fixed,26/Jun/15 02:42,"1.3.0, 2.0.0","1.3.0, 2.0.0"
+1839,HIVE-11118,Closed,Fixed,26/Jun/15 00:10,"1.3.0, 2.0.0","1.3.0, 2.0.0"
+1840,HIVE-11102,Closed,Fixed,24/Jun/15 22:54,"1.2.1, 1.3.0, 2.0.0","1.2.1, 1.3.0, 2.0.0"
+1841,HIVE-11051,Closed,Fixed,19/Jun/15 01:28,"1.3.0, 2.0.0","1.2.0, 2.0.0"
+1842,HIVE-11043,Closed,Fixed,18/Jun/15 16:45,2.0.0,2.0.0
+1843,HIVE-11035,Resolved,Fixed,17/Jun/15 15:56,1.2.1,"0.14.0, 1.0.0, 1.1.0, 1.2.0, 1.3.0, 2.0.0"
+1844,HIVE-11031,Resolved,Fixed,17/Jun/15 00:14,1.2.1,"0.13.0, 0.14.0, 1.0.0, 1.1.0, 1.2.0, 2.0.0"
+1845,HIVE-11023,Resolved,Fixed,16/Jun/15 16:26,1.2.1,"1.2.1, 1.3.0, 2.0.0"
+1846,HIVE-10996,Closed,Fixed,13/Jun/15 00:46,"1.1.1, 1.2.2, 2.0.0","1.1.0, 1.2.0, 1.3.0, 2.0.0"
+1847,HIVE-10974,Closed,Fixed,09/Jun/15 21:03,2.0.0,2.0.0
+1848,HIVE-10972,Closed,Fixed,09/Jun/15 20:37,"1.3.0, 2.0.0",2.0.0
+1849,HIVE-10707,Closed,Fixed,14/May/15 06:18,"1.3.0, 2.0.0",2.0.0
+1850,HIVE-10651,Closed,Fixed,07/May/15 22:01,"1.3.0, 2.0.0","1.3.0, 2.0.0"
+1851,HIVE-10021,Closed,Fixed,19/Mar/15 19:55,"1.3.0, 2.0.0","0.13.1, 2.0.0"
+1852,HIVE-9499,Closed,Fixed,28/Jan/15 16:45,"2.0.1, 2.1.0","0.14.0, 1.0.0, 1.1.0, 1.2.0, 2.0.0"
+1853,HIVE-7239,Closed,Fixed,16/Jun/14 18:47,2.2.0,2.1.0
+1854,HIVE-4243,Closed,Fixed,28/Mar/13 15:02,2.0.0,"1.3.0, 2.0.0"
+1855,HIVE-1863,Closed,Duplicate,23/Dec/10 04:02,0.7.0,2.0.0

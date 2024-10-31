@@ -1,0 +1,2 @@
+project = HIVE AND issuetype = Bug AND status in (Resolved, Closed) AND affectedVersion >=  2.0.0  AND resolved < 2018-01-01 AND affectedVersion in releasedVersions() AND fixVersion in releasedVersions()
+project = HIVE AND issuetype = Bug AND status in (Resolved, Closed) AND affectedVersion >=  2.0.0  AND resolved >= 2018-01-01 AND affectedVersion in releasedVersions() AND fixVersion in releasedVersions()
