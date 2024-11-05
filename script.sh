@@ -27,11 +27,16 @@ while IFS=, read -r version release_date; do
 	und add "$HIVE_DIR" -db "$MGL_DIR/analysis.und"
     und analyze -db "$MGL_DIR/analysis.und"
 
-	und report -db "$MGL_DIR/analysis.und" -metrics "AvgCyclomatic, CountLineCode, CountOutput, CountPath, MaxNesting" -format csv > "$MGL_DIR/full_metrics_$version.csv"
+    # Extraire les métriques de projet et les sauvegarder dans un fichier CSV
+    und metrics -csv "$MGL_DIR/analysis.und" > "$MGL_DIR/full_metrics_$version.csv"
     # Filtrer le rapport pour n'inclure que les fichiers présents dans filtered_couples.csv
     awk -F, 'NR==FNR { files[$1]; next } $1 in files' "$MGL_DIR/filtered_couples.csv" "$MGL_DIR/full_metrics_$version.csv" > "$MGL_DIR/metrics_filtered_$version.csv"
 
     echo "Filtered metrics for version $version saved to metrics_filtered_$version.csv"
+
+    # Revenir à la branche principale (master)
     git checkout master
 
 done < "$MGL_DIR/versions.csv"
+
+echo "Finished analyzing all versions"
