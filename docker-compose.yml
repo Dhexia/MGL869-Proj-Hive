@@ -1,0 +1,8 @@
+services:
+  lab-hive:
+    build: .
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./data:/Hive/data
+      - ./../hive:/Hive/data/repo
