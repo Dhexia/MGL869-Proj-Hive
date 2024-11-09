@@ -3,3 +3,9 @@
 /.env/
 /.idea/
 docker.env
+/app/repo/
+/app/output/
+/app/.ipynb_checkpoints/
+/app/repo/
+/understand_app/license
+/understand_app/

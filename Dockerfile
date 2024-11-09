@@ -6,11 +6,13 @@ RUN apt-get update && apt-get upgrade -y
 RUN apt-get install -y python3-pip git
 RUN pip3 install pandas GitPython requests
 
-COPY UnderstandArchive/Understand-CLI-6.5.1160-Linux-64bit.tgz /temp/Understand-CLI-6.5.1160-Linux-64bit.tgz
+COPY docker-startup.sh /usr/local/bin/docker-startup.sh
+RUN chmod +x /usr/local/bin/docker-startup.sh
+RUN apt-get install -y libglib2.0-0
 
-RUN tar -xvzf /temp/Understand-CLI-6.5.1160-Linux-64bit.tgz -C /Hive
-
-# Expose port for Jupyter
 EXPOSE 8888
 
-CMD ["jupyter", "notebook","--allow-root", "--no-browser", "--NotebookApp.token='my-token'"]
+ENTRYPOINT ["/usr/local/bin/docker-startup.sh"]
+
+
+

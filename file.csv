@@ -1,9 +1,0 @@
-Version,CommitId,Fichier,AvgCyclomatic,AvgCyclomaticModified
-2.1.0,id1,f1,21,41,209
-2.2.0,id1,f2,91,4,9
-2.3.0,id2,f1,31,51,19
-2.4.0,id3,f2,41,41,9
-2.5.0,id1,f1,21,41,209
-2.6.0,id1,f2,91,4,9
-2.7.0,id2,f1,31,51,19
-2.8.0,id3,f2,41,41,9
