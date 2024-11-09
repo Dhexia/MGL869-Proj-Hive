@@ -5,7 +5,6 @@ DIR_PATH="/Hive/understand_app"
 SCITOOLS_DIR="$DIR_PATH/scitools"
 
 
-
 # Retrieve environment variables
 # Exit with an error if either of the variables is not set
 if [ -z "$UNDERSTAND_VERSION" ] || [ -z "$UNDERSTAND_BUILD" ]; then
@@ -57,39 +56,39 @@ fi
 # Function to set the license
 set_license() {
     echo "Setting the license code..."
-    "$SCITOOLS_DIR/bin/linux64/und" -setlicensecode "$LICENSE_CODE"
+    "$SCITOOLS_DIR/bin/linux64/und" -setlicensecode "$UNDERSTAND_LICENSE" >> /Hive/app/license.log
     if [ $? -eq 0 ]; then
-        echo "License successfully set in Understand."
-        echo "$LICENSE_HASH" > "$LICENSE_FILE"
-        echo "License saved to $LICENSE_FILE"
+        echo "License successfully set in Understand." >> /Hive/app/license.log
     else
-        echo "Failed to set the license in Understand. Please check your license code and the number of activations."
+        echo "Failed to set the license in Understand. Please check your license code and the number of activations." >> /Hive/app/license.log
         exit 1
     fi
 }
 
 if [ -z "$UNDERSTAND_LICENSE" ]; then
     echo "Error: UNDERSTAND_LICENSE must be set in the environment."
+    echo "Error: UNDERSTAND_LICENSE must be set in the environment." > /Hive/app/license.log
     exit 1
 fi
 
-LICENSE_HASH=$(echo -n "$UNDERSTAND_LICENSE" | sha256sum | awk '{print $1}')
-LICENSE_FILE="$DIR_PATH/license"
+echo "" > /Hive/app/license.log
 
-# Check if the license file exists
-if [ -f "$LICENSE_FILE" ]; then
-    STORED_LICENSE=$(cat "$LICENSE_FILE")
-    if [ "$STORED_LICENSE" != "$LICENSE_HASH" ]; then
-        echo "License mismatch detected. Attempting to update the license..."
-        set_license
-    else
-        echo "The current license matches the stored license. No changes needed."
-    fi
-else
-    echo "License file not found. Adding the license..."
-    set_license
-fi
+set_license
 
-# Start jupyter notebook
+cleanup() {
+    echo "Container stopped, performing cleanup..." >> /Hive/app/license.log
+    # Unregister the license
+    "$SCITOOLS_DIR/bin/linux64/und" -deregisterlicensecode >> /Hive/app/license.log
+    exit 0
+}
 
-jupyter notebook --allow-root --no-browser --NotebookApp.token='my-token'
+trap 'cleanup' SIGTERM
+trap 'cleanup' SIGINT
+
+
+# Start Jupyter Notebook in the background
+echo "Starting Jupyter Notebook..."
+jupyter notebook --allow-root --no-browser --NotebookApp.token='my-token' &
+
+#Wait
+wait $!
