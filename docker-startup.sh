@@ -3,7 +3,7 @@
 # Path to the main directory to check
 DIR_PATH="/Hive/understand_app"
 SCITOOLS_DIR="$DIR_PATH/scitools"
-
+PROFILE_FILE="/etc/profile"
 
 # Retrieve environment variables
 # Exit with an error if either of the variables is not set
@@ -81,6 +81,9 @@ cleanup() {
     "$SCITOOLS_DIR/bin/linux64/und" -deregisterlicensecode >> /Hive/app/license.log
     exit 0
 }
+
+ls $SCITOOLS_DIR/bin/linux64/
+echo "export PATH=$PATH:$SCITOOLS_DIR/bin/linux64/" >> "$PROFILE_FILE"
 
 trap 'cleanup' SIGTERM
 trap 'cleanup' SIGINT

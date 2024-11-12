@@ -4,7 +4,7 @@ USER root
 
 RUN apt-get update && apt-get upgrade -y
 RUN apt-get install -y python3-pip git
-RUN pip3 install pandas GitPython requests
+RUN pip3 install pandas GitPython requests filelock
 
 COPY docker-startup.sh /usr/local/bin/docker-startup.sh
 RUN chmod +x /usr/local/bin/docker-startup.sh
