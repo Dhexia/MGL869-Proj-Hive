@@ -1,14 +1,5 @@
-/commit_files/
 /.venv/
 /.env/
 /.idea/
 docker.env
-/app/repo/
-/app/output/
-/app/.ipynb_checkpoints/
-/understand_app/license
-/understand_app/
-/app/license.log
-/app/repositories/
-/app/project.csv
-/app/project.und/
+/data/
