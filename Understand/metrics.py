@@ -7,6 +7,9 @@ from shutil import rmtree
 
 from Understand.commands import und_create_command, und_add_command, und_analyze_command, und_metrics_command
 
+import glob
+import shutil
+import os
 
 def create_understand_project(projet_directory: str, name: str):
     """
@@ -124,7 +127,7 @@ def multi_threaded_analysis(versions: dict, num_threads: int) -> None:
                 i += 1
 
 
-def metrics(versions: dict):
+def metrics(versions: dict, limit: int = None):
     """
     :param versions:
     :return:
@@ -135,13 +138,53 @@ def metrics(versions: dict):
 
     temp_repo_directory: str = config['UNDERSTAND']['TempRepoDirectory']
     data_directory: str = config["GENERAL"]["DataDirectory"]
+    metrics_output_directory: str = config["OUTPUT"]["MetricsOutputDirectory"]
     max_threads: int = int(config["GENERAL"]["MaxThreads"])
 
+    if config['UNDERSTAND'].get('SkipMetricsAnalysis', 'No').lower() == 'yes':
+        print("Metrics analysis is skipped as per configuration.")
+        return
+
     temp_repo_path: str = path.join(data_directory, temp_repo_directory)
+    metrics_output_path: str = path.join(data_directory, metrics_output_directory)
+
     threads_num: int = min(max_threads, cpu_count())
 
     if not path.exists(temp_repo_path):
-        print(f"Creating the directory: {temp_repo_path}")
+        print(f"Creating temporary repository directory: {temp_repo_path}")
         makedirs(temp_repo_path)
 
+    if path.exists(metrics_output_path):
+        print(f"Clearing the metrics output directory: {metrics_output_path}")
+        for csv_file in glob.glob(path.join(metrics_output_path, "*.csv")):
+            os.remove(csv_file)  # Supprimer chaque fichier CSV
+    else:
+        print(f"Creating metrics output directory: {metrics_output_path}")
+        makedirs(metrics_output_path)
+        
+    if limit:
+        versions = dict(list(versions.items())[:limit])
+
     multi_threaded_analysis(versions, threads_num)
+
+    # Récupération des fichiers CSV et nettoyage des dossiers
+    for version in versions.keys():
+        version_temp_path = path.join(temp_repo_path, version)
+
+        csv_files = glob.glob(path.join(version_temp_path, "*.csv"))
+        if csv_files:
+            metrics_csv = csv_files[0]
+            shutil.copy(metrics_csv, path.join(metrics_output_path, f"{version}_metrics.csv"))
+            print(f"Metrics for version {version} saved to {metrics_output_path}")
+        else:
+            print(f"No CSV file found for version {version} in {version_temp_path}")
+
+        # Supprimer le répertoire de la version
+        if path.exists(version_temp_path):
+            rmtree(version_temp_path)
+            print(f"Temporary repository for version {version} removed.")
+
+    # Suppression du répertoire temporaire
+    if path.exists(temp_repo_path):
+        print(f"Removing the entire temporary repository: {temp_repo_path}")
+        shutil.rmtree(temp_repo_path)
