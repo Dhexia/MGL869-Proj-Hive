@@ -5,3 +5,5 @@ docker.env
 /data/
 /lab/
 .DS_Store
+/src/data/
+/src/.ipynb_checkpoints/
