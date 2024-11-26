@@ -2,7 +2,6 @@
 /.env/
 /.idea/
 docker.env
-/data/
 /lab/
 .DS_Store
 /src/data/
