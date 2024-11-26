@@ -1,6 +1,13 @@
-from git import Repo
+import time
 from packaging.version import Version
 from Dynamic.collect_sub_dynamic import collect_count_lines, collect_commit_count, collect_developer_count
+from Dynamic.convert_json import save_dynamic_metrics_to_json
+from configparser import ConfigParser
+from os import path
+
+# Configuration loaded once globally
+config = ConfigParser()
+config.read("config.ini")
 
 def collect_dynamic_metrics(sorted_versions, repo, start_version=None, limit=None):
     """
@@ -15,6 +22,15 @@ def collect_dynamic_metrics(sorted_versions, repo, start_version=None, limit=Non
     Returns:
         dict: Collected dynamic metrics for the specified versions.
     """
+
+    metrics_file : str = config["DYNAMIC"]["MetricsFile"]
+    data_directory: str = config["GENERAL"]["DataDirectory"]
+    file_path = path.join(data_directory, metrics_file)
+
+    if config['DYNAMIC'].get('SkipDynamic', 'No').lower() == 'yes':
+        print("Dynamic Metrics have already been collected. Skipping...")
+        return
+
     version_metrics = {}
     versions = list(sorted_versions.items())  # Convert to list for indexing
 
@@ -29,6 +45,8 @@ def collect_dynamic_metrics(sorted_versions, repo, start_version=None, limit=Non
     # Apply limit if specified
     end_index = start_index + limit if limit is not None else len(versions)
 
+    total_pairs = min(end_index, len(versions) - 1) - start_index  # Total pairs to process
+
     for i in range(start_index, min(end_index, len(versions) - 1)):  # Iterate over pairs of versions
         current_version, current_commit = versions[i]
         next_version, next_commit = versions[i + 1]
@@ -36,11 +54,25 @@ def collect_dynamic_metrics(sorted_versions, repo, start_version=None, limit=Non
         print(f"Processing commits between {current_version} ({current_commit.hexsha}) "
               f"and {next_version} ({next_commit.hexsha})")
 
+        # Start timing this pair
+        start_time = time.time()
+
         # Get the commit range between current and next version
         commit_range = list(repo.iter_commits(f"{current_commit.hexsha}..{next_commit.hexsha}"))
 
         # Collect metrics for this range
         version_metrics[next_version] = collect_metrics_for_commits(commit_range, repo)
+
+        # Calculate time taken
+        end_time = time.time()
+        elapsed_time = end_time - start_time
+
+        # Show progress and time
+        progress = (i / total_pairs) * 100
+        print(f"Progress: {progress:.2f}% ({i}/{total_pairs}) | Time spent: {elapsed_time:.2f} seconds")
+
+    # Save the dynamic metrics to a JSON file
+    save_dynamic_metrics_to_json(version_metrics, file_path)
 
     return version_metrics
 
@@ -60,7 +92,7 @@ def collect_metrics_for_commits(commits, repo):
     """
     metrics = {
         "count_lines": dict(collect_count_lines(commits)),  # Convert defaultdict to dict for JSON serialization
-        "commit_count": collect_commit_count(commits),
-        "developer_count": collect_developer_count(commits),
+        "commit_count": dict(collect_commit_count(commits)),
+        "developer_count": dict(collect_developer_count(commits)),
     }
     return metrics

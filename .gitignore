@@ -4,5 +4,7 @@
 docker.env
 /lab/
 .DS_Store
-/src/data/
+/src/Output/
 /src/.ipynb_checkpoints/
+/src/**/__pycache__/
+__pycache__/

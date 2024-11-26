@@ -21,7 +21,7 @@ def label_all_metrics(couples_df: pd.DataFrame) -> None:
 
     if config['UNDERSTAND'].get('SkipLabelization', 'No').lower() == 'yes':
         print("Labelization process is skipped as per configuration.")
-    return
+        return
     
     # Ensure the output directory exists
     if not path.exists(output_dir):
