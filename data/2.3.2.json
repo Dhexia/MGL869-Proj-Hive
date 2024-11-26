@@ -1,0 +1,160 @@
+{
+    "2.3.2": {
+            "count_lines": {
+                "HiveMetaStore.java": {
+                    "LinesAdded": 27,
+                    "LinesDeleted": 23
+                },
+                "ZooKeeperHiveLockManager.java": {
+                    "LinesAdded": 26,
+                    "LinesDeleted": 13
+                },
+                "ObjectStore.java": {
+                    "LinesAdded": 121,
+                    "LinesDeleted": 435
+                },
+                "TestObjectStore.java": {
+                    "LinesAdded": 19,
+                    "LinesDeleted": 0
+                },
+                "PrimitiveObjectInspectorUtils.java": {
+                    "LinesAdded": 13,
+                    "LinesDeleted": 3
+                },
+                "TestHiveMetaStore.java": {
+                    "LinesAdded": 49,
+                    "LinesDeleted": 0
+                },
+                "HiveMetaStoreClient.java": {
+                    "LinesAdded": 27,
+                    "LinesDeleted": 0
+                },
+                "IMetaStoreClient.java": {
+                    "LinesAdded": 51,
+                    "LinesDeleted": 1
+                },
+                "SessionHiveMetaStoreClient.java": {
+                    "LinesAdded": 13,
+                    "LinesDeleted": 0
+                },
+                "BeeLine.java": {
+                    "LinesAdded": 0,
+                    "LinesDeleted": 1
+                },
+                "Hadoop23Shims.java": {
+                    "LinesAdded": 24,
+                    "LinesDeleted": 15
+                },
+                "DbNotificationListener.java": {
+                    "LinesAdded": 1,
+                    "LinesDeleted": 0
+                },
+                "MetaStoreEventListenerConstants.java": {
+                    "LinesAdded": 41,
+                    "LinesDeleted": 33
+                },
+                "DummyRawStoreFailEvent.java": {
+                    "LinesAdded": 5,
+                    "LinesDeleted": 0
+                },
+                "TestDbNotificationListener.java": {
+                    "LinesAdded": 1,
+                    "LinesDeleted": 0
+                },
+                "MetaStoreListenerNotifier.java": {
+                    "LinesAdded": 14,
+                    "LinesDeleted": 1
+                },
+                "RawStore.java": {
+                    "LinesAdded": 2,
+                    "LinesDeleted": 0
+                },
+                "HBaseStore.java": {
+                    "LinesAdded": 5,
+                    "LinesDeleted": 0
+                },
+                "DummyRawStoreControlledCommit.java": {
+                    "LinesAdded": 5,
+                    "LinesDeleted": 0
+                },
+                "DummyRawStoreForJdoConnection.java": {
+                    "LinesAdded": 5,
+                    "LinesDeleted": 0
+                },
+                "SparkClientImpl.java": {
+                    "LinesAdded": 19,
+                    "LinesDeleted": 16
+                },
+                "SemanticAnalyzer.java": {
+                    "LinesAdded": 2,
+                    "LinesDeleted": 2
+                },
+                "TestHCatClient.java": {
+                    "LinesAdded": 1,
+                    "LinesDeleted": 1
+                },
+                "TestHs2Hooks.java": {
+                    "LinesAdded": 36,
+                    "LinesDeleted": 0
+                },
+                "HiveSemanticAnalyzerHookContextImpl.java": {
+                    "LinesAdded": 1,
+                    "LinesDeleted": 0
+                }
+            },
+            "commit_count": {
+                "HiveMetaStore.java": 3,
+                "ZooKeeperHiveLockManager.java": 1,
+                "ObjectStore.java": 2,
+                "TestObjectStore.java": 2,
+                "PrimitiveObjectInspectorUtils.java": 1,
+                "TestHiveMetaStore.java": 1,
+                "HiveMetaStoreClient.java": 2,
+                "IMetaStoreClient.java": 1,
+                "SessionHiveMetaStoreClient.java": 1,
+                "BeeLine.java": 1,
+                "Hadoop23Shims.java": 1,
+                "DbNotificationListener.java": 1,
+                "MetaStoreEventListenerConstants.java": 2,
+                "DummyRawStoreFailEvent.java": 1,
+                "TestDbNotificationListener.java": 1,
+                "MetaStoreListenerNotifier.java": 1,
+                "RawStore.java": 1,
+                "HBaseStore.java": 1,
+                "DummyRawStoreControlledCommit.java": 1,
+                "DummyRawStoreForJdoConnection.java": 1,
+                "SparkClientImpl.java": 1,
+                "SemanticAnalyzer.java": 1,
+                "TestHCatClient.java": 1,
+                "TestHs2Hooks.java": 1,
+                "HiveSemanticAnalyzerHookContextImpl.java": 1
+            },
+            "developer_count": {
+                "HiveMetaStore.java": 3,
+                "ZooKeeperHiveLockManager.java": 1,
+                "ObjectStore.java": 2,
+                "TestObjectStore.java": 2,
+                "PrimitiveObjectInspectorUtils.java": 1,
+                "TestHiveMetaStore.java": 1,
+                "HiveMetaStoreClient.java": 2,
+                "IMetaStoreClient.java": 1,
+                "SessionHiveMetaStoreClient.java": 1,
+                "BeeLine.java": 1,
+                "Hadoop23Shims.java": 1,
+                "DbNotificationListener.java": 1,
+                "MetaStoreEventListenerConstants.java": 1,
+                "DummyRawStoreFailEvent.java": 1,
+                "TestDbNotificationListener.java": 1,
+                "MetaStoreListenerNotifier.java": 1,
+                "RawStore.java": 1,
+                "HBaseStore.java": 1,
+                "DummyRawStoreControlledCommit.java": 1,
+                "DummyRawStoreForJdoConnection.java": 1,
+                "SparkClientImpl.java": 1,
+                "SemanticAnalyzer.java": 1,
+                "TestHCatClient.java": 1,
+                "TestHs2Hooks.java": 1,
+                "HiveSemanticAnalyzerHookContextImpl.java": 1
+            }
+        }
+}
