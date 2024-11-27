@@ -3,7 +3,8 @@ from packaging.version import Version
 from Dynamic.collect_sub_dynamic import collect_count_lines, collect_commit_count, collect_developer_count
 from Dynamic.convert_json import save_dynamic_metrics_to_json
 from configparser import ConfigParser
-from os import path, cpu_count
+from os import path, cpu_count, makedirs
+from os.path import exists, join
 from concurrent.futures import ProcessPoolExecutor
 
 # Configuration loaded once globally
@@ -32,8 +33,9 @@ def collect_dynamic_metrics(sorted_versions, repo, start_version=None, limit=Non
 
     # Initialize variables -------------------------------------------------- #
 
+    serialize = threads_num > 1  # False if sequential mode enabled
     version_metrics, start_index, end_index, total_pairs, versions = initialize_versions(
-        sorted_versions, start_version, limit
+        sorted_versions, start_version, limit, serialize=serialize
     )
 
     # Retrieve the dynamic metrics ------------------------------------------ #
@@ -41,14 +43,13 @@ def collect_dynamic_metrics(sorted_versions, repo, start_version=None, limit=Non
     if threads_num == 1:
         version_metrics = run_sequential_mode(start_index, end_index, versions, repo, version_metrics, total_pairs)
     else:
-        version_metrics = run_parallel_mode(start_index, end_index, versions, version_metrics, main_repo_path, total_pairs, threads_num)
+        version_metrics = run_parallel_mode(start_index, end_index, versions, version_metrics, main_repo_path, threads_num)
 
     # Save the dynamic metrics to a JSON file -------------------------------- #
 
     save_dynamic_metrics_to_json(version_metrics, file_path)
 
     return version_metrics
-
 
 def run_sequential_mode(start_index, end_index, versions, repo, version_metrics, total_pairs):
     """
@@ -65,14 +66,15 @@ def run_sequential_mode(start_index, end_index, versions, repo, version_metrics,
     Returns:
         dict: Collected dynamic metrics.
     """
+    print("Starting sequential processing...")
+
     for i in range(start_index, min(end_index, len(versions) - 1)):
         version_metrics = process_version_pair(
             i, total_pairs, versions=versions, repo=repo, metrics=version_metrics
         )
     return version_metrics
 
-
-def run_parallel_mode(start_index, end_index, versions, version_metrics, main_repo_path, total_pairs, max_cores):
+def run_parallel_mode(start_index, end_index, versions, version_metrics, main_repo_path, max_cores):
     """
     Run the dynamic metrics collection in parallel mode.
 
@@ -82,18 +84,19 @@ def run_parallel_mode(start_index, end_index, versions, version_metrics, main_re
         versions (list): List of version-commit pairs.
         version_metrics (dict): Dictionary to store collected metrics.
         main_repo_path (str): Path to the main Git repository.
-        total_pairs (int): Total pairs of versions to process.
         max_cores (int): Maximum number of cores to use for processing.
 
     Returns:
         dict: Collected dynamic metrics.
     """
 
+    print(f"Starting parallel processing with {max_cores} cores...")
+
     start_time = time.time()
 
     with ProcessPoolExecutor(max_workers=max_cores) as executor:
         futures = [
-            executor.submit(process_version_pair_safe, i, total_pairs, versions, main_repo_path, {})
+            executor.submit(process_version_pair_safe, i, versions, main_repo_path, version_metrics)
             for i in range(start_index, min(end_index, len(versions) - 1))
         ]
         for future in futures:
@@ -146,13 +149,12 @@ def process_version_pair(i, total_pairs, versions, repo, metrics):
 
     return metrics
 
-def process_version_pair_safe(i, total_pairs, versions, repo_path, metrics):
+def process_version_pair_safe(i, versions, repo_path, metrics):
     """
     Safe version of process_version_pair to be executed in a separate process.
 
     Args:
         i (int): Current index in the versions list.
-        total_pairs (int): Total pairs to process.
         versions (list): List of version-commit pairs.
         repo_path (str): Path to the Git repository.
         metrics (dict): Collected metrics.
@@ -162,17 +164,22 @@ def process_version_pair_safe(i, total_pairs, versions, repo_path, metrics):
     """
     from git import Repo
     repo = Repo(repo_path)
-    current_version, current_commit = versions[i]
-    next_version, next_commit = versions[i + 1]
+
+    current_version, current_commit_hexsha = versions[i]
+    next_version, next_commit_hexsha = versions[i + 1]  
+
+    # Recreate Commit objects
+    current_commit = repo.commit(current_commit_hexsha)
+    next_commit = repo.commit(next_commit_hexsha)
 
     print(f"Processing commits between {current_version} ({current_commit.hexsha}) "
-        f"and {next_version} ({next_commit.hexsha})")
+      f"and {next_version} ({next_commit.hexsha})", flush=True)
 
     commit_range = list(repo.iter_commits(f"{current_commit.hexsha}..{next_commit.hexsha}"))
     metrics[next_version] = collect_metrics_for_commits(commit_range)
     return metrics
 
-def initialize_versions(sorted_versions, start_version, limit):
+def initialize_versions(sorted_versions, start_version, limit, serialize=False):
     """
     Initialize version indices and limits for processing.
 
@@ -185,7 +192,12 @@ def initialize_versions(sorted_versions, start_version, limit):
         tuple: Initialized metrics, start index, end index, total pairs.
     """
     version_metrics = {}
-    versions = list(sorted_versions.items())  # Convert to list for indexing
+
+    if serialize:
+        versions = [(version, commit.hexsha) for version, commit in sorted_versions.items()]
+    else:
+        versions = list(sorted_versions.items())
+
     start_index = 0
     if start_version:
         if start_version in sorted_versions:
@@ -197,8 +209,6 @@ def initialize_versions(sorted_versions, start_version, limit):
     end_index = start_index + limit if limit is not None else len(versions)
     total_pairs = min(end_index, len(versions) - 1) - start_index
     return version_metrics, start_index, end_index, total_pairs, versions
-
-
 
 def collect_metrics_for_commits(commits):
     """
@@ -218,7 +228,6 @@ def collect_metrics_for_commits(commits):
     }
     return metrics
 
-
 def load_configuration():
     """
     Load configuration from config.ini.
@@ -226,10 +235,20 @@ def load_configuration():
     Returns:
         tuple: Metrics file name, data directory, and full file path.
     """
+
+    # Paths and directories
     metrics_file = config["DYNAMIC"]["MetricsFile"]
     data_directory = config["GENERAL"]["DataDirectory"]
-    file_path = path.join(data_directory, metrics_file)
+    json_subdir = config["DYNAMIC"]["JsonMetricsSubDirectory"]
+    json_metrics_path = join(data_directory, json_subdir)
 
+    if not exists(json_metrics_path):
+        makedirs(json_metrics_path)
+        print(f"Created directory: {json_metrics_path}")
+
+    file_path = join(json_metrics_path, metrics_file)
+
+    # CPU
     hive_git_directory: str = config["GIT"]["HiveGitDirectory"]
     hive_git_repo_name: str = config["GIT"]["HiveGitRepoName"]
     data_directory: str = config["GENERAL"]["DataDirectory"]
@@ -239,7 +258,6 @@ def load_configuration():
     threads_num: int = min(max_threads, cpu_count())
 
     return file_path, threads_num, main_repo_path
-
 
 def skip_dynamic_metrics():
     """
