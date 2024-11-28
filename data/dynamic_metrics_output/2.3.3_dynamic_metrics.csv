@@ -1,0 +1,8 @@
+Name,LinesAdded,LinesDeleted,CommitCount,DeveloperCount
+DbNotificationListener.java,35,24,1,1
+Exec.java,1,9,1,1
+Ftp.java,0,439,1,1
+HivePreparedStatement.java,25,3,1,1
+TestJdbcDriver2.java,20,0,1,1
+TestUDFXPathUtil.java,22,1,1,1
+UDFXPathUtil.java,26,1,1,1

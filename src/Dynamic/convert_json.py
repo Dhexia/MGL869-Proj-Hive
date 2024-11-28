@@ -1,6 +1,11 @@
 import json
 import pandas as pd
-import os
+from os.path import exists, join
+from configparser import ConfigParser
+from os import makedirs
+
+config = ConfigParser()
+config.read("config.ini")
 
 def save_dynamic_metrics_to_json(dynamic_metrics, file_path):
     """
@@ -21,25 +26,44 @@ def save_dynamic_metrics_to_json(dynamic_metrics, file_path):
     except Exception as e:
         print(f"An error occurred while saving dynamic metrics: {e}")
 
-
-def convert_json_to_csv(json_file, output_dir):
+def convert_json_to_csv():
     """
-    Convert a JSON of dynamic metrics to multiple CSV files, one per version.
+    Convert dynamic metrics JSON to CSV files for each version, using configuration from config.ini.
 
-    Args:
-        json_file (str): Path to the JSON file containing dynamic metrics.
-        output_dir (str): Directory to save the output CSV files.
+    The function reads:
+        - The path of the dynamic metrics JSON from the configuration file.
+        - The output directory for saving the generated CSV files.
+    
+    Returns:
+        None
     """
-    # Charger le fichier JSON
-    with open(json_file, 'r') as f:
-        data = json.load(f)
 
-    # Créer le répertoire de sortie s'il n'existe pas
-    os.makedirs(output_dir, exist_ok=True)
+    # Load configuration from config.ini ----------------------------------- #
+    dynamic_metrics_file = config["DYNAMIC"]["MetricsFile"]
+    data_directory = config["GENERAL"]["DataDirectory"]
+    dynamic_metrics_subdir = config["DYNAMIC"]["JsonMetricsSubDirectory"]
+    csv_output_subdir = config["OUTPUT"]["DynamicMetricsOutputDirectory"]
 
-    # Parcourir chaque version
-    for version, metrics in data.items():
-        # Construire les données pour le DataFrame
+    json_path = join(data_directory, dynamic_metrics_subdir, dynamic_metrics_file)
+    csv_output_dir = join(data_directory, csv_output_subdir)
+
+    if not exists(csv_output_dir):
+        makedirs(csv_output_dir)
+        print(f"Created output directory: {csv_output_dir}")
+
+    if config['DYNAMIC'].get('SkipConversion', 'No').lower() == 'yes':
+        print("Conversion of dynamic metrics to csv has already been done. Skipping...")
+        return
+    
+    # Load the dynamic metrics JSON ---------------------------------------- #
+    if not exists(json_path):
+        raise FileNotFoundError(f"Dynamic metrics JSON not found: {json_path}")
+
+    with open(json_path, 'r') as f:
+        dynamic_metrics = json.load(f)
+
+    # Convert JSON to CSV for each version --------------------------------- #
+    for version, metrics in dynamic_metrics.items():
         rows = []
         for file_name in metrics['count_lines']:
             rows.append({
@@ -50,10 +74,10 @@ def convert_json_to_csv(json_file, output_dir):
                 'DeveloperCount': metrics['developer_count'].get(file_name, 0),
             })
 
-        # Créer un DataFrame et trier par nom de fichier
+        # Create a DataFrame and sort by file name
         df = pd.DataFrame(rows).sort_values(by='Name')
 
-        # Sauvegarder en CSV
-        output_path = os.path.join(output_dir, f"{version}_dynamic_metrics.csv")
-        df.to_csv(output_path, index=False)
-        print(f"CSV écrit : {output_path}")
+        # Save the CSV file
+        csv_file_path = join(csv_output_dir, f"{version}_dynamic_metrics.csv")
+        df.to_csv(csv_file_path, index=False)
+        print(f"Dynamic metrics CSV created: {csv_file_path}")
