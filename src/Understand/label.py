@@ -45,8 +45,11 @@ def label_all_metrics(couples_df: pd.DataFrame) -> None:
                 if "Kind" not in metrics_df.columns:
                     raise KeyError(f"Column 'Kind' not found in {metrics_file}")
                 
-                # Filter rows where Kind == "File"
-                metrics_df = metrics_df[metrics_df["Kind"] == "File"]
+                # Filter rows where Kind == "File" and extension is .java or .cpp
+                metrics_df = metrics_df[
+                    (metrics_df["Kind"] == "File") &
+                    (metrics_df["Name"].str.endswith((".java", ".cpp")))
+                ]
                 metrics_df["BugStatus"] = 0
                 
                 # Extract version from the file name

@@ -266,7 +266,7 @@ def skip_dynamic_metrics():
     Returns:
         bool: True if skipping is enabled, False otherwise.
     """
-    if config['DYNAMIC'].get('SkipDynamic', 'No').lower() == 'yes':
+    if config['DYNAMIC'].get('SkipDynamicAnalysis', 'No').lower() == 'yes':
         print("Dynamic Metrics have already been collected. Skipping...")
         return True
     return False

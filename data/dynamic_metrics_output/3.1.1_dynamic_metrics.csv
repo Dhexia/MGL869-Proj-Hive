@@ -1,0 +1,11 @@
+Name,LinesAdded,LinesDeleted,CommitCount,DeveloperCount
+EnforceReadOnlyTables.java,4,3,1,1
+ExplainSemanticAnalyzer.java,2,0,1,1
+FallbackHiveAuthorizer.java,253,0,1,1
+FallbackHiveAuthorizerFactory.java,36,0,1,1
+HiveConnection.java,16,3,1,1
+HttpAuthUtils.java,6,18,1,1
+HttpKerberosRequestInterceptor.java,11,12,1,1
+MetaStoreUtils.java,9,2,1,1
+SettableConfigUpdater.java,1,1,1,1
+TestMetaStoreUtils.java,79,0,1,1
