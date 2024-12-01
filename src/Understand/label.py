@@ -16,7 +16,7 @@ def label_all_metrics(couples_df: pd.DataFrame) -> None:
     """
     base_dir = config["GENERAL"]["DataDirectory"]
     metrics_directory = path.join(base_dir, config["OUTPUT"]["MetricsOutputDirectory"])
-    output_dir = path.join(base_dir, config["OUTPUT"]["LabeledMetricsOutputDirectory"])
+    output_dir = path.join(base_dir, config["OUTPUT"]["StaticMetricsOutputDirectory"])
     csv_separator = config["GENERAL"].get("CSVSeparatorMetrics", ",")
 
     if config['UNDERSTAND'].get('SkipLabelization', 'No').lower() == 'yes':

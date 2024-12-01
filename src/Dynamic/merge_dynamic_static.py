@@ -23,7 +23,7 @@ def merge_static_and_dynamic_csv():
 
     # Load configuration from config.ini ----------------------------------- #
     data_directory = config["GENERAL"]["DataDirectory"]
-    static_metrics_subdir = config["OUTPUT"]["LabeledMetricsOutputDirectory"]
+    static_metrics_subdir = config["OUTPUT"]["StaticMetricsOutputDirectory"]
     dynamic_metrics_subdir = config["OUTPUT"]["DynamicMetricsOutputDirectory"]
     output_metrics_subdir = config["OUTPUT"]["AllMetricsOutputDirectory"]
 
