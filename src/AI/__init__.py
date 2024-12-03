@@ -1,0 +1,1 @@
+from AI.model_pipeline import run_pipeline

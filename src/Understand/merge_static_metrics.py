@@ -50,10 +50,6 @@ def merge_static_metrics():
         # Add the `Version` column
         df.insert(0, "Version", version)  # Insert at the first position
         
-        # Remove the `Kind` column if it exists
-        if "Kind" in df.columns:
-            df = df.drop(columns=["Kind"])
-        
         # Append the DataFrame to the list
         merged_data.append(df)
     

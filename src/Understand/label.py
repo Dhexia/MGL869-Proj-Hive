@@ -22,51 +22,55 @@ def label_all_metrics(couples_df: pd.DataFrame) -> None:
     if config['UNDERSTAND'].get('SkipLabelization', 'No').lower() == 'yes':
         print("Labelization process is skipped as per configuration.")
         return
-    
-    # Ensure the output directory exists
-    if not path.exists(output_dir):
-        print(f"Creating output directory: {output_dir}")
-        makedirs(output_dir)
-    
-    # Extract only filenames from the 'File' column in the couples DataFrame
+
+    ensure_directory_exists(output_dir)
     couples_df["Filename"] = couples_df["File"].apply(lambda x: path.basename(x))
-    
-    # Process all files in the metrics directory
+
     if not path.exists(metrics_directory):
         raise FileNotFoundError(f"Metrics directory not found: {metrics_directory}")
-    
+
     for metrics_file in listdir(metrics_directory):
         if metrics_file.endswith(".csv"):
-            metrics_path = path.join(metrics_directory, metrics_file)
-            print(f"Processing metrics file: {metrics_path}")
-            try:
-                # Load metrics
-                metrics_df = pd.read_csv(metrics_path, sep=csv_separator, engine="python")
-                if "Kind" not in metrics_df.columns:
-                    raise KeyError(f"Column 'Kind' not found in {metrics_file}")
-                
-                # Filter rows where Kind == "File" and extension is .java or .cpp
-                metrics_df = metrics_df[
-                    (metrics_df["Kind"] == "File") &
-                    (metrics_df["Name"].str.endswith((".java", ".cpp")))
-                ]
-                metrics_df["BugStatus"] = 0
-                
-                # Extract version from the file name
-                version = metrics_file.replace("_metrics.csv", "")
-                
-                # Identify problematic files for the current version
-                problematic_files = couples_df[
-                    couples_df["Version Affected"].str.contains(version, na=False)
-                ]["Filename"]
-                
-                # Label problematic files with BugStatus = 1
-                metrics_df.loc[metrics_df["Name"].isin(problematic_files), "BugStatus"] = 1
-                
-                # Save labeled metrics to the output directory
-                labeled_metrics_path = path.join(output_dir, f"{version}_labeled_metrics.csv")
-                metrics_df.to_csv(labeled_metrics_path, index=False, sep=csv_separator)
-                print(f"Labeled metrics saved to: {labeled_metrics_path}")
-            except Exception as e:
-                print(f"Error processing file {metrics_file}: {e}")
+            process_metrics_file(metrics_file, metrics_directory, couples_df, output_dir, csv_separator)
 
+def ensure_directory_exists(directory: str) -> None:
+    """Ensures the specified directory exists, creating it if necessary."""
+    if not path.exists(directory):
+        print(f"Creating output directory: {directory}")
+        makedirs(directory)
+
+def process_metrics_file(metrics_file: str, metrics_directory: str, 
+                         couples_df: pd.DataFrame, output_dir: str, csv_separator: str) -> None:
+    """
+    Processes a single metrics file, labels it, and saves the output.
+    
+    Parameters:
+        metrics_file (str): Name of the metrics file.
+        metrics_directory (str): Path to the directory containing metrics files.
+        couples_df (pd.DataFrame): DataFrame with affected files and versions.
+        output_dir (str): Directory to save the labeled metrics.
+        csv_separator (str): CSV separator to use for reading/writing files.
+    """
+    metrics_path = path.join(metrics_directory, metrics_file)
+    print(f"Processing metrics file: {metrics_path}")
+
+    try:
+        metrics_df = pd.read_csv(metrics_path, sep=csv_separator, engine="python")
+        if "Kind" not in metrics_df.columns:
+            raise KeyError(f"Column 'Kind' not found in {metrics_file}")
+
+        metrics_df = metrics_df[
+            (metrics_df["Kind"] == "File") &
+            (metrics_df["Name"].str.endswith((".java", ".cpp")))
+        ]
+        metrics_df["BugStatus"] = 0
+
+        version = metrics_file.replace("_metrics.csv", "")
+        problematic_files = couples_df[couples_df["Version Affected"].str.contains(version, na=False)]["Filename"]
+        metrics_df.loc[metrics_df["Name"].isin(problematic_files), "BugStatus"] = 1
+
+        labeled_metrics_path = path.join(output_dir, f"{version}_labeled_metrics.csv")
+        metrics_df.to_csv(labeled_metrics_path, index=False, sep=csv_separator)
+        print(f"Labeled metrics saved to: {labeled_metrics_path}")
+    except Exception as e:
+        print(f"Error processing file {metrics_file}: {e}")
