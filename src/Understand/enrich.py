@@ -19,6 +19,10 @@ def enrich_metrics(couples_df: pd.DataFrame) -> None:
     output_dir = path.join(base_dir, config["OUTPUT"]["StaticMetricsOutputDirectory"])
     csv_separator = config["GENERAL"].get("CSVSeparatorMetrics", ",")
 
+    if config['UNDERSTAND'].get('SkipEnrich', 'No').lower() == 'yes':
+        print("Enrichment process is skipped as per configuration.")
+        return
+
     ensure_directory_exists(output_dir)
 
     if not path.exists(metrics_directory):
