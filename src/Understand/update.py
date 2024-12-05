@@ -25,6 +25,10 @@ def merge_all_metrics(versions):
     - Saves the final metrics to a new CSV file.
     - Deletes the original labeled and enriched metrics files.
     """
+    if config['UNDERSTAND'].get('SkipMerge', 'No').lower() == 'yes':
+        print("Merging has already been done. Skipping...")
+        return
+    
     for version in versions:
         try:
             # File paths
