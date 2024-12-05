@@ -3,7 +3,7 @@ from Dynamic.convert_json import save_dynamic_metrics_to_json
 from concurrent.futures import ThreadPoolExecutor
 import time
 from threading import Lock
-from Dynamic.collect_sub_dynamic import collect_count_lines, collect_commit_count, collect_developer_count
+from Dynamic.collect_sub_dynamic import collect_count_lines, collect_commit_count, collect_developer_count, collect_bug_fix_count, collect_cumulative_developer_count, collect_average_time_between_changes, collect_cumulative_commit_count, collect_comment_change_metrics, collect_cumulative_comment_metrics, collect_cumulative_average_time_between_changes, collect_average_expertise, collect_minimum_expertise
 from os.path import exists, join, abspath
 from os import cpu_count, makedirs
 
@@ -244,5 +244,14 @@ def collect_metrics_for_commits(commits):
         "count_lines": dict(collect_count_lines(commits)),  # Convert defaultdict to dict for JSON serialization
         "commit_count": dict(collect_commit_count(commits)),
         "developer_count": dict(collect_developer_count(commits)),
+        "bug_fix_count": dict(collect_bug_fix_count(commits)),
+        "cumulative_developer_count": dict(collect_cumulative_developer_count(commits)),
+        "average_time_between_changes": dict(collect_average_time_between_changes(commits)),
+        "cumulative_commit_count": dict(collect_cumulative_commit_count(commits)),
+        "comment_change_metrics": dict(collect_comment_change_metrics(commits)),
+        "cumulative_comment_metrics": dict(collect_cumulative_comment_metrics(commits)),
+        "cumulative_average_time_between_changes": dict(collect_cumulative_average_time_between_changes(commits)),
+        "average_expertise": dict(collect_average_expertise(commits)),
+        "minimum_expertise": dict(collect_minimum_expertise(commits))
     }
     return metrics
