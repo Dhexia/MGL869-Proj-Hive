@@ -49,7 +49,7 @@ def merge_static_and_dynamic_csv():
     for dynamic_file in os.listdir(dynamic_dir):
         if dynamic_file.endswith("_dynamic_metrics.csv"):
             version = dynamic_file.replace("_dynamic_metrics.csv", "")
-            static_file = join(static_dir, f"{version}_labeled_metrics.csv")
+            static_file = join(static_dir, f"{version}_static_metrics.csv")
             dynamic_file_path = join(dynamic_dir, dynamic_file)
             output_file = join(output_dir, f"{version}_all_metrics.csv")
 

@@ -1,13 +1,14 @@
 import pandas as pd
 from sklearn.model_selection import train_test_split
-from sklearn.metrics import roc_auc_score, precision_score, recall_score
-from typing import Dict, Callable, Tuple
+from sklearn.metrics import roc_auc_score, precision_score, recall_score, roc_curve
+from typing import Dict, Tuple
 from sklearn.base import BaseEstimator
 from configparser import ConfigParser
-from imblearn.over_sampling import SMOTE
-from imblearn.under_sampling import RandomUnderSampler
-from imblearn.pipeline import Pipeline as ImbPipeline
-
+import time
+from sklearn.preprocessing import StandardScaler
+import matplotlib.pyplot as plt
+import shap
+import numpy as np
 
 
 config=ConfigParser()
@@ -38,7 +39,8 @@ def load_config(config_section: str) -> Dict[str, any]:
 def load_and_prepare_data(
     file_path: str,
     config: Dict[str, any],
-    resampling_method: str = "smote"
+    resampling_method: str = "smote",
+    verbose: bool = False
 ) -> Tuple[pd.DataFrame, pd.DataFrame, pd.Series, pd.Series]:
     """
     Loads data, cleans it, balances classes, and prepares training and testing sets.
@@ -68,9 +70,12 @@ def load_and_prepare_data(
     y = df[target_column]
 
     # Normalize features
-    from sklearn.preprocessing import StandardScaler
     scaler = StandardScaler()
+    start_time = time.time()
     X = pd.DataFrame(scaler.fit_transform(X), columns=X.columns)
+    end_time = time.time()
+    if not verbose:
+        print(f"Scaler fit/transform time: {end_time - start_time:.2f} seconds")
 
     # Balance classes if requested
     if resampling_method == "undersample":
@@ -96,12 +101,19 @@ def load_and_prepare_data(
 def train_model(
     model: BaseEstimator,
     X_train: pd.DataFrame,
-    y_train: pd.Series
+    y_train: pd.Series,
+    verbose: bool = False
 ) -> BaseEstimator:
     """
     Trains a given model on the provided data.
     """
+
+    start_time = time.time()
     model.fit(X_train, y_train)
+    end_time = time.time()
+    if not verbose:
+        print(f"Training time: {end_time - start_time:.2f} seconds")
+
     return model
 
 
@@ -109,48 +121,146 @@ def train_model(
 def evaluate_model(
     model: BaseEstimator,
     X_test: pd.DataFrame,
-    y_test: pd.Series
+    y_test: pd.Series,
+    verbose: bool = False
 ) -> Dict[str, float]:
     """
     Evaluates a model's performance on test data.
     """
+
+    start_time = time.time()
     y_pred = model.predict(X_test)
+    end_time = time.time()
+
+    if not verbose:
+        print(f"Prediction time: {end_time - start_time:.2f} seconds")
+
     y_proba = model.predict_proba(X_test)[:, 1]
+
+    # Calculate ROC curve
+    fpr, tpr, _ = roc_curve(y_test, y_proba)
 
     metrics = {
         "AUC": roc_auc_score(y_test, y_proba),
         "Precision": precision_score(y_test, y_pred),
         "Recall": recall_score(y_test, y_pred),
+        "FPR": fpr.tolist(),
+        "TPR": tpr.tolist()
     }
 
     return metrics
 
 
-# 5. Pipeline
-def run_pipeline(
-    file_path: str,
-    model: Callable[[], BaseEstimator],
-    config_section: str
-) -> Dict[str, float]:
-    """
-    Runs the entire pipeline for training and evaluating a model.
-    
-    :param file_path: Path to the CSV file.
-    :param model: Callable that returns an instance of a scikit-learn model.
-    :param config_section: Name of the section in the config.ini file to load parameters from.
-    :return: Dictionary of evaluation metrics.
-    """
-    # Load configuration
-    config = load_config(config_section)
-    
-    # Prepare data
-    X_train, X_test, y_train, y_test = load_and_prepare_data(file_path, config)
-    
-    # Train model
-    model_instance = model()
-    trained_model = train_model(model_instance, X_train, y_train)
-    
-    # Evaluate model
-    metrics = evaluate_model(trained_model, X_test, y_test)
 
-    return metrics
+# 5. Plot feature importance for Random Forest
+def plot_feature_importance_rf(trained_model_rf, feature_columns, top_n=30):
+    """
+    Plot the top N feature importances from a trained Random Forest model, 
+    with a cumulative bar for all other features.
+
+    Parameters:
+        trained_model_rf (RandomForestClassifier): Trained Random Forest model.
+        feature_columns (list or array-like): Column names of the dataset.
+        top_n (int): Number of top features to display (default is 30).
+    """
+    # Extract feature importances
+    feature_importances = trained_model_rf.feature_importances_
+
+    # Associate importances with feature names
+    feature_importances_df = pd.DataFrame({
+        "Feature": feature_columns,  
+        "Importance": feature_importances
+    }).sort_values(by="Importance", ascending=False)
+
+    # Count how many features are in "Others"
+    others_count = len(feature_importances_df) - top_n
+
+    # Select the top N features and calculate the cumulative importance of the rest
+    top_features = feature_importances_df[:top_n]
+    others_importance = feature_importances_df[top_n:]["Importance"].sum()
+    others_row = pd.DataFrame({
+        "Feature": [f"Others ({others_count} features)"], 
+        "Importance": [others_importance]
+    })
+
+    # Combine top N features with the "Others" row
+    final_df = pd.concat([top_features, others_row], ignore_index=True)
+
+    # Visualization
+    plt.figure(figsize=(14, 10))
+    plt.barh(final_df["Feature"], final_df["Importance"])
+    plt.xlabel("Importance")
+    plt.title(f"Top {top_n} Feature Importances (Random Forest)")
+    plt.gca().invert_yaxis()  # Invert to show the most important feature at the top
+    plt.show()
+
+
+
+# 6. Plot SHAP summary plot
+def plot_shap_summary(trained_model, X_train, X_test, top_n=10):
+    """
+    Generates a SHAP summary plot for the top N most important features.
+    
+    Parameters:
+        trained_model: Trained model (e.g., Logistic Regression or any model compatible with SHAP).
+        X_train: Training dataset used to fit the SHAP explainer.
+        X_test: Test dataset to compute SHAP values.
+        top_n: Number of top features to display in the summary plot (default is 10).
+    """
+    # Prepare SHAP explainer and compute SHAP values
+    explainer = shap.LinearExplainer(trained_model, X_train)
+    shap_values = explainer.shap_values(X_test)
+    
+    # Generate the summary plot
+    plt.figure(figsize=(10, 8))
+    shap.summary_plot(
+        shap_values, 
+        X_test, 
+        feature_names=X_train.columns, 
+        max_display=top_n,  # Display top N features
+        show=True
+    )
+
+
+def plot_shap_with_others(trained_model, X_train, X_test, top_n=10):
+    """
+    Plot the top N features by mean SHAP values with a single "Others" bar for less important features.
+    
+    Parameters:
+        trained_model: Trained model (e.g., Logistic Regression or any compatible model with SHAP).
+        X_train: Training dataset used to fit the SHAP explainer.
+        X_test: Test dataset to compute SHAP values.
+        top_n: Number of top features to display (default is 10).
+    """
+    # Prepare SHAP explainer and compute SHAP values
+    explainer = shap.LinearExplainer(trained_model, X_train)
+    shap_values = explainer.shap_values(X_test)
+    
+    # Compute mean absolute SHAP values for each feature
+    mean_shap_values = np.abs(shap_values).mean(axis=0)
+    feature_importance = pd.DataFrame({
+        "Feature": X_train.columns,
+        "Mean_SHAP": mean_shap_values
+    }).sort_values(by="Mean_SHAP", ascending=False)
+    
+    # Select the top N features and calculate the cumulative importance of "Others"
+    top_features = feature_importance[:top_n]
+    others_count = len(feature_importance) - top_n
+    others_importance = feature_importance[top_n:]["Mean_SHAP"].sum()
+    
+    # Create a row for "Others"
+    others_row = pd.DataFrame({
+        "Feature": [f"Others ({others_count} features)"],
+        "Mean_SHAP": [others_importance]
+    })
+    
+    # Combine top features with "Others"
+    final_df = pd.concat([top_features, others_row], ignore_index=True)
+    
+    # Plot the bar chart
+    plt.figure(figsize=(14, 10))
+    plt.barh(final_df["Feature"], final_df["Mean_SHAP"])
+    plt.xlabel("Mean |SHAP value|")
+    plt.title(f"Top {top_n} SHAP Features with 'Others'")
+    plt.gca().invert_yaxis()  # Show the most important feature at the top
+    plt.show()

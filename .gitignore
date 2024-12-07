@@ -2,9 +2,9 @@
 /.env/
 /.idea/
 docker.env
-/lab/
+/venv3.12/
 .DS_Store
-/src/Output/
+/src/Output/ss
 /src/.ipynb_checkpoints/
 /src/**/__pycache__/
 __pycache__/
