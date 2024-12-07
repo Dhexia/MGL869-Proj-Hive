@@ -4,7 +4,7 @@
 docker.env
 /venv3.12/
 .DS_Store
-/src/Output/ss
+/src/Output/
 /src/.ipynb_checkpoints/
 /src/**/__pycache__/
 __pycache__/

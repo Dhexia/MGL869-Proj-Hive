@@ -4,6 +4,8 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.ensemble import RandomForestClassifier
 from configparser import ConfigParser
 from AI.model_pipeline import evaluate_model, train_model, load_and_prepare_data, load_config
+import matplotlib.pyplot as plt
+from typing import Dict
 
 config=ConfigParser()
 config.read('config.ini')
@@ -28,6 +30,10 @@ def train_and_save_models(max_versions: int = None):
     Returns:
         None
     """
+    if config['MODEL'].get('SkipRetrieval', 'No').lower() == 'yes':
+        print("Model training has already been done. Skipping...")
+        return
+
     base_dir = config["GENERAL"]["DataDirectory"]
     static_metrics_dir = config["OUTPUT"]["StaticMetricsOutputDirectory"]
     metrics_dir = os.path.join(base_dir, static_metrics_dir)
@@ -81,3 +87,77 @@ def train_and_save_models(max_versions: int = None):
     with open(output_file, "w") as f:
         json.dump(results, f, indent=4)
     print(f"Results saved to {output_file}")
+
+
+def plot_metrics_evolution(filteviolet_results: Dict):
+    """
+    Plot the evolution of model metrics across minor versions with improved colors and value annotations.
+
+    Parameters:
+        filteviolet_results (Dict): Dictionary with performance metrics for minor versions.
+
+    Returns:
+        None
+    """
+    versions = []
+    auc_lr, auc_rf = [], []
+    precision_lr, precision_rf = [], []
+    recall_lr, recall_rf = [], []
+
+    # Extract metrics
+    for version, metrics in sorted(filteviolet_results.items(), key=lambda x: x[0]):
+        versions.append(version)
+        auc_lr.append(metrics["LogisticRegression"]["AUC"])
+        auc_rf.append(metrics["RandomForest"]["AUC"])
+        precision_lr.append(metrics["LogisticRegression"]["Precision"])
+        precision_rf.append(metrics["RandomForest"]["Precision"])
+        recall_lr.append(metrics["LogisticRegression"]["Recall"])
+        recall_rf.append(metrics["RandomForest"]["Recall"])
+
+    # Plot AUC
+    plt.figure(figsize=(10, 6))
+    plt.plot(versions, auc_lr, label="Logistic Regression - AUC", marker="o", linestyle="-.", color="purple")
+    plt.plot(versions, auc_rf, label="Random Forest - AUC", marker="s", linestyle=":", color="violet")
+    annotate_points(versions, auc_lr, "purple", position="below")
+    annotate_points(versions, auc_rf, "violet", position="below")
+    configure_plot("AUC Evolution Across Minor Versions", "AUC")
+    plt.show()
+
+    # Plot Precision
+    plt.figure(figsize=(10, 6))
+    plt.plot(versions, precision_lr, label="Logistic Regression - Precision", marker="o", linestyle="-.", color="purple")
+    plt.plot(versions, precision_rf, label="Random Forest - Precision", marker="s", linestyle=":", color="violet")
+    annotate_points(versions, precision_lr, "purple", position="below")
+    annotate_points(versions, precision_rf, "violet", position="below")
+    configure_plot("Precision Evolution Across Minor Versions", "Precision")
+    plt.show()
+
+    # Plot Recall
+    plt.figure(figsize=(10, 6))
+    plt.plot(versions, recall_lr, label="Logistic Regression - Recall", marker="o", linestyle="-.", color="purple")
+    plt.plot(versions, recall_rf, label="Random Forest - Recall", marker="s", linestyle=":", color="violet")
+    annotate_points(versions, recall_lr, "purple", position="below")
+    annotate_points(versions, recall_rf, "violet", position="below")
+    configure_plot("Recall Evolution Across Minor Versions", "Recall")
+    plt.show()
+
+# General plot settings
+def configure_plot(title: str, ylabel: str):
+    plt.title(title, fontsize=14)
+    plt.xlabel("Versions", fontsize=12)
+    plt.ylabel(ylabel, fontsize=12)
+    plt.xticks(rotation=45, fontsize=10)
+    plt.ylim(0, 1)  # Fix y-axis between 0 and 1
+    plt.grid(True, linestyle="--", alpha=0.6)
+    plt.legend(
+        loc="center left", 
+        bbox_to_anchor=(1, 0.5), 
+        title="Model and Metric", 
+        fontsize=10
+    )
+
+# Function to annotate values below points
+def annotate_points(x, y, color, position="below"):
+    offset = -0.06 if position == "below" else 0.02  # Adjust position
+    for i, val in enumerate(y):
+        plt.text(x[i], y[i] + offset, f"{val:.2f}", ha="center", fontsize=10, color=color)

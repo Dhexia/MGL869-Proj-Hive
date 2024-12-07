@@ -1,2 +1,2 @@
 from AI.model_pipeline import plot_feature_importance_rf,plot_shap_summary, plot_shap_with_others, evaluate_model, train_model, load_and_prepare_data, load_config
-from AI.train_models import train_and_save_models
+from AI.train_models import train_and_save_models, plot_metrics_evolution
