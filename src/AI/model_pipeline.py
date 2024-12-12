@@ -9,6 +9,8 @@ from sklearn.preprocessing import StandardScaler
 import matplotlib.pyplot as plt
 import shap
 import numpy as np
+from typing import Union, Dict, Tuple
+
 
 
 config=ConfigParser()
@@ -37,17 +39,32 @@ def load_config(config_section: str) -> Dict[str, any]:
 
 # 2. Load and prepare data
 def load_and_prepare_data(
-    file_path: str,
+    data: Union[str, pd.DataFrame],
     config: Dict[str, any],
     resampling_method: str = "smote",
     verbose: bool = False
 ) -> Tuple[pd.DataFrame, pd.DataFrame, pd.Series, pd.Series]:
     """
     Loads data, cleans it, balances classes, and prepares training and testing sets.
+    Can accept either a file path or a preloaded DataFrame.
+
+    Parameters:
+        data (str | pd.DataFrame): Path to the CSV file or a preloaded DataFrame.
+        config (dict): Configuration settings.
+        resampling_method (str): Resampling strategy ("smote" or "undersample").
+        verbose (bool): Whether to print detailed logs.
+
+    Returns:
+        X_train, X_test, y_train, y_test: Processed training and testing data.
     """
-    # Load data
-    df = pd.read_csv(file_path, sep=",")
-    
+    # Load data if a file path is provided
+    if isinstance(data, str):
+        df = pd.read_csv(data, sep=",")
+    elif isinstance(data, pd.DataFrame):
+        df = data.copy()  # Work with a copy of the DataFrame
+    else:
+        raise ValueError("The 'data' parameter must be either a file path or a DataFrame.")
+
     # Replace commas in numerical columns with dots
     for col in df.select_dtypes(include=["object"]).columns:
         df[col] = df[col].str.replace(",", ".", regex=False)
@@ -93,7 +110,6 @@ def load_and_prepare_data(
     )
 
     return X_train, X_test, y_train, y_test
-
 
 
 
@@ -222,7 +238,7 @@ def plot_shap_summary(trained_model, X_train, X_test, top_n=10):
     )
 
 
-def plot_shap_with_others(trained_model, X_train, X_test, top_n=10):
+def plot_shap_lr(trained_model, X_train, X_test, top_n=10):
     """
     Plot the top N features by mean SHAP values with a single "Others" bar for less important features.
     
@@ -261,6 +277,18 @@ def plot_shap_with_others(trained_model, X_train, X_test, top_n=10):
     plt.figure(figsize=(14, 10))
     plt.barh(final_df["Feature"], final_df["Mean_SHAP"])
     plt.xlabel("Mean |SHAP value|")
-    plt.title(f"Top {top_n} SHAP Features with 'Others'")
+    plt.title(f"Top {top_n} SHAP Features (Logistic Regression)")
     plt.gca().invert_yaxis()  # Show the most important feature at the top
     plt.show()
+
+
+# 7. Filter data by version
+def filter_data_by_version(data: pd.DataFrame, major_version: str) -> pd.DataFrame:
+    """
+    Filtre les données pour inclure uniquement les lignes correspondant à une version majeure spécifique.
+
+    :param data: DataFrame complet contenant toutes les versions.
+    :param major_version: Numéro de la version majeure à inclure (ex: "2.0").
+    :return: DataFrame filtré.
+    """
+    return data[data['Version'].str.startswith(major_version)]
