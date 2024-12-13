@@ -20,11 +20,11 @@ config.read('config.ini')
 def load_config(config_section: str) -> Dict[str, any]:
     """
     Loads the configuration parameters for a specific section.
-    
+
     :param config_section: Section name in the config.ini file.
     :return: Dictionary containing configuration parameters.
     """
-
+    
     if config_section not in config:
         raise ValueError(f"Section '{config_section}' not found in config.ini.")
     
@@ -33,8 +33,37 @@ def load_config(config_section: str) -> Dict[str, any]:
         "drop_columns": config[config_section]["drop_columns"].split(","),
         "test_size": float(config[config_section].get("test_size", 0.3)),
         "random_state": int(config[config_section].get("random_state", 42)),
+        "n_estimators": int(config[config_section].get("n_estimators", 100)),  # Default to 100 if not in config
+        "max_depth": int(config[config_section].get("max_depth", None)) if config[config_section].get("max_depth") else None  # None if not in config
     }
     return model_config
+
+
+# def load_config(config_section: str) -> Dict[str, any]:
+#     """
+#     Loads all configuration parameters for a specific section.
+
+#     :param config_section: Section name in the config.ini file.
+#     :return: Dictionary containing all configuration parameters.
+#     """
+#     if config_section not in config:
+#         raise ValueError(f"Section '{config_section}' not found in config.ini.")
+
+#     # Convert all keys to appropriate types (int, float, etc.)
+#     model_config = {}
+#     for key, value in config[config_section].items():
+#         try:
+#             # Try to cast to int or float if applicable
+#             if '.' in value:
+#                 model_config[key] = float(value)
+#             else:
+#                 model_config[key] = int(value)
+#         except ValueError:
+#             # Keep as string if casting fails
+#             model_config[key] = value.strip()
+
+#     return model_config
+
 
 
 # 2. Load and prepare data

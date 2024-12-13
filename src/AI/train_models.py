@@ -6,6 +6,9 @@ from configparser import ConfigParser
 from AI.model_pipeline import evaluate_model, train_model, load_and_prepare_data, load_config
 import matplotlib.pyplot as plt
 from typing import Dict
+from concurrent.futures import ThreadPoolExecutor
+from os import cpu_count
+from threading import Lock
 
 config=ConfigParser()
 config.read('config.ini')
@@ -87,6 +90,98 @@ def train_and_save_models(max_versions: int = None):
     with open(output_file, "w") as f:
         json.dump(results, f, indent=4)
     print(f"Results saved to {output_file}")
+
+
+
+
+def train_and_save_models_with_threads(source_dir: str, output_dir: str, output_file: str, max_versions: int = None):
+    """
+    Train models for each minor version in parallel using threads and save their performance metrics to a JSON file.
+
+    Args:
+        source_dir (str): Directory containing the metrics files.
+        output_dir (str): Directory where the output file will be saved.
+        output_file (str): Name of the output JSON file.
+        max_threads (int): Maximum number of threads to use for processing.
+        max_versions (int, optional): Maximum number of versions to process.
+
+    Returns:
+        None
+    """
+    
+    if config['MODEL'].get('SkipRetrieval', 'No').lower() == 'yes':
+        print("Model training has already been done. Skipping...")
+        return
+
+    max_threads: int = int(config["GENERAL"]["MaxThreads"])
+    threads_num: int = min(max_threads, cpu_count())
+
+    # Ensure output directory exists
+    os.makedirs(output_dir, exist_ok=True)
+    
+    # List and filter files in the source directory
+    files = [
+        file for file in os.listdir(source_dir)
+        if file.endswith(".csv") and is_minor_version(file.split("_")[0])
+    ]
+    if max_versions is not None:
+        files = files[:max_versions]
+
+    results = {}
+
+    # Use ThreadPoolExecutor for parallel processing
+    with ThreadPoolExecutor(max_workers=threads_num) as executor:
+        # Pass `source_dir` as an additional argument to `process_file`
+        futures = {executor.submit(process_file, source_dir, file): file for file in files}
+        for future in futures:
+            version, metrics = future.result()
+            results[version] = metrics
+
+    # Save results to JSON
+    output_path = os.path.join(output_dir, output_file)
+    with open(output_path, "w") as f:
+        json.dump(results, f, indent=4)
+    print(f"Results saved at: {output_path}")
+
+print_lock = Lock()
+
+def process_file(source_dir: str, file: str):
+    """
+    Process a single file: Train models, evaluate them, and return metrics.
+
+    Args:
+        source_dir (str): Directory containing the metrics files.
+        file (str): Name of the file to process.
+
+    Returns:
+        tuple: Version and metrics dictionary.
+    """
+    version = file.split("_")[0]
+    file_path = os.path.join(source_dir, file)
+
+    with print_lock:
+        print(f"Processing version: {version}")
+
+    # Load configuration for the version
+    param = load_config("VERSION")
+
+    # Prepare data
+    X_train, X_test, y_train, y_test = load_and_prepare_data(file_path, param, verbose=True)
+
+    # Train Logistic Regression
+    model_instance_lr = LogisticRegression(max_iter=5000, class_weight="balanced")
+    trained_model_lr = train_model(model_instance_lr, X_train, y_train, verbose=True)
+    metrics_lr = evaluate_model(trained_model_lr, X_test, y_test, verbose=True)
+
+    # Train Random Forest
+    model_instance_rf = RandomForestClassifier(class_weight="balanced")
+    trained_model_rf = train_model(model_instance_rf, X_train, y_train, verbose=True)
+    metrics_rf = evaluate_model(trained_model_rf, X_test, y_test, verbose=True)
+
+    return version, {
+        "LogisticRegression": metrics_lr,
+        "RandomForest": metrics_rf
+    }
 
 
 def plot_metrics_evolution(filteviolet_results: Dict):

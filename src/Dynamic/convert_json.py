@@ -41,7 +41,7 @@ def convert_json_to_csv():
     # Load configuration from config.ini ----------------------------------- #
     dynamic_metrics_file = config["DYNAMIC"]["MetricsFile"]
     data_directory = config["GENERAL"]["DataDirectory"]
-    dynamic_metrics_subdir = config["DYNAMIC"]["JsonMetricsSubDirectory"]
+    dynamic_metrics_subdir = config["DYNAMIC"]["AllMetricsSubDir"]
     csv_output_subdir = config["OUTPUT"]["DynamicMetricsOutputDirectory"]
 
     json_path = join(data_directory, dynamic_metrics_subdir, dynamic_metrics_file)

@@ -198,7 +198,7 @@ def load_configuration():
     # Paths and directories
     metrics_file = config["DYNAMIC"]["MetricsFile"]
     data_directory = config["GENERAL"]["DataDirectory"]
-    json_subdir = config["DYNAMIC"]["JsonMetricsSubDirectory"]
+    json_subdir = config["DYNAMIC"]["AllMetricsSubDir"]
     json_metrics_path = join(data_directory, json_subdir)
 
     if not exists(json_metrics_path):
