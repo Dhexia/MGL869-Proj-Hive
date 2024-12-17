@@ -170,8 +170,18 @@ def evaluate_model(
     verbose: bool = False
 ) -> Dict[str, float]:
     """
-    Evaluates a model's performance on test data.
+    Evaluates a model's performance on test data and replaces numeric class labels
+    with their corresponding priority names.
     """
+    # Mapping des labels
+    priority_mapping = {
+        0.0: "None",
+        1.0: "Trivial",
+        2.0: "Minor",
+        3.0: "Major",
+        4.0: "Critical",
+        5.0: "Blocker"
+    }
 
     start_time = time.time()
     y_pred = model.predict(X_test)
@@ -180,20 +190,43 @@ def evaluate_model(
     if not verbose:
         print(f"Prediction time: {end_time - start_time:.2f} seconds")
 
-    y_proba = model.predict_proba(X_test)[:, 1]
+    metrics = {}
+    if len(np.unique(y_test)) > 2:  # Multiclass
+        from sklearn.metrics import accuracy_score, f1_score, classification_report
+        y_proba = model.predict_proba(X_test)
+        metrics["Accuracy"] = accuracy_score(y_test, y_pred)
+        metrics["F1_macro"] = f1_score(y_test, y_pred, average="macro")
+        metrics["F1_micro"] = f1_score(y_test, y_pred, average="micro")
+        
+        # Générer le rapport
+        report = classification_report(y_test, y_pred, output_dict=True)
+        
+        # Mettre à jour uniquement les clés numériques
+        updated_report = {}
+        for k, v in report.items():
+            try:
+                updated_key = priority_mapping.get(float(k), k)  # Convert only numeric keys
+            except ValueError:
+                updated_key = k  # Keep non-numeric keys like 'accuracy'
+            updated_report[updated_key] = v
+        
+        metrics["ClassificationReport"] = updated_report
 
-    # Calculate ROC curve
-    fpr, tpr, _ = roc_curve(y_test, y_proba)
-
-    metrics = {
-        "AUC": roc_auc_score(y_test, y_proba),
-        "Precision": precision_score(y_test, y_pred),
-        "Recall": recall_score(y_test, y_pred),
-        "FPR": fpr.tolist(),
-        "TPR": tpr.tolist()
-    }
+    else:  # Binary classification
+        y_proba = model.predict_proba(X_test)[:, 1]
+        from sklearn.metrics import roc_auc_score, precision_score, recall_score, roc_curve
+        fpr, tpr, _ = roc_curve(y_test, y_proba)
+        metrics = {
+            "AUC": roc_auc_score(y_test, y_proba),
+            "Precision": precision_score(y_test, y_pred),
+            "Recall": recall_score(y_test, y_pred),
+            "FPR": fpr.tolist(),
+            "TPR": tpr.tolist()
+        }
 
     return metrics
+
+
 
 
 

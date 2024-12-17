@@ -12,7 +12,7 @@ def update_commit_dataframe(commit_dataframe, jira_dataframe):
     """
 
     merged_dataframe = commit_dataframe.merge(
-        jira_dataframe[['Issue key', 'Affects Versions Combined']],
+        jira_dataframe[['Issue key', 'Affects Versions Combined', 'Priority']],
         on='Issue key',
         how='left'  # Conserver toutes les lignes de commit_dataframe
     )
