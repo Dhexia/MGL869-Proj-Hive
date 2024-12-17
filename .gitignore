@@ -2,7 +2,7 @@
 /.env/
 /.idea/
 docker.env
-/lab/
+/venv3.12/
 .DS_Store
 /src/Output/
 /src/.ipynb_checkpoints/

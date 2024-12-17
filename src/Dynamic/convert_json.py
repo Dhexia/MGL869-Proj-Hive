@@ -41,7 +41,7 @@ def convert_json_to_csv():
     # Load configuration from config.ini ----------------------------------- #
     dynamic_metrics_file = config["DYNAMIC"]["MetricsFile"]
     data_directory = config["GENERAL"]["DataDirectory"]
-    dynamic_metrics_subdir = config["DYNAMIC"]["JsonMetricsSubDirectory"]
+    dynamic_metrics_subdir = config["DYNAMIC"]["AllMetricsSubDir"]
     csv_output_subdir = config["OUTPUT"]["DynamicMetricsOutputDirectory"]
 
     json_path = join(data_directory, dynamic_metrics_subdir, dynamic_metrics_file)
@@ -72,6 +72,17 @@ def convert_json_to_csv():
                 'LinesDeleted': metrics['count_lines'][file_name].get('LinesDeleted', 0),
                 'CommitCount': metrics['commit_count'].get(file_name, 0),
                 'DeveloperCount': metrics['developer_count'].get(file_name, 0),
+                'BugFixCount': metrics['bug_fix_count'].get(file_name, 0),
+                'CumulativeDeveloperCount': metrics['cumulative_developer_count'].get(file_name, 0),
+                'AverageTimeBetweenChanges': metrics['average_time_between_changes'].get(file_name, 0),
+                'CumulativeCommitCount': metrics['cumulative_commit_count'].get(file_name, 0),
+                'ChangedComments': metrics['comment_change_metrics'][file_name].get('ChangedComments', 0),
+                'UnchangedComments': metrics['comment_change_metrics'][file_name].get('UnchangedComments', 0),
+                'CumulativeChangedComments': metrics['cumulative_comment_metrics'][file_name].get('ChangedComments', 0),
+                'CumulativeUnchangedComments': metrics['cumulative_comment_metrics'][file_name].get('UnchangedComments', 0),
+                'CumulativeAverageTimeBetweenChanges': metrics['cumulative_average_time_between_changes'].get(file_name, 0),
+                'AverageExpertise': metrics['average_expertise'].get(file_name, 0),
+                'MinimumExpertise': metrics['minimum_expertise'].get(file_name, 0)
             })
 
         # Create a DataFrame and sort by file name
