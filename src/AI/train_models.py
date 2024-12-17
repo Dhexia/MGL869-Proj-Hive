@@ -2,6 +2,8 @@ import os
 import json
 from sklearn.linear_model import LogisticRegression
 from sklearn.ensemble import RandomForestClassifier
+from sklearn.metrics import precision_score, f1_score, classification_report
+import matplotlib.pyplot as plt
 from configparser import ConfigParser
 from AI.model_pipeline import evaluate_model, train_model, load_and_prepare_data, load_config
 import matplotlib.pyplot as plt
@@ -92,21 +94,17 @@ def train_and_save_models(max_versions: int = None):
     print(f"Results saved to {output_file}")
 
 
-
-
-def train_and_save_models_with_threads(source_dir: str, output_dir: str, output_file: str, max_versions: int = None):
+def train_and_save_models_with_threads(source_dir: str, output_dir: str, output_file: str, max_versions: int = None, verbose_mode: str = "binary"):
     """
-    Train models for each minor version in parallel using threads and save their performance metrics to a JSON file.
+    Train models for each minor version in parallel and save performance metrics.
+    Supports both binary and classification pipelines.
 
     Args:
         source_dir (str): Directory containing the metrics files.
-        output_dir (str): Directory where the output file will be saved.
-        output_file (str): Name of the output JSON file.
-        max_threads (int): Maximum number of threads to use for processing.
-        max_versions (int, optional): Maximum number of versions to process.
-
-    Returns:
-        None
+        output_dir (str): Directory to save the output file.
+        output_file (str): JSON file name to store results.
+        max_versions (int): Max number of versions to process.
+        verbose_mode (str): "binary" for binary BugStatus, "classification" for Priority.
     """
     
     if config['MODEL'].get('SkipRetrieval', 'No').lower() == 'yes':
@@ -132,7 +130,7 @@ def train_and_save_models_with_threads(source_dir: str, output_dir: str, output_
     # Use ThreadPoolExecutor for parallel processing
     with ThreadPoolExecutor(max_workers=threads_num) as executor:
         # Pass `source_dir` as an additional argument to `process_file`
-        futures = {executor.submit(process_file, source_dir, file): file for file in files}
+        futures = {executor.submit(process_file, source_dir, file, verbose_mode): file for file in files}
         for future in futures:
             version, metrics = future.result()
             results[version] = metrics
@@ -145,13 +143,14 @@ def train_and_save_models_with_threads(source_dir: str, output_dir: str, output_
 
 print_lock = Lock()
 
-def process_file(source_dir: str, file: str):
+def process_file(source_dir: str, file: str, verbose_mode: str = "binary"):
     """
-    Process a single file: Train models, evaluate them, and return metrics.
+    Process a single file: Train and evaluate models.
 
     Args:
         source_dir (str): Directory containing the metrics files.
         file (str): Name of the file to process.
+        verbose_mode (str): Pipeline mode ("binary" or "classification").
 
     Returns:
         tuple: Version and metrics dictionary.
@@ -162,29 +161,46 @@ def process_file(source_dir: str, file: str):
     with print_lock:
         print(f"Processing version: {version}")
 
-    # Load configuration for the version
-    param = load_config("VERSION")
+    # Load appropriate configuration
+    config_section = "VERSION" if verbose_mode == "binary" else "VERSION2"
+    param = load_config(config_section)
 
     # Prepare data
     X_train, X_test, y_train, y_test = load_and_prepare_data(file_path, param, verbose=True)
 
     # Train Logistic Regression
-    model_instance_lr = LogisticRegression(max_iter=5000, class_weight="balanced")
-    trained_model_lr = train_model(model_instance_lr, X_train, y_train, verbose=True)
-    metrics_lr = evaluate_model(trained_model_lr, X_test, y_test, verbose=True)
+    if verbose_mode == "binary":
+        model_instance_lr = LogisticRegression(max_iter=5000, class_weight="balanced")
+        trained_model_lr = train_model(model_instance_lr, X_train, y_train, verbose=True)
+        metrics_lr = evaluate_model(trained_model_lr, X_test, y_test, verbose=True)
 
     # Train Random Forest
-    model_instance_rf = RandomForestClassifier(class_weight="balanced")
+    model_instance_rf = RandomForestClassifier(n_estimators=param['n_estimators'], 
+                                               max_depth=param['max_depth'],
+                                               class_weight="balanced",
+                                               random_state=param['random_state'])
     trained_model_rf = train_model(model_instance_rf, X_train, y_train, verbose=True)
-    metrics_rf = evaluate_model(trained_model_rf, X_test, y_test, verbose=True)
 
-    return version, {
-        "LogisticRegression": metrics_lr,
-        "RandomForest": metrics_rf
-    }
+    if verbose_mode == "binary":
+        metrics_rf = evaluate_model(trained_model_rf, X_test, y_test, verbose=True)
+        return version, {
+            "LogisticRegression": metrics_lr,
+            "RandomForest": metrics_rf
+        }
+    else:  # Classification mode
+        y_pred = trained_model_rf.predict(X_test)
+        precision = precision_score(y_test, y_pred, average="macro")
+        f1_macro = f1_score(y_test, y_pred, average="macro")
+        metrics_rf = {
+            "Precision": precision,
+            "F1_macro": f1_macro,
+            "Report": classification_report(y_test, y_pred, output_dict=True)
+        }
+        return version, {"RandomForest": metrics_rf}
 
 
-def plot_metrics_evolution(filteviolet_results: Dict):
+
+def plot_metrics_evolution(filteviolet_results: Dict, verbose_mode: str = "binary"):
     """
     Plot the evolution of model metrics across minor versions with improved colors and value annotations.
 
@@ -195,46 +211,72 @@ def plot_metrics_evolution(filteviolet_results: Dict):
         None
     """
     versions = []
-    auc_lr, auc_rf = [], []
-    precision_lr, precision_rf = [], []
-    recall_lr, recall_rf = [], []
 
-    # Extract metrics
-    for version, metrics in sorted(filteviolet_results.items(), key=lambda x: x[0]):
-        versions.append(version)
-        auc_lr.append(metrics["LogisticRegression"]["AUC"])
-        auc_rf.append(metrics["RandomForest"]["AUC"])
-        precision_lr.append(metrics["LogisticRegression"]["Precision"])
-        precision_rf.append(metrics["RandomForest"]["Precision"])
-        recall_lr.append(metrics["LogisticRegression"]["Recall"])
-        recall_rf.append(metrics["RandomForest"]["Recall"])
+    if verbose_mode == "binary":
+        auc_lr, auc_rf = [], []
+        precision_lr, precision_rf = [], []
+        recall_lr, recall_rf = [], []
 
-    # Plot AUC
-    plt.figure(figsize=(10, 6))
-    plt.plot(versions, auc_lr, label="Logistic Regression - AUC", marker="o", linestyle="-.", color="purple")
-    plt.plot(versions, auc_rf, label="Random Forest - AUC", marker="s", linestyle=":", color="violet")
-    annotate_points(versions, auc_lr, "purple", position="below")
-    annotate_points(versions, auc_rf, "violet", position="below")
-    configure_plot("AUC Evolution Across Minor Versions", "AUC")
-    plt.show()
+        # Extract metrics
+        for version, metrics in sorted(filteviolet_results.items(), key=lambda x: x[0]):
+            versions.append(version)
+            auc_lr.append(metrics["LogisticRegression"]["AUC"])
+            auc_rf.append(metrics["RandomForest"]["AUC"])
+            precision_lr.append(metrics["LogisticRegression"]["Precision"])
+            precision_rf.append(metrics["RandomForest"]["Precision"])
+            recall_lr.append(metrics["LogisticRegression"]["Recall"])
+            recall_rf.append(metrics["RandomForest"]["Recall"])
 
-    # Plot Precision
-    plt.figure(figsize=(10, 6))
-    plt.plot(versions, precision_lr, label="Logistic Regression - Precision", marker="o", linestyle="-.", color="purple")
-    plt.plot(versions, precision_rf, label="Random Forest - Precision", marker="s", linestyle=":", color="violet")
-    annotate_points(versions, precision_lr, "purple", position="below")
-    annotate_points(versions, precision_rf, "violet", position="below")
-    configure_plot("Precision Evolution Across Minor Versions", "Precision")
-    plt.show()
+        # Plot AUC
+        plt.figure(figsize=(10, 6))
+        plt.plot(versions, auc_lr, label="Logistic Regression - AUC", marker="o", linestyle="-.", color="purple")
+        plt.plot(versions, auc_rf, label="Random Forest - AUC", marker="s", linestyle=":", color="violet")
+        annotate_points(versions, auc_lr, "purple", position="below")
+        annotate_points(versions, auc_rf, "violet", position="below")
+        configure_plot("AUC Evolution Across Minor Versions", "AUC")
+        plt.show()
 
-    # Plot Recall
-    plt.figure(figsize=(10, 6))
-    plt.plot(versions, recall_lr, label="Logistic Regression - Recall", marker="o", linestyle="-.", color="purple")
-    plt.plot(versions, recall_rf, label="Random Forest - Recall", marker="s", linestyle=":", color="violet")
-    annotate_points(versions, recall_lr, "purple", position="below")
-    annotate_points(versions, recall_rf, "violet", position="below")
-    configure_plot("Recall Evolution Across Minor Versions", "Recall")
-    plt.show()
+        # Plot Precision
+        plt.figure(figsize=(10, 6))
+        plt.plot(versions, precision_lr, label="Logistic Regression - Precision", marker="o", linestyle="-.", color="purple")
+        plt.plot(versions, precision_rf, label="Random Forest - Precision", marker="s", linestyle=":", color="violet")
+        annotate_points(versions, precision_lr, "purple", position="below")
+        annotate_points(versions, precision_rf, "violet", position="below")
+        configure_plot("Precision Evolution Across Minor Versions", "Precision")
+        plt.show()
+
+        # Plot Recall
+        plt.figure(figsize=(10, 6))
+        plt.plot(versions, recall_lr, label="Logistic Regression - Recall", marker="o", linestyle="-.", color="purple")
+        plt.plot(versions, recall_rf, label="Random Forest - Recall", marker="s", linestyle=":", color="violet")
+        annotate_points(versions, recall_lr, "purple", position="below")
+        annotate_points(versions, recall_rf, "violet", position="below")
+        configure_plot("Recall Evolution Across Minor Versions", "Recall")
+        plt.show()
+    else:  # Classification mode
+        precision_rf, f1_rf = [], []
+        for version, metrics in sorted(filteviolet_results.items(), key=lambda x: x[0]):
+            versions.append(version)
+
+            # Extraire les valeurs à partir du Report -> macro avg
+            report = metrics["RandomForest"]["Report"]
+            precision_rf.append(report["macro avg"]["precision"])
+            f1_rf.append(report["macro avg"]["f1-score"])
+
+        # Plot Precision Macro
+        plt.figure(figsize=(10, 6))
+        plt.plot(versions, precision_rf, label="Precision Macro", marker="o", color="purple")
+        annotate_points(versions, precision_rf, "purple", position="below")
+        configure_plot("Precision Macro Evolution Across Minor Versions (Random Forest)", "Precision Macro")
+        plt.show()
+
+        # Plot F1 Macro
+        plt.figure(figsize=(10, 6))
+        plt.plot(versions, f1_rf, label="F1 Macro", marker="s", color="violet")
+        annotate_points(versions, f1_rf, "violet", position="below")
+        configure_plot("F1 Macro Evolution Across Minor Versions (Random Forest)", "F1 Macro")
+        plt.show()
+
 
 # General plot settings
 def configure_plot(title: str, ylabel: str):

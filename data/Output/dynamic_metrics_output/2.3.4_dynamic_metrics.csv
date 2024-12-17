@@ -1,0 +1,13 @@
+Name,LinesAdded,LinesDeleted,CommitCount,DeveloperCount,BugFixCount,CumulativeDeveloperCount,AverageTimeBetweenChanges,CumulativeCommitCount,ChangedComments,UnchangedComments,CumulativeChangedComments,CumulativeUnchangedComments,CumulativeAverageTimeBetweenChanges,AverageExpertise,MinimumExpertise
+EnforceReadOnlyTables.java,4,3,1,1,0,1,39388.0,1,0,1,0,1,39388.0,1.0,1
+ExplainSemanticAnalyzer.java,4,0,1,1,0,1,39388.0,1,0,1,0,1,39388.0,1.0,1
+FallbackHiveAuthorizer.java,260,1,2,1,0,1,7601836.5,2,0,2,0,2,7601836.5,2.0,2
+FallbackHiveAuthorizerFactory.java,36,0,1,1,0,1,15089836.0,1,0,1,0,1,15089836.0,1.0,1
+HiveAlterHandler.java,13,1,1,1,0,1,495658.0,1,0,1,0,1,495658.0,1.0,1
+HiveMetaStore.java,4,6,1,1,0,1,495658.0,1,0,1,0,1,495658.0,1.0,1
+HiveStatement.java,1,1,1,1,0,1,282446.0,1,0,1,0,1,282446.0,1.0,1
+MetaStoreUtils.java,9,2,1,1,0,1,1675483.0,1,0,1,0,1,1675483.0,1.0,1
+Operation2Privilege.java,15,0,1,1,0,1,113837.0,1,0,1,0,1,113837.0,1.0,1
+SettableConfigUpdater.java,1,1,1,1,0,1,15089836.0,1,0,1,0,1,15089836.0,1.0,1
+TestDbNotificationListener.java,1,0,1,1,0,1,495658.0,1,0,1,0,1,495658.0,1.0,1
+TestMetaStoreUtils.java,85,2,1,1,0,1,1675483.0,1,0,1,0,1,1675483.0,1.0,1

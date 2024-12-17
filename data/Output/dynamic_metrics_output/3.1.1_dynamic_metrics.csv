@@ -1,0 +1,11 @@
+Name,LinesAdded,LinesDeleted,CommitCount,DeveloperCount,BugFixCount,CumulativeDeveloperCount,AverageTimeBetweenChanges,CumulativeCommitCount,ChangedComments,UnchangedComments,CumulativeChangedComments,CumulativeUnchangedComments,CumulativeAverageTimeBetweenChanges,AverageExpertise,MinimumExpertise
+EnforceReadOnlyTables.java,4,3,1,1,0,1,682075.0,1,0,1,0,1,682075.0,1.0,1
+ExplainSemanticAnalyzer.java,2,0,1,1,0,1,682075.0,1,0,1,0,1,682075.0,1.0,1
+FallbackHiveAuthorizer.java,253,0,1,1,0,1,386976.0,1,0,1,0,1,386976.0,1.0,1
+FallbackHiveAuthorizerFactory.java,36,0,1,1,0,1,386976.0,1,0,1,0,1,386976.0,1.0,1
+HiveConnection.java,16,3,1,1,0,1,0.0,1,0,1,0,1,0.0,1.0,1
+HttpAuthUtils.java,6,18,1,1,0,1,0.0,1,0,1,0,1,0.0,1.0,1
+HttpKerberosRequestInterceptor.java,11,12,1,1,0,1,0.0,1,0,1,0,1,0.0,1.0,1
+MetaStoreUtils.java,9,2,1,1,0,1,1695709.0,1,0,1,0,1,1695709.0,1.0,1
+SettableConfigUpdater.java,1,1,1,1,0,1,386976.0,1,0,1,0,1,386976.0,1.0,1
+TestMetaStoreUtils.java,79,0,1,1,0,1,1695709.0,1,0,1,0,1,1695709.0,1.0,1

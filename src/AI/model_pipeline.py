@@ -4,6 +4,8 @@ from sklearn.metrics import roc_auc_score, precision_score, recall_score, roc_cu
 from typing import Dict, Tuple
 from sklearn.base import BaseEstimator
 from configparser import ConfigParser
+from imblearn.over_sampling import SMOTE
+from imblearn.over_sampling import RandomOverSampler
 import time
 from sklearn.preprocessing import StandardScaler
 import matplotlib.pyplot as plt
@@ -124,13 +126,17 @@ def load_and_prepare_data(
         print(f"Scaler fit/transform time: {end_time - start_time:.2f} seconds")
 
     # Balance classes if requested
-    if resampling_method == "undersample":
-        from imblearn.under_sampling import RandomUnderSampler
-        sampler = RandomUnderSampler(random_state=config.get("random_state", 42))
+    if resampling_method == "smote":
+        min_samples = y.value_counts().min()
+        if min_samples > 1:  # SMOTE can only work if all classes have at least 2 samples
+            k_neighbors = max(1, min(2, min_samples - 1))  # Ensure k_neighbors >= 1
+            sampler = SMOTE(random_state=config.get("random_state", 42), k_neighbors=k_neighbors)
+        else:
+            print("Switching to RandomOverSampler due to small class sizes.")
+            sampler = RandomOverSampler(random_state=config.get("random_state", 42))
         X, y = sampler.fit_resample(X, y)
-    elif resampling_method == "smote":
-        from imblearn.over_sampling import SMOTE
-        sampler = SMOTE(random_state=config.get("random_state", 42))
+    elif resampling_method == "oversample":
+        sampler = RandomOverSampler(random_state=config.get("random_state", 42))
         X, y = sampler.fit_resample(X, y)
 
     # Split into training and testing sets
