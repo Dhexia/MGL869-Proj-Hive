@@ -16,7 +16,11 @@ L'objectif de ce laboratoire est d'implémenter une version simplifiée des algo
 ---
 
 ## Auteurs
+
 - [William PHAN](mailto:william.phan.1@ens.etsmtl.ca)
+
+**Note :** Ce projet est un fork personnel issu du travail réalisé en équipe lors du laboratoire dans le cadre du cours MGL869. Les contributions des autres membres visibles dans l'historique Git sont uniquement liées aux travaux collaboratifs effectués pendant le laboratoire. Le projet actuel, en revanche, a été entièrement développé et maintenu individuellement.
+
 
 ---
 
